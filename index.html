@@ -218,36 +218,42 @@
       {
         label: "Watch on Youtube",
         subtitle: "Mahkus",
+        slug: "youtube",
         url: "https://youtube.com/@themahkus",
         emoji: "▶️",
       },
       {
         label: "Amazon Storefront",
         subtitle: "Shop my picks",
+        slug: "amazon",
         url: "https://www.amazon.com/shop/mahkusg",
         emoji: "🛒",
       },
       {
         label: "Matic Robots",
         subtitle: "Referral link",
+        slug: "matic",
         url: "http://referrals.maticrobots.com/maticrobots/u/mahkus11?sub=maticrobots",
         emoji: "🤖",
       },
       {
         label: "Starlink",
         subtitle: "Referral link",
+        slug: "starlink",
         url: "https://starlink.com/?referral=RC-3867860-40768-78",
         emoji: "🛰️",
       },
       {
         label: "Tesla",
         subtitle: "Referral link",
+        slug: "tesla",
         url: "https://ts.la/mark51041",
         emoji: "🚗",
       },
       {
         label: "Questions?",
         subtitle: "mahkusvideo@gmail.com",
+        slug: "email",
         url: "mailto:mahkusvideo@gmail.com",
         emoji: "✉️",
       },
@@ -267,7 +273,8 @@
     for (const item of LINKS) {
       const a = document.createElement("a");
       a.className = "link";
-      a.href = item.url;
+      // Hop through /r/<slug>/ so Cloudflare can count each button as a page view
+      a.href = item.slug ? ("/r/" + item.slug + "/") : item.url;
       if (!item.url.startsWith("mailto:")) {
         a.target = "_blank";
         a.rel = "noopener noreferrer";
@@ -282,6 +289,18 @@
       if (sub) sub.textContent = item.subtitle;
       nav.appendChild(a);
     }
+  </script>
+  <script src="/analytics-token.js"></script>
+  <script>
+    (function () {
+      var token = window.CF_WEB_ANALYTICS_TOKEN;
+      if (!token) return;
+      var s = document.createElement("script");
+      s.defer = true;
+      s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+      s.setAttribute("data-cf-beacon", JSON.stringify({ token: token }));
+      document.head.appendChild(s);
+    })();
   </script>
 </body>
 </html>
