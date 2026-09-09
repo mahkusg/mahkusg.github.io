@@ -1,2 +1,2 @@
-// Cloudflare Web Analytics token for mahkusg.github.io
-window.CF_WEB_ANALYTICS_TOKEN = "45b51de6d45149a7ad6458df535cf25a";
+// Cloudflare Web Analytics siteTag for mahkusg.github.io (live)
+window.CF_WEB_ANALYTICS_TOKEN = "598340fa82d247de874a33ee1d62381b";
