@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redirecting…</title>
+  <meta name="robots" content="noindex" />
+  <script src="/analytics-token.js"></script>
+  <script>
+    (function () {
+      var token = window.CF_WEB_ANALYTICS_TOKEN;
+      if (token) {
+        var s = document.createElement("script");
+        s.type = "module";
+        s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+        s.setAttribute("data-cf-beacon", JSON.stringify({ token: token }));
+        document.head.appendChild(s);
+      }
+      var dest = "/solar/";
+      // Give the beacon a moment to register this hop pageview
+      setTimeout(function () {
+        window.location.replace(dest);
+      }, token ? 200 : 0);
+    })();
+  </script>
+</head>
+<body>
+  <p style="font-family:system-ui;padding:2rem;color:#666">Opening link…</p>
+  <p style="font-family:system-ui;padding:0 2rem"><a id="fallback" href="/solar/">Continue</a></p>
+</body>
+</html>

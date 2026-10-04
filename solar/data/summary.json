@@ -1,0 +1,59 @@
+{
+ "generated": "2026-10-03 17:41",
+ "cards": {
+  "pge": {
+   "close": "~Oct 26, 2026",
+   "due": 36.370600008815615,
+   "text": "about $36 owed",
+   "small": "Likely range: $35 owed to $38 owed. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; about $3 more in fees through Oct 26 would make it about $37.",
+   "annual": 204.83005000881587
+  },
+  "vce": {
+   "close": "Feb 25, 2027",
+   "val": -48.92639304489913,
+   "text": "about $49 credited to the owner",
+   "small": "As a bill credit. Likely range: $88 credited to $10 credited."
+  },
+  "nxt": {
+   "pge_label": "Oct 2026 &ndash; Oct 2027",
+   "pge": "about $47 owed",
+   "pge_rng": "range $29 owed to $514 owed",
+   "vce_label": "Feb 2027 &ndash; Feb 2028",
+   "vce": "about $32 credited to the owner",
+   "vce_rng": "range $133 credited to $150 owed",
+   "bsc": "$24"
+  }
+ },
+ "why_pge": [
+  "This home's solar sent more energy to the grid than the home pulled from it, so its energy account ends the year about <b>$321 in credit</b>. That leftover dollar credit is <b>wiped out</b> at the true-up. PG&amp;E pays nothing for it, because for Valley Clean Energy customers the payment for extra energy comes from VCE (see below).",
+  "There's a small fee on every kWh pulled from the grid that solar credits can't cancel (PG&amp;E calls it the \"non-bypassable charge\"). It adds up all year and is settled at the true-up: about <b>$86.77</b> this year. Most of it came in Nov&ndash;Feb, when the home used the most grid power.",
+  "The monthly minimum charge paid Nov&ndash;Feb (<b>$50.40</b>) counts against those fees. What's left, <b>$36.37</b>, is the true-up bill. The Oct 1 bill already shows this: \"YTD Estimated NEM Charges At True-Up <b>$33.76</b>\" ($84.17 of fees minus $50.41 of minimum charges), and one more billing cycle of fees (to Oct 26) will be added.",
+  "The 2025 true-up worked the same way. The fees ($141) were less than the minimum charges already paid ($146.50), so <b>$0</b> was owed.",
+  "The monthly bill is just the fixed <b>~$24/month Base Services Charge</b> (about $190 this year), which solar credits can't reduce. Three state Climate Credits ($46.26 on the May 4 bill, $36.18 on the Sep 2 bill and $36.18 on the Oct 1 bill) offset part of it. All-in, PG&amp;E costs this home about <b>$205</b> for the year."
+ ],
+ "why_vce": [
+  "Valley Clean Energy (VCE) is the local public agency that supplies this home's electricity. PG&amp;E still delivers it and sends the bill. VCE's side runs on its own year, March through February.",
+  "Summer solar builds up VCE credit, and that credit pays for winter use as it comes up, so nothing is owed to VCE <b>month to month</b>.",
+  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,255 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$49</b>, as a <b>bill credit</b>.",
+  "The remaining dollar credit (about $111) is not paid out. The payout counts kWh, not dollars.",
+  "The range depends on how much grid power the home uses this winter (EV charging adds to it)."
+ ],
+ "leftover": [
+  "<b>Leftover dollar credits:</b> forfeited at both PG&amp;E and VCE. They are never paid out at the full retail value.",
+  "<b>Extra kWh (more exported than used):</b> paid only by VCE, once a year in February, at the wholesale rate plus a 1&cent; bonus (about 3.9&cent;/kWh). It arrives as a bill credit, or as a check if the account is closed.",
+  "<b>PG&amp;E pays nothing</b> for extra kWh to customers of a local provider like VCE. Its tariff hands that job to VCE. The 2025 PG&amp;E statement shows no surplus payment, even though the home exported about 1,497 kWh more than it used."
+ ],
+ "kwh_html": "<h2>What a kWh really costs this home (rates since March 2026)</h2>\n<div class=\"card\"><div class=\"tbl\"><table class=\"kwh\">\n<tr><th>Time of day</th><th>PG&amp;E delivery</th><th>PCIA<br><span class='small'>(PG&amp;E exit fee)</span></th><th>VCE power<br><span class='small'>(after 5% discount)</span></th>\n<th>Grid fee<br><span class='small'>(credits can't cancel it)</span></th><th>All-in: 1 kWh pulled from the grid</th><th>1 kWh sent to the grid earns</th><th>Last year (2025): 1 kWh from grid</th></tr>\n<tr><td><b>Summer 5&ndash;8 pm weekdays</b><br><span class='small'>Jun&ndash;Sep</span></td><td>26.9&cent;</td><td>3.7&cent;</td><td>14.9&cent;</td><td>1.2&cent;</td><td class='tot'>46.7&cent;</td><td class='exp'>46.5&cent;<br><span class='small'>30.6&cent; PG&amp;E + 15.9&cent; VCE</span></td><td class='small'>55.9&cent;</td></tr><tr><td><b>Summer, all other hours</b><br><span class='small'>Jun&ndash;Sep</span></td><td>23.9&cent;</td><td>3.7&cent;</td><td>4.9&cent;</td><td>1.2&cent;</td><td class='tot'>33.8&cent;</td><td class='exp'>33.5&cent;<br><span class='small'>27.6&cent; PG&amp;E + 5.9&cent; VCE</span></td><td class='small'>42.9&cent;</td></tr><tr><td><b>Winter 5&ndash;8 pm weekdays</b><br><span class='small'>Oct&ndash;May</span></td><td>22.0&cent;</td><td>3.7&cent;</td><td>11.0&cent;</td><td>1.2&cent;</td><td class='tot'>38.0&cent;</td><td class='exp'>37.7&cent;<br><span class='small'>25.7&cent; PG&amp;E + 12.0&cent; VCE</span></td><td class='small'>46.1&cent;</td></tr><tr><td><b>Winter, all other hours</b><br><span class='small'>Oct&ndash;May</span></td><td>21.7&cent;</td><td>3.7&cent;</td><td>7.7&cent;</td><td>1.2&cent;</td><td class='tot'>34.3&cent;</td><td class='exp'>34.1&cent;<br><span class='small'>25.4&cent; PG&amp;E + 8.7&cent; VCE</span></td><td class='small'>42.4&cent;</td></tr></table></div>\n<ul class=\"small\">\n<li><b>This home's imports are almost all \"other hours\"</b> (in the Aug cycle only 0.2% came at 5&ndash;8 pm), so a kWh from the grid really costs about <b>33.8&cent;</b> in summer and <b>34.3&cent;</b> in winter.</li>\n<li>An exported kWh earns the same as an imported one costs, except the <b>1.2&cent; grid fee</b> (never credited back), plus VCE's <b>1&cent; bonus</b> on each month's net exports.\nThose credits only cancel charges within the true-up year. Leftover credit is forfeited. The only cash is VCE's surplus payout of about <b>3.9&cent;</b> per <i>net surplus</i> kWh for the year.</li>\n<li><b>What an extra kWh really means for this home this year:</b> both balances end in forfeited credit, so an extra kWh from the grid costs only about\n<b>5.1&cent;</b> (grid fee + a smaller VCE payout). An extra kWh exported is worth about <b>3.9&cent;</b>.</li>\n<li>Compared with 2025, per-kWh prices are <b>16&ndash;21% lower in summer and 18&ndash;19% lower in winter</b>,\nbecause PG&amp;E moved costs into the fixed Base Services Charge: $24.12/month now vs a $12.26/month minimum in 2025.</li>\n<li>Checked against the Sep 2, 2026 bill (7/27&ndash;8/25): PG&amp;E side model <b>$-32.94</b> vs bill <b>$-32.77</b>; VCE model <b>$-14.79</b> vs bill <b>$-14.77</b>. Oct 1, 2026 bill (8/26&ndash;9/24): PG&amp;E side model <b>$-35.83</b> vs bill <b>$-35.67</b>; VCE model <b>$-18.85</b> vs bill <b>$-18.84</b>.\nSummer delivery, PCIA, grid fee, VCE rates and discount are all read off that bill.\nWinter rates are confirmed on the Mar&ndash;Jun 2026 bills: VCE 8.300&cent;/11.808&cent;, and the PCIA works out to $8.89 on 242.9 kWh = 3.66&cent;. The 2025 rates are the ones printed on the Oct 2025&ndash;Jan 2026 bills.</li>\n</ul></div>",
+ "assumptions": [
+  "The home's PG&amp;E 15-minute meter data (2024-10-01 to 2026-10-01) is used for every day it covers, with the actual 5&ndash;8 pm weekday peak (holidays excluded). This covers 93% of the current PG&amp;E year and 60% of the current VCE year.",
+  "What the meter shows: through Feb 2026 the home pulled very little from the grid at 5&ndash;8 pm (under 3%). In Mar&ndash;Jul 2026 it was 7&ndash;14%, but on very small amounts, and it's back near 0% since August. Exports at 5&ndash;8 pm are about 1% most months, but 9&ndash;32% in Aug&ndash;Oct, when the Powerwall sends power out in the evening.",
+  "Days without meter data (before Oct 2024, and future months) use Tesla app totals, scaled up about 5% to match the PG&amp;E meter, and split using the 5&ndash;8 pm shares the meter showed for that month. Future months are a weighted average of past years. The range is &plusmn;1 standard deviation of past usage. EV charging adds about 66 kWh/month.",
+  "PG&amp;E's true-up year follows the account's billing cycle (last year: 10/25/2024&ndash;10/26/2025). This year is assumed to end Oct 26, 2026.",
+  "Grid fees (non-bypassable charges) build up all year and are settled at the true-up, with minimum charges already paid counted against them. The 2025 statement and the Oct 1, 2026 bill both show this ($84.17 of fees so far minus $50.41 of minimum charges = $33.76 estimated). The model gets $83.81 of fees for the same dates.",
+  "Rates: PG&amp;E's published E-TOU-D rates for each date, and VCE's published generation rates. Future rates rise 4.8%/yr from 2027. The PG&amp;E-side rate before Sep 2025 includes a correction of &minus;1.3&cent;/kWh, fitted to the 2025 statement."
+ ],
+ "meter_through": "2026-10-01",
+ "tesla_from": "2021-09",
+ "tesla_to": "2026-09",
+ "bill_verdict": "Checked against 13 monthly PG&amp;E bills (Oct 2025 &ndash; Oct 2026): the grid fee was never charged monthly. It shows up only in the NEM details, which settle at the true-up. The running total on the bills ($84.17 by Sep 24, 2026) equals the sum of the monthly lines, and nothing was charged twice."
+}

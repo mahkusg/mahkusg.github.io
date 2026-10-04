@@ -1,0 +1,242 @@
+{
+ "pay_rate": 2.0,
+ "events": [
+  {
+   "date": "2025-07-29",
+   "season": 2025,
+   "window": "19:00-21:00",
+   "hours": 2.0,
+   "sent": 27.0,
+   "baseline": 0.0,
+   "counted": 27.0,
+   "payout": 49.59
+  },
+  {
+   "date": "2025-08-22",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 33.9,
+   "baseline": 0.06,
+   "counted": 33.8,
+   "payout": 62.09
+  },
+  {
+   "date": "2025-09-03",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 33.8,
+   "baseline": 0.04,
+   "counted": 33.7,
+   "payout": 61.86
+  },
+  {
+   "date": "2025-09-16",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 33.6,
+   "baseline": 0.01,
+   "counted": 33.6,
+   "payout": 61.58
+  },
+  {
+   "date": "2025-09-22",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 33.7,
+   "baseline": 0.04,
+   "counted": 33.6,
+   "payout": 61.72
+  },
+  {
+   "date": "2025-10-07",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 33.1,
+   "baseline": 0.06,
+   "counted": 33.1,
+   "payout": 60.73
+  },
+  {
+   "date": "2025-10-17",
+   "season": 2025,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 32.5,
+   "baseline": 0.05,
+   "counted": 32.4,
+   "payout": 59.49
+  },
+  {
+   "date": "2026-08-03",
+   "season": 2026,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 37.5,
+   "baseline": 0.16,
+   "counted": 37.4,
+   "payout": 68.58
+  },
+  {
+   "date": "2026-08-25",
+   "season": 2026,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 36.4,
+   "baseline": 0.12,
+   "counted": 36.3,
+   "payout": 66.61
+  },
+  {
+   "date": "2026-08-26",
+   "season": 2026,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 36.5,
+   "baseline": 0.12,
+   "counted": 36.4,
+   "payout": 66.85
+  },
+  {
+   "date": "2026-09-09",
+   "season": 2026,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 37.1,
+   "baseline": 0.02,
+   "counted": 37.1,
+   "payout": 68.12
+  },
+  {
+   "date": "2026-09-10",
+   "season": 2026,
+   "window": "17:00-20:00",
+   "hours": 3.0,
+   "sent": 36.3,
+   "baseline": 0.02,
+   "counted": 36.3,
+   "payout": 66.58
+  }
+ ],
+ "seasons": {
+  "2025": {
+   "events": 7,
+   "hours": 20.0,
+   "payout": 417.06,
+   "model": 454.51,
+   "actual": 417.06,
+   "incremental_kwh": 227.3,
+   "by_month": {
+    "5": 0,
+    "6": 0,
+    "7": 1,
+    "8": 1,
+    "9": 3,
+    "10": 2
+   }
+  },
+  "2026": {
+   "events": 5,
+   "hours": 15.0,
+   "payout": 336.74,
+   "model": 366.97,
+   "actual": null,
+   "incremental_kwh": 183.5,
+   "by_month": {
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 3,
+    "9": 2,
+    "10": 0
+   }
+  }
+ },
+ "actual": {
+  "2023": {
+   "paid": "2024-03-02",
+   "amount": 352.94
+  },
+  "2024": {
+   "paid": "2025-02-24",
+   "amount": 400.56
+  },
+  "2025": {
+   "paid": "2026-03-06",
+   "amount": 417.06
+  }
+ },
+ "forecast": {
+  "min_season_hours": 20,
+  "hours_so_far": 15.0,
+  "hours_needed": 5.0,
+  "typical_event_hours": 3,
+  "prev_season_events_after_today": 2,
+  "oct_events_likely": 2,
+  "oct_events_high": 3,
+  "per_event_payout": 67.35,
+  "per_hour_payout": 22.45,
+  "per_hour_export_kwh": 12.26,
+  "per_event_export_kwh": 36.79,
+  "oct_payout_likely": 134.69,
+  "season_to_date": 336.74,
+  "season_low": 448.98,
+  "season_likely": 471.43,
+  "season_high": 538.78,
+  "low_rule": "earned + 5 h minimum x $22.45/h",
+  "likely_rule": "earned + 2 x 3 h events x $67.35",
+  "high_rule": "earned + 3 events",
+  "expected_paid": "about March of the following year (2027)",
+  "through": "2026-10-01",
+  "meter_through": "2026-10-01",
+  "season_to_date_raw": 366.97,
+  "season_likely_raw": 513.76
+ },
+ "method": {
+  "basis": "export",
+  "method": "10in10",
+  "floor": "interval",
+  "day_of_adj": "none",
+  "scale": 0.9176,
+  "model_payout": 454.50800000000004,
+  "actual": 417.06
+ },
+ "current": 2026,
+ "table": [
+  [
+   "2023 season",
+   "n/a (no 15-min data)",
+   "n/a",
+   "$352.94 (actual)",
+   "Mar 2, 2024"
+  ],
+  [
+   "2024 season",
+   "n/a (no 15-min data)",
+   "n/a",
+   "$400.56 (actual)",
+   "Feb 24, 2025"
+  ],
+  [
+   "2025 season",
+   "7",
+   "20 h (minimum 20 h)",
+   "$417.06 (actual)",
+   "Mar 6, 2026"
+  ],
+  [
+   "2026 season",
+   "5 so far + ~2 more",
+   "15 h so far of 20 h minimum",
+   "$337 earned + ~$135 = ~$471 (range $449-$539)",
+   "~Mar 2027"
+  ]
+ ],
+ "normal_note": "Normal 5-8pm export on non-event days: ~0.2 kWh weekdays / ~0.2 kWh weekends",
+ "paid_label": "~Mar 2027",
+ "calibrate_season": 2025
+}

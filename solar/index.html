@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahkus' Solar &amp; Powerwalls - all the data you've been looking for</title>
+<meta name="description" content="12.24 kW of solar and three Tesla Powerwalls near Sacramento: real production, true-up costs, lifetime savings, payback and Virtual Power Plant payouts, all from the actual data.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mahkus' Solar &amp; Powerwalls - all the data you've been looking for">
+<meta property="og:description" content="12.24 kW of solar and three Tesla Powerwalls near Sacramento: real production, true-up costs, lifetime savings, payback and Virtual Power Plant payouts, all from the actual data.">
+<meta property="og:image" content="https://mahkusg.github.io/solar/assets/og_image.png">
+<meta property="og:image:width" content="1320">
+<meta property="og:image:height" content="704">
+<meta property="og:url" content="https://mahkusg.github.io/solar/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mahkus' Solar &amp; Powerwalls - all the data you've been looking for">
+<meta name="twitter:description" content="12.24 kW of solar and three Tesla Powerwalls near Sacramento: real production, true-up costs, lifetime savings, payback and Virtual Power Plant payouts, all from the actual data.">
+<meta name="twitter:image" content="https://mahkusg.github.io/solar/assets/og_image.png">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<script src="data/site_data.js"></script>
+</head>
+<body>
+<main>
+  <h1>Mahkus' solar + Powerwall home, by the numbers</h1>
+  <p class="welcome">If you've been following along with my YouTube journey with our system, I thought it'd be a good time to put up a bunch of data to help show you the benefits of solar and Powerwall. This home in the Sacramento suburbs has 12.24&nbsp;kW of solar panels on an east-facing roof and three Tesla
+    Powerwall&nbsp;3 batteries. The system was installed in August 2021 with three Powerwall&nbsp;2s, which were recalled and replaced with
+    Powerwall&nbsp;3s in July 2026. The home is on PG&amp;E's NEM&nbsp;2 net-metering program with the E-TOU-D time-of-use rate, gets its
+    electricity generation from Valley Clean Energy, and is enrolled in a Virtual Power Plant program that sends battery power to the grid
+    during emergencies. This page shows how much the panels produce, what the electricity really costs after the yearly true-ups, how much
+    the system has saved and when it pays for itself, and what the Virtual Power Plant events earn.
+    Want this same analysis for your own system? <a id="template-link" href="https://x.ai/bot/zKAXhEjEvUuqSOvMqD3m9" target="_blank" rel="noopener">Get the bot template</a> that walks you through setting it up.</p>
+  <p class="sub" id="sub"></p>
+
+
+  <h2 class="part">Solar</h2>
+  <h2>Solar forecast</h2>
+  <p id="sol-head" class="solhead"></p>
+  <div class="chartbox"><div id="ch-solar" class="chart"></div>
+    <p class="legend" id="sol-legend"></p></div>
+  <h3 class="h3">Every year compared</h3>
+  <div class="chartbox"><div id="ch-solar-hist" class="chart"></div>
+    <p class="legend" id="solh-legend"></p></div>
+
+  <h2>Month by month: solar, home, battery and grid</h2>
+  <div class="chartbox"><div id="ch-monthly" class="chart tall"></div>
+    <p class="legend">Hover over a month to see every value. Where PG&amp;E's 15-minute meter data covers the whole month, the popup also shows
+      the share of grid use and exports at 5&ndash;8 pm and the month's estimated $ value (positive = charge, negative = credit).
+      Drag the slider underneath to zoom. Click a legend item to hide or show it. The original three Powerwall&nbsp;2s were replaced with Powerwall&nbsp;3s in July 2026, so battery numbers from then on come from the new batteries. <span id="mon-note"></span></p></div>
+
+  <h2 class="part">Money: true-up, yearly cost, savings and payback</h2>
+  <div class="cards">
+    <div class="card"><div class="t">PG&amp;E true-up</div><div class="when" id="pge-when"></div>
+      <div class="big" id="pge-big"></div><div class="small" id="pge-small"></div></div>
+    <div class="card"><div class="t">Valley Clean Energy</div><div class="when" id="vce-when"></div>
+      <div class="big" id="vce-big"></div><div class="small" id="vce-small"></div></div>
+    <div class="card" id="roi-card"><div class="t">Payback</div><div class="when" id="roic-when"></div>
+      <div class="big cr" id="roic-big"></div><div class="small" id="roic-small"></div></div>
+  </div>
+  <div class="card next"><div class="t">Next year's estimate</div>
+    <div class="row"><span id="n-pge-l"></span><b id="n-pge"></b></div>
+    <div class="row small"><span id="n-pge-r"></span></div>
+    <div class="row"><span id="n-vce-l"></span><b id="n-vce"></b></div>
+    <div class="row small"><span id="n-vce-r"></span></div>
+  </div>
+
+  <h2>Total electricity cost for the year</h2>
+  <p id="tc-head" class="solhead"></p>
+  <div class="toggle" id="tc-toggle"><button data-k="this" class="on">This year (Oct 2025 &ndash; Oct 2026)</button><button data-k="next">Next year (Oct 2026 &ndash; Oct 2027, forecast)</button></div>
+  <div class="chartbox"><div id="ch-total" class="chart"></div>
+    <p class="legend" id="tc-legend"></p></div>
+  <h2>Lifetime savings</h2>
+  <p id="ls-head" class="solhead"></p>
+  <div class="chartbox"><div id="ch-lifetime" class="chart"></div>
+    <p class="legend" id="ls-legend"></p></div>
+
+  <h3>What this home would have paid without solar + Powerwall</h3>
+  <div class="chartbox"><div id="ch-nosolar" class="chart" style="height:220px"></div>
+    <p class="legend" id="ns-legend"></p>
+    <div class="tbl"><table class="vpp" id="ns-life"></table></div></div>
+
+  <h2>Payback: return on the system cost</h2>
+  <p id="roi-head" class="solhead"></p>
+  <div class="chartbox"><div id="ch-roi" class="chart"></div>
+    <p class="legend" id="roi-legend"></p></div>
+  <h3>Over the full 25-year system life</h3>
+  <p id="l25-head" class="solhead"></p>
+  <div class="chartbox"><div id="ch-life25" class="chart"></div>
+    <p class="legend" id="l25-legend"></p></div>
+
+  <h2>Why the PG&amp;E number is so small</h2>
+  <ul class="why" id="why-pge"></ul>
+  <h2>The PG&amp;E balance through the true-up year</h2>
+  <div class="chartbox"><div id="ch-pge" class="chart"></div>
+    <p class="legend">One point per billing cycle. <b>Above zero = owed, below zero = credit.</b> Solid = PG&amp;E meter data, dashed = estimate.
+      The diamonds are the running balance printed on the bills (energy + grid fees). The leftover credit at the end is wiped out.</p></div>
+
+  <h2>Why Valley Clean Energy pays this home</h2>
+  <ul class="why" id="why-vce"></ul>
+  <h2>Valley Clean Energy: cash to the owner (+) or paid by the owner (&minus;), year by year</h2>
+  <div class="chartbox"><div id="ch-vce" class="chart"></div>
+    <p class="legend" id="vce-legend"></p></div>
+
+  <div id="kwh"></div>
+  <div class="callout"><b>Are leftover credits paid out?</b><ul id="leftover"></ul></div>
+
+  <h2 class="part">Virtual Power Plant (VPP)</h2>
+  <div class="cards one">
+    <div class="card" id="vpp-card"><div class="t" id="vppc-t">VPP payout</div><div class="when" id="vppc-when"></div>
+      <div class="big cr" id="vppc-big"></div><div class="small" id="vppc-small"></div></div>
+  </div>
+  <h2>Powerwall grid events (VPP) payouts</h2>
+  <p id="vpp-head" class="solhead"></p>
+  <div class="chartbox"><div id="ch-vpp" class="chart"></div>
+    <div class="tbl" id="vpp-table"></div>
+    <p class="legend" id="vpp-legend"></p></div>
+
+  <details><summary>How this was estimated</summary><ul id="assump"></ul><p class="small" id="verdict"></p></details>
+  <p class="small foot" id="foot"></p>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
