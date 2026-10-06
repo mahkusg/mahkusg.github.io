@@ -22,7 +22,9 @@
       $('vppc-when').textContent = 'paid ' + (V.paid_label || ('~Mar ' + (V.current + 1)));
       $('vppc-big').textContent = '~' + usd(F.season_likely) + ' expected';
       $('vppc-small').innerHTML = 'range ' + usd(F.season_low) + '&ndash;' + usd(F.season_high) + '; ' + usd(F.season_to_date) + ' earned so far, ' +
-        (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours done.';
+        (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours done' +
+        ((F.scheduled || []).length ? ', ' + F.scheduled.map(s => s.hours + ' h scheduled ' + new Date(s.date + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })).join(', ') +
+          (F.hours_needed_after_scheduled ? '' : ' (minimum met)') : '') + '.';
     } else $('vpp-card').style.display = 'none';
   }
   $('n-pge-l').innerHTML = 'PG&amp;E true-up (' + c.nxt.pge_label + ')'; $('n-pge').textContent = c.nxt.pge;
@@ -348,6 +350,17 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
         customdata: E.map(e => [fmtD(e.date) + ', ' + y, e.window, e.sent.toFixed(1), e.baseline.toFixed(2), e.counted.toFixed(1), e.payout.toFixed(2), e.hours]),
         hovertemplate: '<b>%{customdata[0]}</b><br>Event window: %{customdata[1]} (%{customdata[6]} h)<br>Sent to the grid: %{customdata[2]} kWh<br>' +
           'Paid (est.): $%{customdata[5]}<extra></extra>' });
+      if (y === cur && (F.scheduled || []).length) {
+        const SC = F.scheduled, sx = SC.map(s => 'sched ' + s.date); cats.push(...sx);
+        SC.forEach((s, i) => { hrs[sx[i]] = s.hours; });
+        tr.push({ type: 'bar', name: 'Scheduled event (estimate)', x: sx, y: SC.map(s => s.export_kwh),
+          marker: { color: 'rgba(30,132,73,.12)', line: { color: '#1e8449', width: 2, dash: 'dash' }, pattern: { shape: '/', fgcolor: '#1e8449' } },
+          text: SC.map(s => NARROW ? '~$' + s.payout.toFixed(0) : '~' + s.export_kwh.toFixed(0) + ' kWh<br>~$' + s.payout.toFixed(0)), textposition: 'outside', cliponaxis: false, constraintext: 'none', textangle: NARROW ? -90 : 0,
+          textfont: { size: NARROW ? 9 : 12, color: '#1e8449' },
+          customdata: SC.map(s => [fmtD(s.date), s.window, s.hours, s.export_kwh.toFixed(1), s.payout.toFixed(0), s.rate_kw.toFixed(1)]),
+          hovertemplate: '<b>%{customdata[0]} (scheduled)</b><br>Event window: %{customdata[1]} (%{customdata[2]} h)<br>Estimate: ~%{customdata[3]} kWh, ~$%{customdata[4]}' +
+            '<br>(the latest event\'s %{customdata[5]} kW average export x %{customdata[2]} h)<extra></extra>' });
+      }
       if (y === cur && F.oct_events_likely > 0) {
         const fx = Array.from({ length: F.oct_events_likely }, (_, i) => 'Oct forecast ' + (i + 1)); cats.push(...fx);
         tr.push({ type: 'bar', name: 'October ' + cur + ' forecast', x: fx, y: fx.map(() => F.per_event_export_kwh),
@@ -361,15 +374,21 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
     Plotly.newPlot('ch-vpp', tr, Object.assign({}, baseLayout, { hovermode: 'closest', bargap: 0.25,
       yaxis: { title: NARROW ? 'kWh sent to grid' : 'kWh sent to the grid during the event', range: [0, 45], dtick: 5 },
       xaxis: { type: 'category', categoryorder: 'array', categoryarray: cats, tickvals: cats, tickangle: NARROW ? -90 : 0, tickfont: { size: NARROW ? 9 : 12 },
-        ticktext: cats.map(c => NARROW ? (c.startsWith('Oct forecast') ? 'Oct fcst' : c.slice(0, -3)) : (c.startsWith('Oct forecast') ? 'Oct (fcst)<br>' + F.typical_event_hours + ' h' : c.slice(0, -3) + '<br>' + hrs[c] + ' h')) },
+        ticktext: cats.map(c => c.startsWith('sched ') ? (NARROW ? fmtD(c.slice(6)) + ' sch.' : fmtD(c.slice(6)) + '<br>(scheduled, ' + hrs[c] + ' h)') :
+          NARROW ? (c.startsWith('Oct forecast') ? 'Oct fcst' : c.slice(0, -3)) : (c.startsWith('Oct forecast') ? 'Oct (fcst)<br>' + F.typical_event_hours + ' h' : c.slice(0, -3) + '<br>' + hrs[c] + ' h')) },
       margin: NARROW ? { l: 45, r: 5, t: 30, b: 70 } : { l: 60, r: 20, t: 30, b: 60 }, legend: { orientation: 'h', y: -0.2 } }), cfg);
     $('vpp-table').innerHTML = '<table class="vpp"><tr><th>Season (May&ndash;Oct)</th><th>Events</th><th>Event hours</th><th>VPP payout</th><th>Paid</th></tr>' +
       VP.table.map(r => '<tr>' + r.map(c => '<td>' + c + '</td>').join('') + '</tr>').join('') + '</table>';
     $('vpp-legend').innerHTML = (VP.normal_note ? '<b>' + VP.normal_note + '</b><br>' : '') + 'During a grid emergency the Powerwalls send their stored energy to the grid (usually 5&ndash;8 pm). The 2025 events ran on the original Powerwall&nbsp;2s; the 2026 events (from Aug 3) ran on the Powerwall&nbsp;3s that replaced them in July 2026. The owner gets $' + VP.pay_rate.toFixed(2) +
       ' for each kWh above what the home normally sends at that time (the average of the same hours on the 10 most recent similar non-event days, which is close to 0). ' +
-      'Events are found in PG&amp;E\'s meter data. The meter reads a bit higher than what was paid, so $ amounts are scaled by ' + VP.method.scale.toFixed(3) +
-      ' to match the actual 2025 payout. The program guarantees at least ' + F.min_season_hours + ' event-hours per season; with ' + F.hours_so_far +
-      ' h so far, at least ' + F.hours_needed + ' h more are due by Oct 31. Range: low = just those ' + F.hours_needed + ' h, likely = ' + F.oct_events_likely + ' more ' +
-      F.typical_event_hours + '-hour events (hatched bars), high = ' + F.oct_events_high + ' more events.';
+      'Events are found in PG&amp;E\'s meter data' + ((F.tesla_5min_days || []).length ? ' (' + F.tesla_5min_days.map(fmtD).join(', ') +
+      ' from the Tesla app\'s 5-minute data until the meter data catches up)' : '') + '. The meter reads a bit higher than what was paid, so $ amounts are scaled by ' + VP.method.scale.toFixed(3) +
+      ' to match the actual 2025 payout. The program guarantees at least ' + F.min_season_hours + ' event-hours per season; ' +
+      (((F.scheduled || []).length && !F.hours_needed_after_scheduled)
+        ? 'with ' + F.hours_so_far + ' h so far plus the ' + F.hours_scheduled + ' h event scheduled for ' + F.scheduled.map(s => fmtD(s.date) + ', ' + s.window.replace('-', '&ndash;')).join('; ') +
+          ' (hatched bar, estimated from the latest event\'s average export rate), the minimum is met. Range: low = likely = earned so far + the scheduled event; high = ' +
+          F.oct_events_high + ' more ' + F.typical_event_hours + '-hour event by Oct 31 (possible, not required).'
+        : 'with ' + F.hours_so_far + ' h so far, at least ' + F.hours_needed + ' h more are due by Oct 31. Range: low = just those ' + F.hours_needed + ' h, likely = ' + F.oct_events_likely + ' more ' +
+          F.typical_event_hours + '-hour events (hatched bars), high = ' + F.oct_events_high + ' more events.');
   }
 })();

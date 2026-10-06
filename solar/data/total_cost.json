@@ -68,10 +68,10 @@
  },
  "next": {
   "label": "Oct 27, 2026 - Oct 26, 2027",
-  "net": -240.56,
-  "net_low": -364.21,
-  "net_high": 287.9,
-  "headline": "this home came out $241 ahead (net -$241)",
+  "net": -212.41,
+  "net_low": -335.51,
+  "net_high": 293.6,
+  "headline": "this home came out $212 ahead (net -$212)",
   "bills_through": null,
   "components": [
    {
@@ -109,14 +109,14 @@
    {
     "name": "VPP payout (2026 season, ~Mar 2027)",
     "short": "VPP payout\n2026 season\n~Mar 2027",
-    "amount": -471.43,
+    "amount": -443.28,
     "actual": false,
-    "low": -538.78,
-    "high": -448.98
+    "low": -510.08,
+    "high": -443.28
    }
   ],
   "without_solar": 5545.93,
-  "savings": 5786.48,
+  "savings": 5758.33,
   "ws_rates": {
    "winter_peak": 0.3963,
    "winter_off": 0.3577,
@@ -220,8 +220,8 @@
    {
     "label": "Oct 2026 - Oct 2027",
     "without_solar": 5545.93,
-    "actual_net": -240.56,
-    "savings": 5786.48,
+    "actual_net": -212.41,
+    "savings": 5758.33,
     "kwh": 14319,
     "rates": {
      "winter_peak": 0.3963,
@@ -240,7 +240,7 @@
   "since": 2021,
   "first": "Sep 2021 - Dec 2021",
   "last": "Oct 2025 - Oct 2026",
-  "with_forecast": 36770.15,
+  "with_forecast": 36741.99,
   "forecast_label": "Oct 2026 - Oct 2027"
  },
  "rate_history": [
