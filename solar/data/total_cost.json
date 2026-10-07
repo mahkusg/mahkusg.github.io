@@ -69,7 +69,7 @@
  "next": {
   "label": "Oct 27, 2026 - Oct 26, 2027",
   "net": -235.55,
-  "net_low": -358.48,
+  "net_low": -291.85,
   "net_high": 270.46,
   "headline": "this home came out $236 ahead (net -$236)",
   "bills_through": null,
@@ -111,8 +111,8 @@
     "short": "VPP payout\n2026 season\n~Mar 2027",
     "amount": -466.42,
     "actual": false,
-    "low": -533.05,
-    "high": -466.42
+    "low": null,
+    "high": null
    }
   ],
   "without_solar": 5545.93,

@@ -26,7 +26,7 @@
       $('vppc-small').innerHTML = (nEv != null ? nEv + ' events, ' : '') +
         (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
         (minMet ? ' (minimum met)' : '') +
-        '. More events are still possible through Oct 31; only actuals are counted here.';
+        '. Season runs through Oct 31; only earned payouts are shown.';
     } else if ($('vpp-card')) $('vpp-card').style.display = 'none';
   }
   {   // This year's total electricity cost card (from total_cost.json)
@@ -355,7 +355,7 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
     $('vpp-head').innerHTML = '<b>' + cur + ' VPP: ' + usd(F.season_to_date) + ' earned so far</b> (paid ~Mar ' + (VP.current + 1) + '); ' +
       (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
       (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' : '') +
-      '. More events are still possible through Oct 31; the chart shows actuals only.';
+      '. Season runs through Oct 31; the chart shows earned events only.';
     const colr = { '2025': '#2563eb', '2026': '#1e8449' };
     const fmtD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const tr = [], cats = [], hrs = {};
@@ -383,6 +383,6 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
       ' to match the actual 2025 payout. The program guarantees at least ' + F.min_season_hours + ' event-hours per season; ' +
       'this home has ' + F.hours_so_far + ' h so far' + (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' :
         (', so at least ' + F.hours_needed + ' h more are due by Oct 31')) +
-      '. More events are still possible through Oct 31; the chart and table show actual events only.';
+      '. Season runs through Oct 31; the chart and table show earned events only.';
   }
 })();
