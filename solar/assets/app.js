@@ -15,17 +15,32 @@
   $('pge-small').innerHTML = c.pge.small;
   $('vce-when').textContent = 'closes ' + c.vce.close; $('vce-big').textContent = c.vce.text; $('vce-big').className = 'big ' + cls(c.vce.val);
   $('vce-small').innerHTML = c.vce.small;
-  {   // VPP headline card (from vpp.json; hidden if no VPP data)
+  {   // VPP headline card (from vpp.json; hidden if no VPP data) — actuals only
     const V = D.vpp, F = V && V.forecast, usd = v => '$' + Math.round(v).toLocaleString();
     if (F) {
+      const minMet = F.min_season_hours && F.hours_so_far >= F.min_season_hours;
+      const nEv = V.seasons && V.seasons[String(V.current)] ? V.seasons[String(V.current)].events : null;
       $('vppc-t').textContent = 'VPP payout (' + V.current + ' season)';
       $('vppc-when').textContent = 'paid ' + (V.paid_label || ('~Mar ' + (V.current + 1)));
-      $('vppc-big').textContent = '~' + usd(F.season_likely) + ' expected';
-      $('vppc-small').innerHTML = 'range ' + usd(F.season_low) + '&ndash;' + usd(F.season_high) + '; ' + usd(F.season_to_date) + ' earned so far, ' +
-        (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours done' +
-        ((F.scheduled || []).length ? ', ' + F.scheduled.map(s => s.hours + ' h scheduled ' + new Date(s.date + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })).join(', ') +
-          (F.hours_needed_after_scheduled ? '' : ' (minimum met)') : '') + '.';
-    } else $('vpp-card').style.display = 'none';
+      $('vppc-big').textContent = usd(F.season_to_date) + ' earned';
+      $('vppc-small').innerHTML = (nEv != null ? nEv + ' events, ' : '') +
+        (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
+        (minMet ? ' (minimum met)' : '') +
+        '. More events are still possible through Oct 31; only actuals are counted here.';
+    } else if ($('vpp-card')) $('vpp-card').style.display = 'none';
+  }
+  {   // This year's total electricity cost card (from total_cost.json)
+    const TC = D.total_cost, Y = TC && TC.this, usd0 = v => '$' + Math.round(Math.abs(v)).toLocaleString();
+    if (Y && $('tcc-big')) {
+      const ahead = Y.net < 0;
+      $('tcc-t').textContent = "This year's electricity cost";
+      $('tcc-when').textContent = (Y.label || '').replace(' - ', ' – ');
+      $('tcc-big').textContent = ahead ? ('about ' + usd0(Y.net) + ' ahead') : ('about ' + usd0(Y.net) + ' cost');
+      $('tcc-big').className = 'big ' + (ahead ? 'cr' : 'owe');
+      $('tcc-small').innerHTML = 'Net for this home after PG&amp;E bills and true-up, climate credits, Valley Clean Energy, and VPP. ' +
+        'Without solar + Powerwall the same electricity would have cost about ' + usd0(Y.without_solar) +
+        ' &mdash; about ' + usd0(Y.savings) + ' saved this true-up year.';
+    } else if ($('tc-card')) $('tc-card').style.display = 'none';
   }
   $('n-pge-l').innerHTML = 'PG&amp;E true-up (' + c.nxt.pge_label + ')'; $('n-pge').textContent = c.nxt.pge;
   $('n-pge-r').innerHTML = c.nxt.pge_rng + '. The high end only happens if winter grid use goes back to 2024 levels. Plus the Base Services Charge, ~' + c.nxt.bsc + '/month, on each monthly bill.';
@@ -337,8 +352,10 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
   const VP = D.vpp;
   if (VP && VP.forecast) {
     const F = VP.forecast, cur = String(VP.current), usd = v => '$' + Math.round(v).toLocaleString();
-    $('vpp-head').innerHTML = '<b>' + cur + ' VPP payout: ~' + usd(F.season_likely) + ' expected</b> (paid ~Mar ' + (VP.current + 1) + '). ' +
-      'Range ' + usd(F.season_low) + '&ndash;' + usd(F.season_high) + '; ' + usd(F.season_to_date) + ' earned so far.';
+    $('vpp-head').innerHTML = '<b>' + cur + ' VPP: ' + usd(F.season_to_date) + ' earned so far</b> (paid ~Mar ' + (VP.current + 1) + '); ' +
+      (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
+      (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' : '') +
+      '. More events are still possible through Oct 31; the chart shows actuals only.';
     const colr = { '2025': '#2563eb', '2026': '#1e8449' };
     const fmtD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const tr = [], cats = [], hrs = {};
@@ -350,32 +367,12 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
         customdata: E.map(e => [fmtD(e.date) + ', ' + y, e.window, e.sent.toFixed(1), e.baseline.toFixed(2), e.counted.toFixed(1), e.payout.toFixed(2), e.hours]),
         hovertemplate: '<b>%{customdata[0]}</b><br>Event window: %{customdata[1]} (%{customdata[6]} h)<br>Sent to the grid: %{customdata[2]} kWh<br>' +
           'Paid (est.): $%{customdata[5]}<extra></extra>' });
-      if (y === cur && (F.scheduled || []).length) {
-        const SC = F.scheduled, sx = SC.map(s => 'sched ' + s.date); cats.push(...sx);
-        SC.forEach((s, i) => { hrs[sx[i]] = s.hours; });
-        tr.push({ type: 'bar', name: 'Scheduled event (estimate)', x: sx, y: SC.map(s => s.export_kwh),
-          marker: { color: 'rgba(30,132,73,.12)', line: { color: '#1e8449', width: 2, dash: 'dash' }, pattern: { shape: '/', fgcolor: '#1e8449' } },
-          text: SC.map(s => NARROW ? '~$' + s.payout.toFixed(0) : '~' + s.export_kwh.toFixed(0) + ' kWh<br>~$' + s.payout.toFixed(0)), textposition: 'outside', cliponaxis: false, constraintext: 'none', textangle: NARROW ? -90 : 0,
-          textfont: { size: NARROW ? 9 : 12, color: '#1e8449' },
-          customdata: SC.map(s => [fmtD(s.date), s.window, s.hours, s.export_kwh.toFixed(1), s.payout.toFixed(0), s.rate_kw.toFixed(1)]),
-          hovertemplate: '<b>%{customdata[0]} (scheduled)</b><br>Event window: %{customdata[1]} (%{customdata[2]} h)<br>Estimate: ~%{customdata[3]} kWh, ~$%{customdata[4]}' +
-            '<br>(the latest event\'s %{customdata[5]} kW average export x %{customdata[2]} h)<extra></extra>' });
-      }
-      if (y === cur && F.oct_events_likely > 0) {
-        const fx = Array.from({ length: F.oct_events_likely }, (_, i) => 'Oct forecast ' + (i + 1)); cats.push(...fx);
-        tr.push({ type: 'bar', name: 'October ' + cur + ' forecast', x: fx, y: fx.map(() => F.per_event_export_kwh),
-          marker: { color: 'rgba(30,132,73,.12)', line: { color: '#1e8449', width: 2 }, pattern: { shape: '/', fgcolor: '#1e8449' } },
-          text: fx.map(() => NARROW ? '~$' + F.per_event_payout.toFixed(0) : '~' + F.per_event_export_kwh.toFixed(0) + ' kWh<br>~$' + F.per_event_payout.toFixed(0)), textposition: 'outside', cliponaxis: false, constraintext: 'none', textangle: NARROW ? -90 : 0,
-          textfont: { size: NARROW ? 9 : 12, color: '#1e8449' },
-          hovertemplate: 'October forecast: one event like this season\'s<br>~' + F.per_event_export_kwh.toFixed(1) + ' kWh, ~$' + F.per_event_payout.toFixed(0) +
-            '<br>' + F.oct_events_likely + ' expected: ' + F.hours_so_far + ' h so far, the program guarantees ' + F.min_season_hours + ' h per season<extra></extra>' });
-      }
+      // Actual events only — no scheduled / October-forecast estimate bars.
     });
     Plotly.newPlot('ch-vpp', tr, Object.assign({}, baseLayout, { hovermode: 'closest', bargap: 0.25,
       yaxis: { title: NARROW ? 'kWh sent to grid' : 'kWh sent to the grid during the event', range: [0, 45], dtick: 5 },
       xaxis: { type: 'category', categoryorder: 'array', categoryarray: cats, tickvals: cats, tickangle: NARROW ? -90 : 0, tickfont: { size: NARROW ? 9 : 12 },
-        ticktext: cats.map(c => c.startsWith('sched ') ? (NARROW ? fmtD(c.slice(6)) + ' sch.' : fmtD(c.slice(6)) + '<br>(scheduled, ' + hrs[c] + ' h)') :
-          NARROW ? (c.startsWith('Oct forecast') ? 'Oct fcst' : c.slice(0, -3)) : (c.startsWith('Oct forecast') ? 'Oct (fcst)<br>' + F.typical_event_hours + ' h' : c.slice(0, -3) + '<br>' + hrs[c] + ' h')) },
+        ticktext: cats.map(c => NARROW ? c.slice(0, -3) : (c.slice(0, -3) + '<br>' + hrs[c] + ' h')) },
       margin: NARROW ? { l: 45, r: 5, t: 30, b: 70 } : { l: 60, r: 20, t: 30, b: 60 }, legend: { orientation: 'h', y: -0.2 } }), cfg);
     $('vpp-table').innerHTML = '<table class="vpp"><tr><th>Season (May&ndash;Oct)</th><th>Events</th><th>Event hours</th><th>VPP payout</th><th>Paid</th></tr>' +
       VP.table.map(r => '<tr>' + r.map(c => '<td>' + c + '</td>').join('') + '</tr>').join('') + '</table>';
@@ -384,11 +381,8 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
       'Events are found in PG&amp;E\'s meter data' + ((F.tesla_5min_days || []).length ? ' (' + F.tesla_5min_days.map(fmtD).join(', ') +
       ' from the Tesla app\'s 5-minute data until the meter data catches up)' : '') + '. The meter reads a bit higher than what was paid, so $ amounts are scaled by ' + VP.method.scale.toFixed(3) +
       ' to match the actual 2025 payout. The program guarantees at least ' + F.min_season_hours + ' event-hours per season; ' +
-      (((F.scheduled || []).length && !F.hours_needed_after_scheduled)
-        ? 'with ' + F.hours_so_far + ' h so far plus the ' + F.hours_scheduled + ' h event scheduled for ' + F.scheduled.map(s => fmtD(s.date) + ', ' + s.window.replace('-', '&ndash;')).join('; ') +
-          ' (hatched bar, estimated from the latest event\'s average export rate), the minimum is met. Range: low = likely = earned so far + the scheduled event; high = ' +
-          F.oct_events_high + ' more ' + F.typical_event_hours + '-hour event by Oct 31 (possible, not required).'
-        : 'with ' + F.hours_so_far + ' h so far, at least ' + F.hours_needed + ' h more are due by Oct 31. Range: low = just those ' + F.hours_needed + ' h, likely = ' + F.oct_events_likely + ' more ' +
-          F.typical_event_hours + '-hour events (hatched bars), high = ' + F.oct_events_high + ' more events.');
+      'this home has ' + F.hours_so_far + ' h so far' + (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' :
+        (', so at least ' + F.hours_needed + ' h more are due by Oct 31')) +
+      '. More events are still possible through Oct 31; the chart and table show actual events only.';
   }
 })();

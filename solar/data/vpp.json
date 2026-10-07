@@ -200,20 +200,20 @@
   "scheduled_payout": 0,
   "hours_needed_after_scheduled": 0.0,
   "prev_season_events_after_today": 2,
-  "oct_events_likely": 2,
-  "oct_events_high": 3,
+  "oct_events_likely": 0,
+  "oct_events_high": 1,
   "per_event_payout": 66.63,
   "per_hour_payout": 23.32,
   "per_hour_export_kwh": 12.73,
   "per_event_export_kwh": 36.37,
-  "oct_payout_likely": 133.26,
+  "oct_payout_likely": 0.0,
   "season_to_date": 466.42,
   "season_low": 466.42,
-  "season_likely": 599.68,
-  "season_high": 666.31,
+  "season_likely": 466.42,
+  "season_high": 533.05,
   "low_rule": "earned",
-  "likely_rule": "earned + 2 x 3 h events x $66.63",
-  "high_rule": "earned + 3 more event(s) by the season end",
+  "likely_rule": "earned",
+  "high_rule": "earned + 1 more event(s) by the season end",
   "expected_paid": "about March of the following year (2027)",
   "through": "2026-10-06",
   "meter_through": "2026-10-01",
@@ -222,7 +222,7 @@
    "2026-10-06"
   ],
   "season_to_date_raw": 508.3,
-  "season_likely_raw": 653.52
+  "season_likely_raw": 508.3
  },
  "method": {
   "basis": "export",
@@ -258,9 +258,9 @@
   ],
   [
    "2026 season",
-   "7 so far + ~2 more",
-   "20 h so far of 20 h minimum",
-   "$466 earned + ~$133 = ~$600 (range $466-$666)",
+   "7",
+   "20 h (minimum 20 h met)",
+   "$466.42 earned so far",
    "~Mar 2027"
   ]
  ],
