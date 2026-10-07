@@ -130,6 +130,16 @@
    "baseline": 0.01,
    "counted": 34.9,
    "payout": 64.07
+  },
+  {
+   "date": "2026-10-06",
+   "season": 2026,
+   "window": "17:00-19:00",
+   "hours": 2.0,
+   "sent": 35.8,
+   "baseline": 0.01,
+   "counted": 35.7,
+   "payout": 65.61
   }
  ],
  "seasons": {
@@ -150,19 +160,19 @@
    }
   },
   "2026": {
-   "events": 6,
-   "hours": 18.0,
-   "payout": 400.81,
-   "model": 436.8,
+   "events": 7,
+   "hours": 20.0,
+   "payout": 466.42,
+   "model": 508.3,
    "actual": null,
-   "incremental_kwh": 218.4,
+   "incremental_kwh": 254.1,
    "by_month": {
     "5": 0,
     "6": 0,
     "7": 0,
     "8": 3,
     "9": 2,
-    "10": 1
+    "10": 2
    }
   }
  },
@@ -182,48 +192,37 @@
  },
  "forecast": {
   "min_season_hours": 20,
-  "hours_so_far": 18.0,
-  "hours_needed": 2.0,
+  "hours_so_far": 20.0,
+  "hours_needed": 0.0,
   "typical_event_hours": 3,
-  "scheduled": [
-   {
-    "date": "2026-10-06",
-    "window": "17:00-19:00",
-    "hours": 2,
-    "export_kwh": 23.28,
-    "baseline_kwh": 0.14,
-    "counted_kwh": 23.14,
-    "payout": 42.47,
-    "label": "Oct 6 (scheduled, 2 h)",
-    "rate_kw": 11.64
-   }
-  ],
-  "hours_scheduled": 2,
-  "scheduled_payout": 42.47,
+  "scheduled": [],
+  "hours_scheduled": 0,
+  "scheduled_payout": 0,
   "hours_needed_after_scheduled": 0.0,
   "prev_season_events_after_today": 2,
-  "oct_events_likely": 0,
-  "oct_events_high": 1,
-  "per_event_payout": 66.8,
-  "per_hour_payout": 22.27,
-  "per_hour_export_kwh": 12.16,
-  "per_event_export_kwh": 36.48,
-  "oct_payout_likely": 42.47,
-  "season_to_date": 400.81,
-  "season_low": 443.28,
-  "season_likely": 443.28,
-  "season_high": 510.08,
-  "low_rule": "earned + scheduled 2 h",
-  "likely_rule": "earned + scheduled 2 h",
-  "high_rule": "earned + scheduled 2 h + 1 more event(s) by the season end",
+  "oct_events_likely": 2,
+  "oct_events_high": 3,
+  "per_event_payout": 66.63,
+  "per_hour_payout": 23.32,
+  "per_hour_export_kwh": 12.73,
+  "per_event_export_kwh": 36.37,
+  "oct_payout_likely": 133.26,
+  "season_to_date": 466.42,
+  "season_low": 466.42,
+  "season_likely": 599.68,
+  "season_high": 666.31,
+  "low_rule": "earned",
+  "likely_rule": "earned + 2 x 3 h events x $66.63",
+  "high_rule": "earned + 3 more event(s) by the season end",
   "expected_paid": "about March of the following year (2027)",
-  "through": "2026-10-05",
+  "through": "2026-10-06",
   "meter_through": "2026-10-01",
   "tesla_5min_days": [
-   "2026-10-05"
+   "2026-10-05",
+   "2026-10-06"
   ],
-  "season_to_date_raw": 436.8,
-  "season_likely_raw": 483.08
+  "season_to_date_raw": 508.3,
+  "season_likely_raw": 653.52
  },
  "method": {
   "basis": "export",
@@ -259,9 +258,9 @@
   ],
   [
    "2026 season",
-   "6 so far + 1 scheduled",
-   "18 h + 2 h sched. = 20 h, min. met",
-   "$401 earned + ~$42 sched. = ~$443 (range $443-$510)",
+   "7 so far + ~2 more",
+   "20 h so far of 20 h minimum",
+   "$466 earned + ~$133 = ~$600 (range $466-$666)",
    "~Mar 2027"
   ]
  ],
