@@ -861,5 +861,16 @@
   "grid_fee": 2.99,
   "vce_energy": -13.0,
   "value": -38.69
+ },
+ {
+  "month": "2026-10",
+  "solar": 600.0,
+  "home": 763.0,
+  "powerwall": 375.0,
+  "grid_in": 274.8,
+  "grid_out": 104.5,
+  "net_grid": 170.3,
+  "ev": 0.0,
+  "meter": false
  }
 ]

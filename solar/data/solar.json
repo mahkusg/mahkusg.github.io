@@ -1,6 +1,6 @@
 {
  "current_year": 2026,
- "last_actual": "2026-09",
+ "last_actual": "2026-10",
  "prior_years": [
   2022,
   2023,
@@ -88,7 +88,7 @@
    "7": 2000,
    "8": 1800,
    "9": 1374,
-   "10": null,
+   "10": 600,
    "11": null,
    "12": null
   }
@@ -99,7 +99,7 @@
   "2023": 17060,
   "2024": 16390,
   "2025": 16070,
-  "2026": 14314
+  "2026": 14914
  },
  "calendar": [
   {
@@ -212,10 +212,10 @@
   },
   {
    "month": "2026-10",
-   "status": "forecast",
-   "likely": 890,
-   "low": 790,
-   "high": 1080,
+   "status": "partial",
+   "likely": 944,
+   "low": 905,
+   "high": 1018,
    "avg": 1085,
    "median": 1050,
    "min": 940,
@@ -248,18 +248,6 @@
   }
  ],
  "next12": [
-  {
-   "month": "2026-10",
-   "status": "forecast",
-   "likely": 890,
-   "low": 790,
-   "high": 1080,
-   "avg": 1085,
-   "median": 1050,
-   "min": 940,
-   "max": 1300,
-   "fraction": null
-  },
   {
    "month": "2026-11",
    "status": "forecast",
@@ -390,6 +378,18 @@
    "median": 1400,
    "min": 1300,
    "max": 1500,
+   "fraction": null
+  },
+  {
+   "month": "2027-10",
+   "status": "forecast",
+   "likely": 885,
+   "low": 564,
+   "high": 1074,
+   "avg": 1085,
+   "median": 1050,
+   "min": 940,
+   "max": 1300,
    "fraction": null
   }
  ],
@@ -540,10 +540,10 @@
   },
   {
    "month": "2026-10",
-   "status": "forecast",
-   "likely": 746,
-   "low": 663,
-   "high": 905,
+   "status": "partial",
+   "likely": 792,
+   "low": 759,
+   "high": 853,
    "avg": 1085,
    "median": 1050,
    "min": 940,
@@ -554,19 +554,19 @@
  "pge_year_label": "Oct 27 2025 - Oct 26 2026",
  "totals": {
   "calendar": {
-   "likely": 16033,
-   "low": 15730,
-   "high": 16441
+   "likely": 16087,
+   "low": 15845,
+   "high": 16379
   },
   "next12": {
-   "likely": 15961,
-   "low": 14753,
-   "high": 16834
+   "likely": 15957,
+   "low": 14527,
+   "high": 16828
   },
   "pge_year": {
-   "likely": 15953,
-   "low": 15869,
-   "high": 16112
+   "likely": 15998,
+   "low": 15965,
+   "high": 16060
   }
  },
  "ratio_low_sun": 0.863,

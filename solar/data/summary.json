@@ -1,18 +1,18 @@
 {
- "generated": "2026-10-06 19:59",
+ "generated": "2026-10-19 20:11",
  "cards": {
   "pge": {
    "close": "~Oct 26, 2026",
-   "due": 36.370600008815615,
-   "text": "about $36 owed",
-   "small": "Likely range: $35 owed to $38 owed. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; about $3 more in fees through Oct 26 would make it about $37.",
-   "annual": 204.83005000881587
+   "due": 37.733704973999124,
+   "text": "about $38 owed",
+   "small": "93% of this year is already measured by the PG&amp;E meter, so the range is tight. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; about $4 more in fees through Oct 26 would make it about $38.",
+   "annual": 206.19315497399936
   },
   "vce": {
    "close": "Feb 25, 2027",
-   "val": -48.92639304489913,
-   "text": "about $49 credited to the owner",
-   "small": "As a bill credit. Likely range: $88 credited to $10 credited."
+   "val": -45.19161552048242,
+   "text": "about $45 credited to the owner",
+   "small": "As a bill credit. Likely range: $80 credited to $10 credited."
   },
   "nxt": {
    "pge_label": "Oct 2026 &ndash; Oct 2027",
@@ -25,17 +25,17 @@
   }
  },
  "why_pge": [
-  "This home's solar sent more energy to the grid than the home pulled from it, so its energy account ends the year about <b>$321 in credit</b>. That leftover dollar credit is <b>wiped out</b> at the true-up. PG&amp;E pays nothing for it, because for Valley Clean Energy customers the payment for extra energy comes from VCE (see below).",
-  "There's a small fee on every kWh pulled from the grid that solar credits can't cancel (PG&amp;E calls it the \"non-bypassable charge\"). It adds up all year and is settled at the true-up: about <b>$86.77</b> this year. Most of it came in Nov&ndash;Feb, when the home used the most grid power.",
-  "The monthly minimum charge paid Nov&ndash;Feb (<b>$50.40</b>) counts against those fees. What's left, <b>$36.37</b>, is the true-up bill. The Oct 1 bill already shows this: \"YTD Estimated NEM Charges At True-Up <b>$33.76</b>\" ($84.17 of fees minus $50.41 of minimum charges), and one more billing cycle of fees (to Oct 26) will be added.",
+  "This home's solar sent more energy to the grid than the home pulled from it, so its energy account ends the year about <b>$297 in credit</b>. That leftover dollar credit is <b>wiped out</b> at the true-up. PG&amp;E pays nothing for it, because for Valley Clean Energy customers the payment for extra energy comes from VCE (see below).",
+  "There's a small fee on every kWh pulled from the grid that solar credits can't cancel (PG&amp;E calls it the \"non-bypassable charge\"). It adds up all year and is settled at the true-up: about <b>$88.13</b> this year. Most of it came in Nov&ndash;Feb, when the home used the most grid power.",
+  "The monthly minimum charge paid Nov&ndash;Feb (<b>$50.40</b>) counts against those fees. What's left, <b>$37.73</b>, is the true-up bill. The Oct 1 bill already shows this: \"YTD Estimated NEM Charges At True-Up <b>$33.76</b>\" ($84.17 of fees minus $50.41 of minimum charges), and one more billing cycle of fees (to Oct 26) will be added.",
   "The 2025 true-up worked the same way. The fees ($141) were less than the minimum charges already paid ($146.50), so <b>$0</b> was owed.",
-  "The monthly bill is just the fixed <b>~$24/month Base Services Charge</b> (about $190 this year), which solar credits can't reduce. Three state Climate Credits ($46.26 on the May 4 bill, $36.18 on the Sep 2 bill and $36.18 on the Oct 1 bill) offset part of it. All-in, PG&amp;E costs this home about <b>$205</b> for the year."
+  "The monthly bill is just the fixed <b>~$24/month Base Services Charge</b> (about $190 this year), which solar credits can't reduce. Three state Climate Credits ($46.26 on the May 4 bill, $36.18 on the Sep 2 bill and $36.18 on the Oct 1 bill) offset part of it. All-in, PG&amp;E costs this home about <b>$206</b> for the year."
  ],
  "why_vce": [
   "Valley Clean Energy (VCE) is the local public agency that supplies this home's electricity. PG&amp;E still delivers it and sends the bill. VCE's side runs on its own year, March through February.",
   "Summer solar builds up VCE credit, and that credit pays for winter use as it comes up, so nothing is owed to VCE <b>month to month</b>.",
-  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,255 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$49</b>, as a <b>bill credit</b>.",
-  "The remaining dollar credit (about $111) is not paid out. The payout counts kWh, not dollars.",
+  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,159 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$45</b>, as a <b>bill credit</b>.",
+  "The remaining dollar credit (about $104) is not paid out. The payout counts kWh, not dollars.",
   "The range depends on how much grid power the home uses this winter (EV charging adds to it)."
  ],
  "leftover": [
@@ -54,6 +54,6 @@
  ],
  "meter_through": "2026-10-01",
  "tesla_from": "2021-09",
- "tesla_to": "2026-09",
+ "tesla_to": "2026-10",
  "bill_verdict": "Checked against 13 monthly PG&amp;E bills (Oct 2025 &ndash; Oct 2026): the grid fee was never charged monthly. It shows up only in the NEM details, which settle at the true-up. The running total on the bills ($84.17 by Sep 24, 2026) equals the sum of the monthly lines, and nothing was charged twice."
 }
