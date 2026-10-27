@@ -385,4 +385,70 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
         (', so at least ' + F.hours_needed + ' h more are due by Oct 31')) +
       '. Season runs through Oct 31; the chart and table show earned events only.';
   }
+
+  {   // ---- Yearly true-up numbers (yearly.json; only present in builds with the section turned on)
+    const Y = D.yearly;
+    if (Y && $('yr-table')) {
+      const yrs = NARROW ? Y.years.slice().reverse() : Y.years, lab = {};   // phones: newest year first, so it is on screen without scrolling
+      Y.rows.forEach(r => { lab[r[0]] = [r[1], r[2]]; });
+      const dir = { net: -1, trueup: -1, without: 0, saved: 1, pge_total: -1, nbc: -1, mdc: -1, bsc: -1, climate: -1, credit: 0, forfeit: -1,
+        vce: -1, vpp: 1, solar: 1, home: 0, imp: -1, exp: 1 };
+      const groups = [['The bottom line', ['net', 'trueup', 'without', 'saved']],
+        ['PG&amp;E', ['pge_total', 'nbc', 'mdc', 'bsc', 'climate', 'credit', 'forfeit']],
+        ['Valley Clean Energy and VPP', ['vce', 'vpp']],
+        ['Energy (Tesla app)', ['solar', 'home', 'imp', 'exp']]];
+      const usd = v => (v < -0.5 ? '\u2212$' : '$') + Math.round(Math.abs(v)).toLocaleString();
+      const kwh = v => Math.round(v).toLocaleString();
+      const fmt = (k, v) => v == null ? '&mdash;' : (lab[k][1] === '$' ? usd(v) : kwh(v));
+      const chg = (k, c) => {
+        if (c.chg == null) return '';
+        const d = c.chg, unit = lab[k][1] === '$', small = Math.abs(d) < (unit ? 0.5 : 0.5);
+        if (small) return '<span class="chg nt">no change</span>';
+        const good = dir[k] * d, cl = good > 0 ? 'up' : good < 0 ? 'dn' : 'nt';
+        const amt = (d > 0 ? '+' : '\u2212') + (unit ? '$' : '') + Math.round(Math.abs(d)).toLocaleString();
+        return '<span class="chg ' + cl + '">' + (d > 0 ? '\u25b2 ' : '\u25bc ') + amt + (c.pct != null ? ' (' + (c.pct > 0 ? '+' : '') + c.pct.toFixed(0) + '%)' : '') + '</span>';
+      };
+      let h = '<tr><th>True-up year<small>Oct 27 &ndash; Oct 26</small></th>' + yrs.map(y => '<th' + (y.current ? ' class="cur"' : '') + '>' + y.label +
+        '<small>' + (y.current ? 'latest' : y.range.replace(/, \d{4}/g, '').replace(/^(\w+ \d+) \u2013 (\w+ \d+)$/, '$1 \u2013 $2')) + '</small></th>').join('') + '</tr>';
+      groups.forEach(([g, ks]) => {
+        h += '<tr class="grp"><td colspan="' + (yrs.length + 1) + '">' + g + '</td></tr>';
+        ks.forEach(k => {
+          h += '<tr' + (k === 'net' || k === 'trueup' ? ' class="key"' : '') + '><td>' + lab[k][0] + (lab[k][1] === 'kWh' ? ' (kWh)' : '') + '</td>' + yrs.map(y => {
+            const c = y.cells[k], est = c.est && c.v != null;
+            const sub = k === 'vce' && c.vce_year ? '<span class="chg nt">VCE ' + c.vce_year + '</span>' : '';
+            return '<td' + (y.current ? ' class="cur"' : '') + ' title="' + (c.note || '').replace(/"/g, '') + '">' + fmt(k, c.v) + (est ? '<sup class="est">est</sup>' : '') + chg(k, c) + sub + '</td>';
+          }).join('') + '</tr>';
+        });
+      });
+      $('yr-table').innerHTML = h;
+      $('yr-head').innerHTML = Y.head;
+      const first = Y.years[0];
+      $('yr-legend').innerHTML = 'Each column is one PG&amp;E true-up year' + (NARROW ? ', newest first (swipe the table for older years)' : '') + '; the arrows compare it with the year before (green = better for the owner, red = worse). ' +
+        'Negative dollars = money back to the owner. <b><sup>est</sup> = estimate</b> (modeled, or not billed yet); everything else is from the bills, true-up statement, VCE statements or VPP payments.' +
+        '<details class="src"><summary>Where these numbers come from</summary>' +
+        'Only the 2024&ndash;25 PG&amp;E true-up statement and the 2025&ndash;26 monthly bills are on file, so earlier PG&amp;E rows are modeled. ' +
+        'The whole energy credit is forfeited each year because the minimum charges always covered the grid fees until 2026. ' +
+        'Valley Clean Energy settles on its own Mar&ndash;Feb year; each column shows the VCE year that ended inside it (none for ' + first.label + ', so its net cost is PG&amp;E only). ' +
+        'VPP = the May&ndash;Oct season inside each year (actual payments; ' + Y.years[Y.years.length - 1].label + ' = earned from the 2026 events, paid next spring). ' +
+        'Energy is from the Tesla app (PG&amp;E\'s meter reads grid flows about 5% higher). Before this table: ' + Y.stub.range + ' (' + Y.stub.solar.toLocaleString() + ' kWh of solar).</details>';
+      const cy = Y.years, x = cy.map(y => y.label), g = (k, y) => y.cells[k].v || 0;
+      Plotly.newPlot('ch-yearly', [
+        { type: 'bar', name: NARROW ? 'PG&E (all charges minus credits)' : 'PG&E (true-up, fixed charges, minus Climate Credits)', x, y: cy.map(y => g('pge_total', y)), marker: { color: '#c0392b' },
+          hovertemplate: '%{x}: PG&E %{y:$,.0f}<extra></extra>' },
+        { type: 'bar', name: 'Valley Clean Energy true-up', x, y: cy.map(y => g('vce', y)), marker: { color: '#7c3aed' },
+          hovertemplate: '%{x}: VCE %{y:$,.0f}<extra></extra>' },
+        { type: 'bar', name: 'VPP payout', x, y: cy.map(y => -g('vpp', y)), marker: { color: '#1e8449' },
+          hovertemplate: '%{x}: VPP %{y:$,.0f}<extra></extra>' },
+        { type: 'scatter', mode: 'markers', name: 'Net yearly cost', x, y: cy.map(y => g('net', y)), marker: { symbol: 'diamond', size: 14, color: '#1d2a3a', line: { color: '#fff', width: 1.5 } },
+          cliponaxis: false,
+          hovertemplate: '%{x}: net %{y:$,.0f}<extra></extra>' }],
+        Object.assign({}, baseLayout, { barmode: 'relative', yaxis: { tickprefix: '$', zeroline: true, zerolinecolor: '#333', zerolinewidth: 2, title: NARROW ? '' : 'Up = paid, down = money back' },
+          xaxis: { type: 'category', tickfont: { size: NARROW ? 12 : 14 } }, legend: { orientation: 'h', y: NARROW ? -0.3 : -0.15, font: { size: NARROW ? 11 : 13 } },
+          annotations: cy.map(y => ({ x: y.label, y: Math.max(0, g('pge_total', y)) + Math.max(0, g('vce', y)), yshift: 4, yanchor: 'bottom', showarrow: false,
+            text: (NARROW ? '' : 'net ') + '<b>' + usd(g('net', y)) + '</b>', font: { size: NARROW ? 12 : 15, color: '#1d2a3a' } })),
+          margin: NARROW ? { l: 50, r: 10, t: 30, b: 40 } : { l: 70, r: 30, t: 30, b: 40 } }), cfg);
+      $('yr-chart-legend').innerHTML = 'Bars stack each year\'s pieces; the diamond (and the number above each bar) is the net. PG&amp;E\'s bar jumps in ' + cy[cy.length - 1].label +
+        ' because of the new ~$24/month Base Services Charge (from Mar 2026). ' + first.label + ' has no VCE bar (not tracked) and no VPP season.';
+    }
+  }
 })();

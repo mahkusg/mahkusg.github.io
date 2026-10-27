@@ -25,3 +25,11 @@ table.vpp{width:100%;font-size:15px;margin:14px 0 4px} table.vpp td,table.vpp th
 
 .welcome{font-size:18px;line-height:1.6;margin:6px 0 10px;max-width:880px} h2.part{font-size:30px;margin:56px 0 14px;padding-top:22px;border-top:2px solid #d8dee6}
 .cards.one{grid-template-columns:1fr;margin-bottom:12px}
+table.yr{width:100%;min-width:720px;font-size:15px} table.yr td,table.yr th{padding:7px 9px;vertical-align:top;white-space:nowrap}
+table.yr th:first-child,table.yr td:first-child{position:sticky;left:0;background:#fff;z-index:1;white-space:normal;min-width:150px;max-width:210px}
+table.yr th:first-child{background:#f3f4f6} table.yr tr.grp td{background:#f8fafc;font-weight:700;color:var(--ink);text-align:left;padding-top:12px}
+table.yr tr.grp td:first-child{background:#f8fafc} table.yr tr.key td{font-weight:700;font-size:16px} table.yr .cur{background:#f0fdf4}
+table.yr .chg{display:block;font-size:12.5px;font-weight:600} .chg.up{color:var(--credit)} .chg.dn{color:var(--owe)} .chg.nt{color:var(--muted)}
+table.yr .est,.legend sup{color:#8a6d1f;font-weight:600;font-size:10.5px;margin-left:2px;letter-spacing:.02em} table.yr th small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+@media (max-width:600px){table.yr{font-size:14px;min-width:640px} table.yr th:first-child,table.yr td:first-child{min-width:120px;max-width:140px}}
+details.src{background:none;box-shadow:none;padding:6px 0 0;margin:6px 0 0} details.src summary{font-size:15px;color:var(--ink)}

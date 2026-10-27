@@ -1,0 +1,704 @@
+{
+ "generated": "2026-10-26 22:16",
+ "years": [
+  {
+   "label": "2021\u201322",
+   "range": "Oct 27, 2021 \u2013 Oct 26, 2022",
+   "start": "2021-10-27",
+   "end": "2022-10-26",
+   "current": false,
+   "cells": {
+    "trueup": {
+     "v": 0.0,
+     "est": true,
+     "note": "modeled (no true-up statement on file)"
+    },
+    "mdc": {
+     "v": 125.12,
+     "est": true,
+     "note": "modeled at the published daily minimum charge"
+    },
+    "nbc": {
+     "v": 49.07,
+     "est": true,
+     "note": "modeled from Tesla data at published rates"
+    },
+    "credit": {
+     "v": 824.31,
+     "est": true,
+     "note": "modeled from Tesla data at published rates"
+    },
+    "forfeit": {
+     "v": 824.31,
+     "est": true,
+     "note": "all of the leftover energy credit is wiped out at true-up"
+    },
+    "bsc": {
+     "v": 0.0,
+     "est": false,
+     "note": "Base Services Charge on monthly bills (new in 2026)"
+    },
+    "climate": {
+     "v": -78.6,
+     "est": false,
+     "note": "Climate Credits on the bills"
+    },
+    "pge_total": {
+     "v": 46.52,
+     "est": true,
+     "note": "true-up + minimum charges + Base Services Charge - Climate Credits"
+    },
+    "vce": {
+     "v": null,
+     "est": true,
+     "note": "not tracked (VCE year Mar 2021 \u2013 Feb 2022 had only 6 months of solar)"
+    },
+    "solar": {
+     "v": 18331.22,
+     "est": false,
+     "note": "Tesla app"
+    },
+    "home": {
+     "v": 13200.68,
+     "est": false,
+     "note": "Tesla app (home + EV charging)"
+    },
+    "imp": {
+     "v": 1513.81,
+     "est": false,
+     "note": "Tesla app"
+    },
+    "exp": {
+     "v": 5316.51,
+     "est": false,
+     "note": "Tesla app"
+    },
+    "vpp": {
+     "v": 0.0,
+     "est": false,
+     "note": "no VPP payout for the 2022 season"
+    },
+    "net": {
+     "v": 46.52,
+     "est": true,
+     "note": "PG&E total + VCE - VPP (VCE not included)"
+    },
+    "without": {
+     "v": 4634.94,
+     "est": true,
+     "note": "modeled: same use at E-TOU-D rates, no solar or battery"
+    },
+    "saved": {
+     "v": 4588.42,
+     "est": true,
+     "note": "without solar - net cost"
+    }
+   }
+  },
+  {
+   "label": "2022\u201323",
+   "range": "Oct 27, 2022 \u2013 Oct 26, 2023",
+   "start": "2022-10-27",
+   "end": "2023-10-26",
+   "current": false,
+   "cells": {
+    "trueup": {
+     "v": 0.0,
+     "est": true,
+     "note": "modeled (no true-up statement on file)",
+     "chg": 0.0,
+     "pct": null
+    },
+    "mdc": {
+     "v": 133.78,
+     "est": true,
+     "note": "modeled at the published daily minimum charge",
+     "chg": 8.66,
+     "pct": 6.9
+    },
+    "nbc": {
+     "v": 86.64,
+     "est": true,
+     "note": "modeled from Tesla data at published rates",
+     "chg": 37.57,
+     "pct": 76.6
+    },
+    "credit": {
+     "v": 337.59,
+     "est": true,
+     "note": "modeled from Tesla data at published rates",
+     "chg": -486.72,
+     "pct": -59.0
+    },
+    "forfeit": {
+     "v": 337.59,
+     "est": true,
+     "note": "all of the leftover energy credit is wiped out at true-up",
+     "chg": -486.72,
+     "pct": -59.0
+    },
+    "bsc": {
+     "v": 0.0,
+     "est": false,
+     "note": "Base Services Charge on monthly bills (new in 2026)",
+     "chg": 0.0,
+     "pct": null
+    },
+    "climate": {
+     "v": -76.78,
+     "est": false,
+     "note": "Climate Credits on the bills",
+     "chg": 1.82,
+     "pct": 2.3
+    },
+    "pge_total": {
+     "v": 57.0,
+     "est": true,
+     "note": "true-up + minimum charges + Base Services Charge - Climate Credits",
+     "chg": 10.48,
+     "pct": 22.5
+    },
+    "vce": {
+     "v": -126.07,
+     "est": true,
+     "note": "modeled (VCE year Mar 2022 \u2013 Feb 2023)",
+     "vce_year": "Mar 22\u2013Feb 23"
+    },
+    "solar": {
+     "v": 17172.26,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -1158.96,
+     "pct": -6.3
+    },
+    "home": {
+     "v": 14787.74,
+     "est": false,
+     "note": "Tesla app (home + EV charging)",
+     "chg": 1587.06,
+     "pct": 12.0
+    },
+    "imp": {
+     "v": 2794.8,
+     "est": false,
+     "note": "Tesla app",
+     "chg": 1280.99,
+     "pct": 84.6
+    },
+    "exp": {
+     "v": 4299.55,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -1016.96,
+     "pct": -19.1
+    },
+    "vpp": {
+     "v": 352.94,
+     "est": false,
+     "note": "2023 season, paid Mar 2024",
+     "chg": 352.94,
+     "pct": null
+    },
+    "net": {
+     "v": -422.01,
+     "est": true,
+     "note": "PG&E total + VCE - VPP"
+    },
+    "without": {
+     "v": 5740.27,
+     "est": true,
+     "note": "modeled: same use at E-TOU-D rates, no solar or battery",
+     "chg": 1105.33,
+     "pct": 23.8
+    },
+    "saved": {
+     "v": 6162.28,
+     "est": true,
+     "note": "without solar - net cost",
+     "chg": 1573.86,
+     "pct": 34.3
+    }
+   }
+  },
+  {
+   "label": "2023\u201324",
+   "range": "Oct 27, 2023 \u2013 Oct 26, 2024",
+   "start": "2023-10-27",
+   "end": "2024-10-26",
+   "current": false,
+   "cells": {
+    "trueup": {
+     "v": 0.0,
+     "est": true,
+     "note": "modeled (no true-up statement on file)",
+     "chg": 0.0,
+     "pct": null
+    },
+    "mdc": {
+     "v": 141.39,
+     "est": true,
+     "note": "modeled at the published daily minimum charge",
+     "chg": 7.61,
+     "pct": 5.7
+    },
+    "nbc": {
+     "v": 129.44,
+     "est": true,
+     "note": "modeled from Tesla data at published rates",
+     "chg": 42.8,
+     "pct": 49.4
+    },
+    "credit": {
+     "v": 52.82,
+     "est": true,
+     "note": "modeled from Tesla data at published rates",
+     "chg": -284.77,
+     "pct": -84.4
+    },
+    "forfeit": {
+     "v": 52.82,
+     "est": true,
+     "note": "all of the leftover energy credit is wiped out at true-up",
+     "chg": -284.77,
+     "pct": -84.4
+    },
+    "bsc": {
+     "v": 0.0,
+     "est": false,
+     "note": "Base Services Charge on monthly bills (new in 2026)",
+     "chg": 0.0,
+     "pct": null
+    },
+    "climate": {
+     "v": -110.34,
+     "est": false,
+     "note": "Climate Credits on the bills",
+     "chg": -33.56,
+     "pct": -43.7
+    },
+    "pge_total": {
+     "v": 31.05,
+     "est": true,
+     "note": "true-up + minimum charges + Base Services Charge - Climate Credits",
+     "chg": -25.95,
+     "pct": -45.5
+    },
+    "vce": {
+     "v": -26.86,
+     "est": true,
+     "note": "modeled (VCE year Mar 2023 \u2013 Feb 2024)",
+     "vce_year": "Mar 23\u2013Feb 24",
+     "chg": 99.21,
+     "pct": 78.7
+    },
+    "solar": {
+     "v": 16556.13,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -616.13,
+     "pct": -3.6
+    },
+    "home": {
+     "v": 15570.0,
+     "est": false,
+     "note": "Tesla app (home + EV charging)",
+     "chg": 782.26,
+     "pct": 5.3
+    },
+    "imp": {
+     "v": 4027.89,
+     "est": false,
+     "note": "Tesla app",
+     "chg": 1233.09,
+     "pct": 44.1
+    },
+    "exp": {
+     "v": 4123.62,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -175.93,
+     "pct": -4.1
+    },
+    "vpp": {
+     "v": 400.56,
+     "est": false,
+     "note": "2024 season, paid Feb 2025",
+     "chg": 47.62,
+     "pct": 13.5
+    },
+    "net": {
+     "v": -396.37,
+     "est": true,
+     "note": "PG&E total + VCE - VPP",
+     "chg": 25.64,
+     "pct": 6.1
+    },
+    "without": {
+     "v": 7090.32,
+     "est": true,
+     "note": "modeled: same use at E-TOU-D rates, no solar or battery",
+     "chg": 1350.05,
+     "pct": 23.5
+    },
+    "saved": {
+     "v": 7486.69,
+     "est": true,
+     "note": "without solar - net cost",
+     "chg": 1324.41,
+     "pct": 21.5
+    }
+   }
+  },
+  {
+   "label": "2024\u201325",
+   "range": "Oct 25, 2024 \u2013 Oct 26, 2025",
+   "start": "2024-10-25",
+   "end": "2025-10-26",
+   "current": false,
+   "cells": {
+    "trueup": {
+     "v": 0.0,
+     "est": false,
+     "note": "true-up statement",
+     "chg": 0.0,
+     "pct": null
+    },
+    "mdc": {
+     "v": 146.5,
+     "est": false,
+     "note": "true-up statement",
+     "chg": 5.11,
+     "pct": 3.6
+    },
+    "nbc": {
+     "v": 141.69,
+     "est": true,
+     "note": "modeled from PG&E meter data",
+     "chg": 12.25,
+     "pct": 9.5
+    },
+    "credit": {
+     "v": 438.44,
+     "est": true,
+     "note": "statement NEM total minus modeled grid fees",
+     "chg": 385.62,
+     "pct": 730.1
+    },
+    "forfeit": {
+     "v": 438.44,
+     "est": true,
+     "note": "all of the leftover energy credit is wiped out at true-up",
+     "chg": 385.62,
+     "pct": 730.1
+    },
+    "bsc": {
+     "v": 0.0,
+     "est": false,
+     "note": "Base Services Charge on monthly bills (new in 2026)",
+     "chg": 0.0,
+     "pct": null
+    },
+    "climate": {
+     "v": -116.46,
+     "est": false,
+     "note": "Climate Credits on the bills",
+     "chg": -6.12,
+     "pct": -5.5
+    },
+    "pge_total": {
+     "v": 30.04,
+     "est": false,
+     "note": "true-up + minimum charges + Base Services Charge - Climate Credits",
+     "chg": -1.01,
+     "pct": -3.3
+    },
+    "vce": {
+     "v": 29.44,
+     "est": false,
+     "note": "VCE statement (VCE year Feb 2024 \u2013 Feb 2025)",
+     "vce_year": "Feb 24\u2013Feb 25",
+     "chg": 56.3,
+     "pct": null
+    },
+    "solar": {
+     "v": 16434.19,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -121.94,
+     "pct": -0.7
+    },
+    "home": {
+     "v": 14064.84,
+     "est": false,
+     "note": "Tesla app (home + EV charging)",
+     "chg": -1505.16,
+     "pct": -9.7
+    },
+    "imp": {
+     "v": 4425.23,
+     "est": false,
+     "note": "Tesla app",
+     "chg": 397.34,
+     "pct": 9.9
+    },
+    "exp": {
+     "v": 5952.19,
+     "est": false,
+     "note": "Tesla app",
+     "chg": 1828.57,
+     "pct": 44.3
+    },
+    "vpp": {
+     "v": 417.06,
+     "est": false,
+     "note": "2025 season, paid Mar 2026",
+     "chg": 16.5,
+     "pct": 4.1
+    },
+    "net": {
+     "v": -357.58,
+     "est": false,
+     "note": "PG&E total + VCE - VPP",
+     "chg": 38.79,
+     "pct": 9.8
+    },
+    "without": {
+     "v": 6130.42,
+     "est": true,
+     "note": "modeled: same use at E-TOU-D rates, no solar or battery",
+     "chg": -959.9,
+     "pct": -13.5
+    },
+    "saved": {
+     "v": 6488.0,
+     "est": true,
+     "note": "without solar - net cost",
+     "chg": -998.69,
+     "pct": -13.3
+    }
+   }
+  },
+  {
+   "label": "2025\u201326",
+   "range": "Oct 27, 2025 \u2013 Oct 26, 2026",
+   "start": "2025-10-27",
+   "end": "2026-10-26",
+   "current": true,
+   "cells": {
+    "trueup": {
+     "v": 38.36,
+     "est": true,
+     "note": "monthly bills + meter data; true-up bill not issued yet",
+     "chg": 38.36,
+     "pct": null
+    },
+    "mdc": {
+     "v": 50.4,
+     "est": false,
+     "note": "monthly bills",
+     "chg": -96.1,
+     "pct": -65.6
+    },
+    "nbc": {
+     "v": 88.76,
+     "est": true,
+     "note": "bills through Sep 24 + meter data",
+     "chg": -52.93,
+     "pct": -37.4
+    },
+    "credit": {
+     "v": 276.62,
+     "est": true,
+     "note": "meter data + bills",
+     "chg": -161.82,
+     "pct": -36.9
+    },
+    "forfeit": {
+     "v": 276.62,
+     "est": true,
+     "note": "all of the leftover energy credit is wiped out at true-up",
+     "chg": -161.82,
+     "pct": -36.9
+    },
+    "bsc": {
+     "v": 190.42,
+     "est": true,
+     "note": "Base Services Charge on monthly bills (new in 2026)",
+     "chg": 190.42,
+     "pct": null
+    },
+    "climate": {
+     "v": -72.36,
+     "est": false,
+     "note": "Climate Credits on the bills",
+     "chg": 44.1,
+     "pct": 37.9
+    },
+    "pge_total": {
+     "v": 206.82,
+     "est": true,
+     "note": "true-up + minimum charges + Base Services Charge - Climate Credits",
+     "chg": 176.78,
+     "pct": 588.5
+    },
+    "vce": {
+     "v": -77.06,
+     "est": false,
+     "note": "VCE statement (VCE year Feb 2025 \u2013 Feb 2026)",
+     "vce_year": "Feb 25\u2013Feb 26",
+     "chg": -106.5,
+     "pct": null
+    },
+    "solar": {
+     "v": 15964.91,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -469.28,
+     "pct": -2.9
+    },
+    "home": {
+     "v": 14592.01,
+     "est": false,
+     "note": "Tesla app (home + EV charging)",
+     "chg": 527.17,
+     "pct": 3.7
+    },
+    "imp": {
+     "v": 3387.53,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -1037.7,
+     "pct": -23.4
+    },
+    "exp": {
+     "v": 4493.63,
+     "est": false,
+     "note": "Tesla app",
+     "chg": -1458.56,
+     "pct": -24.5
+    },
+    "vpp": {
+     "v": 466.42,
+     "est": false,
+     "note": "2026 season, earned from the event data (paid ~Mar 2027)",
+     "chg": 49.36,
+     "pct": 11.8
+    },
+    "net": {
+     "v": -336.66,
+     "est": true,
+     "note": "PG&E total + VCE - VPP",
+     "chg": 20.92,
+     "pct": 5.9
+    },
+    "without": {
+     "v": 5573.77,
+     "est": true,
+     "note": "modeled: same use at E-TOU-D rates, no solar or battery",
+     "chg": -556.65,
+     "pct": -9.1
+    },
+    "saved": {
+     "v": 5910.43,
+     "est": true,
+     "note": "without solar - net cost",
+     "chg": -577.57,
+     "pct": -8.9
+    }
+   }
+  }
+ ],
+ "head": "<b>2025\u201326: PG&amp;E true-up $38.36 owed, the first non-zero PG&amp;E true-up in five years.</b> For the whole year, after PG&amp;E, Valley Clean Energy and VPP, electricity came out <b>$337 ahead</b>, $21 less ahead than 2024\u201325. The main reason is PG&amp;E's new fixed Base Services Charge ($190 this year), which outweighed bigger Valley Clean Energy and VPP payouts. Without it, 2025\u201326 would have come out about $527 ahead, the best of the five years.",
+ "stub": {
+  "range": "Sep 3 \u2013 Oct 26, 2021",
+  "solar": 2484,
+  "home": 2482
+ },
+ "rows": [
+  [
+   "trueup",
+   "PG&E true-up amount due",
+   "$"
+  ],
+  [
+   "nbc",
+   "PG&E grid fees (non-bypassable charges)",
+   "$"
+  ],
+  [
+   "mdc",
+   "Minimum delivery charges paid",
+   "$"
+  ],
+  [
+   "credit",
+   "PG&E energy credit earned",
+   "$"
+  ],
+  [
+   "forfeit",
+   "Energy credit forfeited at true-up",
+   "$"
+  ],
+  [
+   "bsc",
+   "Base Services Charge (monthly bills)",
+   "$"
+  ],
+  [
+   "climate",
+   "Climate Credits",
+   "$"
+  ],
+  [
+   "pge_total",
+   "PG&E total for the year",
+   "$"
+  ],
+  [
+   "vce",
+   "Valley Clean Energy true-up (+ owed / \u2212 paid out)",
+   "$"
+  ],
+  [
+   "vpp",
+   "VPP payout (season)",
+   "$"
+  ],
+  [
+   "net",
+   "Net yearly electricity cost",
+   "$"
+  ],
+  [
+   "without",
+   "Cost without solar + Powerwall",
+   "$"
+  ],
+  [
+   "saved",
+   "Saved vs. no solar",
+   "$"
+  ],
+  [
+   "solar",
+   "Solar produced",
+   "kWh"
+  ],
+  [
+   "home",
+   "Home use (incl. EV)",
+   "kWh"
+  ],
+  [
+   "imp",
+   "Grid import",
+   "kWh"
+  ],
+  [
+   "exp",
+   "Grid export",
+   "kWh"
+  ]
+ ]
+}

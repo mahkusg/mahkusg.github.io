@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-26 21:56",
+ "generated": "2026-10-26 22:16",
  "cards": {
   "pge": {
    "close": "~Oct 26, 2026",
    "due": 38.36073224424945,
    "text": "about $38 owed",
-   "small": "93% of this year is already measured by the PG&amp;E meter, so the range is tight. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; about $5 more in fees through Oct 26 would make it about $39.",
+   "small": "93% of this year is already measured by the PG&amp;E meter, so the range is tight. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; grid fees since then add $4.60, for $38.36 at the true-up.",
    "annual": 206.82018224424968
   },
   "vce": {

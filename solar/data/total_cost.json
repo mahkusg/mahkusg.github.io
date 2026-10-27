@@ -160,8 +160,8 @@
    {
     "label": "Oct 2022 - Oct 2023",
     "without_solar": 5740.27,
-    "actual_net": -69.07,
-    "savings": 5809.34,
+    "actual_net": -422.01,
+    "savings": 6162.28,
     "kwh": 14788,
     "rates": {
      "winter_peak": 0.4155,
@@ -175,8 +175,8 @@
    {
     "label": "Oct 2023 - Oct 2024",
     "without_solar": 7090.32,
-    "actual_net": -348.75,
-    "savings": 7439.07,
+    "actual_net": -396.37,
+    "savings": 7486.69,
     "kwh": 15570,
     "rates": {
      "winter_peak": 0.4961,
@@ -190,8 +190,8 @@
    {
     "label": "Oct 2024 - Oct 2025",
     "without_solar": 6130.42,
-    "actual_net": -341.08,
-    "savings": 6471.5,
+    "actual_net": -357.58,
+    "savings": 6488.0,
     "kwh": 14065,
     "rates": {
      "winter_peak": 0.4757,
@@ -233,14 +233,14 @@
     "partial": false
    }
   ],
-  "total_savings": 31072.78,
+  "total_savings": 31489.84,
   "years": 6,
   "full_years": 4,
-  "total_full_years": 25630.33,
+  "total_full_years": 26047.39,
   "since": 2021,
   "first": "Sep 2021 - Dec 2021",
   "last": "Oct 2025 - Oct 2026",
-  "with_forecast": 36803.84,
+  "with_forecast": 37220.9,
   "forecast_label": "Oct 2026 - Oct 2027"
  },
  "rate_history": [
