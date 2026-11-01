@@ -49,7 +49,7 @@
   $('kwh').innerHTML = S.kwh_html; $('leftover').innerHTML = li(S.leftover);
   $('why-pge').innerHTML = li(S.why_pge); $('why-vce').innerHTML = li(S.why_vce);
   $('assump').innerHTML = li(S.assumptions); $('verdict').innerHTML = S.bill_verdict;
-  $('mon-note').innerHTML = 'Monthly totals come from the Tesla app (' + S.tesla_from + ' to ' + S.tesla_to + ').';
+  if ($('mon-note')) $('mon-note').innerHTML = 'Monthly totals come from the Tesla app (' + S.tesla_from + ' to ' + S.tesla_to + ').';
   $('foot').innerHTML = 'Estimates only, not a bill. Built from Tesla app monthly totals, PG&amp;E meter data (monthly and billing-cycle totals only), ' +
     'and published PG&amp;E and Valley Clean Energy rates.';
 
@@ -233,7 +233,7 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
   });
   const bar = (name, key, color) => ({ type: 'bar', name, x, y: M.map(r => r[key]), marker: { color },
     hovertemplate: name + ': %{y:,.0f} kWh<extra></extra>' });
-  Plotly.newPlot('ch-monthly', [
+  if ($('ch-monthly')) Plotly.newPlot('ch-monthly', [
     bar('Solar generated', 'solar', '#f5b700'), bar('Home use', 'home', '#2563eb'), bar('From Powerwall', 'powerwall', '#16a085'),
     bar('Grid import', 'grid_in', '#c0392b'), bar('Grid export', 'grid_out', '#1e8449'), bar('EV charging', 'ev', '#8e44ad'),
     { type: 'scatter', mode: 'lines+markers', name: 'Net grid (import - export)', x, y: M.map(r => r.net_grid), line: { color: '#111', width: 2 },
@@ -246,6 +246,36 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
         { step: 'all', label: 'all' }] } },
     legend: { orientation: 'h', y: -0.45 }, margin: { l: 60, r: 20, t: 40, b: 40 }
   }), cfg);
+
+  // ---- 1b) simple monthly chart: last 12 full months, solar made vs home use (incl. EV)
+  if ($('ch-monthly-simple')) {
+    const now = new Date(), cur = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0');
+    const full = D.monthly.filter(r => r.month < cur).slice(-12);
+    const mo = r => new Date(r.month + '-15T12:00').toLocaleDateString('en-US', { month: 'short' });
+    const lab = full.map((r, i) => (NARROW ? mo(r).charAt(0) : mo(r)) + (i === 0 || r.month.endsWith('-01') ? '<br>' + (NARROW ? "'" + r.month.slice(2, 4) : r.month.slice(0, 4)) : '<br> ') +
+      '<span style="display:none">' + r.month + '</span>');   // hidden month key keeps labels unique (two J/M/A on phones)
+    const sol = full.map(r => r.solar), use = full.map(r => r.home + (r.ev || 0));
+    const k = v => v >= 1000 ? (v / 1000).toFixed(1) + 'k' : Math.round(v).toString();
+    const bar = (name, y, color) => ({ type: 'bar', name, x: lab, y, marker: { color },
+      text: NARROW ? null : y.map(k), textposition: 'outside', textfont: { size: 13 }, cliponaxis: false,
+      customdata: full.map(r => new Date(r.month + '-15T12:00').toLocaleDateString('en-US', { month: 'long', year: 'numeric' })),
+      hovertemplate: '%{customdata}<br>' + name + ': %{y:,.0f} kWh<extra></extra>' });
+    Plotly.newPlot('ch-monthly-simple', [bar('Solar made', sol, '#f5b700'), bar('Home use (incl. EV)', use, '#2563eb')],
+      Object.assign({}, baseLayout, {
+        barmode: 'group', bargap: NARROW ? 0.2 : 0.25, bargroupgap: 0.05, hovermode: 'closest',
+        font: { family: 'system-ui, sans-serif', size: NARROW ? 14 : 16 },
+        legend: { orientation: 'h', x: 0, y: 1.02, xanchor: 'left', yanchor: 'bottom', font: { size: NARROW ? 14 : 17 }, itemwidth: 30, tracegroupgap: 0 },
+        margin: { l: NARROW ? 46 : 64, r: 10, t: NARROW ? 44 : 50, b: NARROW ? 54 : 60 },
+        xaxis: { tickangle: 0, tickfont: { size: NARROW ? 14 : 15 }, fixedrange: true },
+        yaxis: { title: NARROW ? null : { text: 'kWh' }, tickformat: ',.0f', ticksuffix: NARROW ? '' : '', tickfont: { size: NARROW ? 13 : 15 },
+          gridcolor: '#eee', fixedrange: true, rangemode: 'tozero' }
+      }), Object.assign({}, cfg, { displayModeBar: false }));
+    const tS = sol.reduce((a, b) => a + b, 0), tU = use.reduce((a, b) => a + b, 0), m0 = full[0], m1 = full[full.length - 1];
+    const nm = r => new Date(r.month + '-15T12:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+    const over = full.filter((r, i) => sol[i] > use[i]).length;
+    $('mons-cap').innerHTML = 'Over the last 12 full months (' + nm(m0) + ' \u2013 ' + nm(m1) + '), Mahkus\'s solar made <b>' + Math.round(tS).toLocaleString() +
+      ' kWh</b> and the home used <b>' + Math.round(tU).toLocaleString() + ' kWh</b> including EV charging; solar made more than the home used in ' + over + ' of the 12 months.';
+  }
 
   // ---- 2) PG&E balance per billing cycle
   const P = D.pge, pa = P.actual, n = pa.filter(Boolean).length;
