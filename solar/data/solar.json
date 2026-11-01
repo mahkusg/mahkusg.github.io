@@ -88,7 +88,7 @@
    "7": 2000,
    "8": 1800,
    "9": 1374,
-   "10": 759,
+   "10": 886,
    "11": null,
    "12": null
   }
@@ -99,7 +99,7 @@
   "2023": 17060,
   "2024": 16390,
   "2025": 16070,
-  "2026": 15073
+  "2026": 15201
  },
  "calendar": [
   {
@@ -212,20 +212,20 @@
   },
   {
    "month": "2026-10",
-   "status": "partial",
-   "likely": 902,
+   "status": "actual",
+   "likely": 886,
    "low": 886,
-   "high": 933,
-   "avg": 1085,
-   "median": 1050,
-   "min": 940,
-   "max": 1300,
+   "high": 886,
+   "avg": null,
+   "median": null,
+   "min": null,
+   "max": null,
    "fraction": null
   },
   {
    "month": "2026-11",
    "status": "forecast",
-   "likely": 503,
+   "likely": 502,
    "low": 360,
    "high": 637,
    "avg": 640,
@@ -251,7 +251,7 @@
   {
    "month": "2026-11",
    "status": "forecast",
-   "likely": 503,
+   "likely": 502,
    "low": 360,
    "high": 637,
    "avg": 640,
@@ -275,7 +275,7 @@
   {
    "month": "2027-01",
    "status": "forecast",
-   "likely": 521,
+   "likely": 520,
    "low": 474,
    "high": 621,
    "avg": 628,
@@ -287,7 +287,7 @@
   {
    "month": "2027-02",
    "status": "forecast",
-   "likely": 713,
+   "likely": 711,
    "low": 561,
    "high": 869,
    "avg": 878,
@@ -383,8 +383,8 @@
   {
    "month": "2027-10",
    "status": "forecast",
-   "likely": 885,
-   "low": 647,
+   "likely": 884,
+   "low": 749,
    "high": 1074,
    "avg": 1085,
    "median": 1050,
@@ -540,27 +540,27 @@
   },
   {
    "month": "2026-10",
-   "status": "partial",
+   "status": "actual",
    "likely": 759,
    "low": 759,
    "high": 759,
-   "avg": 1085,
-   "median": 1050,
-   "min": 940,
-   "max": 1300,
+   "avg": null,
+   "median": null,
+   "min": null,
+   "max": null,
    "fraction": 0.8387
   }
  ],
  "pge_year_label": "Oct 27 2025 - Oct 26 2026",
  "totals": {
   "calendar": {
-   "likely": 16045,
+   "likely": 16028,
    "low": 15826,
-   "high": 16295
+   "high": 16248
   },
   "next12": {
-   "likely": 15957,
-   "low": 14610,
+   "likely": 15952,
+   "low": 14712,
    "high": 16828
   },
   "pge_year": {
@@ -569,7 +569,7 @@
    "high": 15965
   }
  },
- "ratio_low_sun": 0.863,
+ "ratio_low_sun": 0.861,
  "ratio_high_sun": 0.989,
  "degradation": 0.005
 }

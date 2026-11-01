@@ -22,11 +22,12 @@
       const nEv = V.seasons && V.seasons[String(V.current)] ? V.seasons[String(V.current)].events : null;
       $('vppc-t').textContent = 'VPP payout (' + V.current + ' season)';
       $('vppc-when').textContent = 'paid ' + (V.paid_label || ('~Mar ' + (V.current + 1)));
-      $('vppc-big').textContent = usd(F.season_to_date) + ' earned';
+      const ended = ((((D.roi && D.roi.today) || new Date().toISOString().slice(0, 10)) > (V.current + '-10-31')));
+      $('vppc-big').textContent = usd(F.season_to_date) + (ended ? ' final' : ' earned');
       $('vppc-small').innerHTML = (nEv != null ? nEv + ' events, ' : '') +
         (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
         (minMet ? ' (minimum met)' : '') +
-        '. Season runs through Oct 31; only earned payouts are shown.';
+        (ended ? '. Season ended Oct 31; final total.' : '. Season runs through Oct 31; only earned payouts are shown.');
     } else if ($('vpp-card')) $('vpp-card').style.display = 'none';
   }
   {   // This year's total electricity cost card (from total_cost.json)
@@ -352,10 +353,11 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
   const VP = D.vpp;
   if (VP && VP.forecast) {
     const F = VP.forecast, cur = String(VP.current), usd = v => '$' + Math.round(v).toLocaleString();
-    $('vpp-head').innerHTML = '<b>' + cur + ' VPP: ' + usd(F.season_to_date) + ' earned so far</b> (paid ~Mar ' + (VP.current + 1) + '); ' +
+    const ended = ((((D.roi && D.roi.today) || new Date().toISOString().slice(0, 10)) > (VP.current + '-10-31')));
+    $('vpp-head').innerHTML = '<b>' + cur + ' VPP: ' + usd(F.season_to_date) + (ended ? ' earned (final; season ended Oct 31)</b>' : ' earned so far</b>') + ' (paid ~Mar ' + (VP.current + 1) + '); ' +
       (+F.hours_so_far).toFixed(0) + ' of ' + F.min_season_hours + ' event-hours' +
       (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' : '') +
-      '. Season runs through Oct 31; the chart shows earned events only.';
+      (ended ? '. Final season total.' : '. Season runs through Oct 31; the chart shows earned events only.');
     const colr = { '2025': '#2563eb', '2026': '#1e8449' };
     const fmtD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     const tr = [], cats = [], hrs = {};
@@ -381,9 +383,9 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
       'Events are found in PG&amp;E\'s meter data' + ((F.tesla_5min_days || []).length ? ' (' + F.tesla_5min_days.map(fmtD).join(', ') +
       ' from the Tesla app\'s 5-minute data until the meter data catches up)' : '') + '. The meter reads a bit higher than what was paid, so $ amounts are scaled by ' + VP.method.scale.toFixed(3) +
       ' to match the actual 2025 payout. The program guarantees at least ' + F.min_season_hours + ' event-hours per season; ' +
-      'this home has ' + F.hours_so_far + ' h so far' + (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' :
+      'this home had ' + F.hours_so_far + ' h' + (ended ? ' this season' : ' so far') + (F.hours_so_far >= F.min_season_hours ? ' (minimum met)' :
         (', so at least ' + F.hours_needed + ' h more are due by Oct 31')) +
-      '. Season runs through Oct 31; the chart and table show earned events only.';
+      (ended ? '. The ' + cur + ' season ended Oct 31; these are the final numbers.' : '. Season runs through Oct 31; the chart and table show earned events only.');
   }
 
   {   // ---- Yearly true-up numbers (yearly.json; only present in builds with the section turned on)

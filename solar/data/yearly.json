@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26 22:16",
+ "generated": "2026-11-01 08:04",
  "years": [
   {
    "label": "2021\u201322",
@@ -557,11 +557,11 @@
      "pct": -2.9
     },
     "home": {
-     "v": 14592.01,
+     "v": 14594.11,
      "est": false,
      "note": "Tesla app (home + EV charging)",
-     "chg": 527.17,
-     "pct": 3.7
+     "chg": 529.27,
+     "pct": 3.8
     },
     "imp": {
      "v": 3387.53,
@@ -592,18 +592,18 @@
      "pct": 5.9
     },
     "without": {
-     "v": 5573.77,
+     "v": 5563.47,
      "est": true,
      "note": "modeled: same use at E-TOU-D rates, no solar or battery",
-     "chg": -556.65,
-     "pct": -9.1
+     "chg": -566.95,
+     "pct": -9.2
     },
     "saved": {
-     "v": 5910.43,
+     "v": 5900.13,
      "est": true,
      "note": "without solar - net cost",
-     "chg": -577.57,
-     "pct": -8.9
+     "chg": -587.87,
+     "pct": -9.1
     }
    }
   }
