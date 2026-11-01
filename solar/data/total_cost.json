@@ -48,8 +48,8 @@
     "high": null
    },
    {
-    "name": "VPP payout (2026 season, earned so far)",
-    "short": "VPP payout\n2026 season\nearned so far",
+    "name": "VPP payout (2026 season, final)",
+    "short": "VPP payout\n2026 season\nfinal",
     "amount": -466.42,
     "actual": false,
     "low": null,
