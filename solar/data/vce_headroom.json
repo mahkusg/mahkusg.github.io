@@ -1,0 +1,33 @@
+{
+ "surplus_kwh": 1110,
+ "credit": 99.97,
+ "payout": 43.28,
+ "cash_rate": 0.039,
+ "rates": {
+  "peak": 0.1103,
+  "off": 0.077
+ },
+ "winter_kwh": 1907,
+ "mi_per_kwh": 2.5,
+ "to_date": 117.65,
+ "last_actual": "2026-10",
+ "peak": {
+  "kwh": 959,
+  "low": 728,
+  "high": 1159,
+  "credit_covers": 906,
+  "total": 2866,
+  "total_low": 2254,
+  "total_high": 3447
+ },
+ "off": {
+  "kwh": 1110,
+  "low": 728,
+  "high": 1491,
+  "credit_covers": 1298,
+  "total": 3017,
+  "total_low": 2254,
+  "total_high": 3779
+ },
+ "payout_gone_kwh": 1110
+}
