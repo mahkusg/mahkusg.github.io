@@ -18,7 +18,8 @@
   "credit_covers": 906,
   "total": 2866,
   "total_low": 2254,
-  "total_high": 3447
+  "total_high": 3447,
+  "per_day": 23.9
  },
  "off": {
   "kwh": 1110,
@@ -27,7 +28,12 @@
   "credit_covers": 1298,
   "total": 3017,
   "total_low": 2254,
-  "total_high": 3779
+  "total_high": 3779,
+  "per_day": 25.1
  },
- "payout_gone_kwh": 1110
+ "payout_gone_kwh": 1110,
+ "days_left": 120,
+ "through": "2026-10-31",
+ "end": "2027-02-28",
+ "normal_per_day": 15.9
 }
