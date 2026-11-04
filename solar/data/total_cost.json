@@ -1,16 +1,16 @@
 {
  "this": {
   "label": "Oct 27, 2025 - Oct 26, 2026",
-  "net": -336.65,
-  "net_low": -336.65,
-  "net_high": -336.65,
-  "headline": "this home came out $337 ahead (net -$337)",
-  "bills_through": "2026-09-24",
+  "net": -336.41,
+  "net_low": -336.41,
+  "net_high": -336.41,
+  "headline": "this home came out $336 ahead (net -$336)",
+  "bills_through": "2026-10-25",
   "components": [
    {
-    "name": "PG&E monthly bills (11 paid)",
-    "short": "Monthly bills\n11 paid",
-    "amount": 215.44,
+    "name": "PG&E monthly bills (12 paid)",
+    "short": "Monthly bills\n12 paid",
+    "amount": 240.04,
     "actual": true,
     "low": null,
     "high": null
@@ -18,18 +18,18 @@
    {
     "name": "PG&E monthly bills (still to come)",
     "short": "Monthly bills\nstill to come",
-    "amount": 25.39,
+    "amount": 0.79,
     "actual": false,
     "low": null,
     "high": null
    },
    {
-    "name": "PG&E true-up (~Oct 26, 2026)",
-    "short": "PG&E true-up\n~Oct 26, 2026",
-    "amount": 38.36,
-    "actual": false,
-    "low": 38.36,
-    "high": 38.36
+    "name": "PG&E true-up",
+    "short": "PG&E true-up",
+    "amount": 38.59,
+    "actual": true,
+    "low": null,
+    "high": null
    },
    {
     "name": "Climate credits (electric)",
@@ -57,7 +57,7 @@
    }
   ],
   "without_solar": 5563.47,
-  "savings": 5900.12,
+  "savings": 5899.89,
   "ws_rates": {
    "winter_peak": 0.4207,
    "winter_off": 0.3844,
@@ -205,8 +205,8 @@
    {
     "label": "Oct 2025 - Oct 2026",
     "without_solar": 5563.47,
-    "actual_net": -336.65,
-    "savings": 5900.12,
+    "actual_net": -336.41,
+    "savings": 5899.89,
     "kwh": 14563,
     "rates": {
      "winter_peak": 0.4207,
@@ -233,14 +233,14 @@
     "partial": false
    }
   ],
-  "total_savings": 31479.54,
+  "total_savings": 31479.31,
   "years": 6,
   "full_years": 4,
-  "total_full_years": 26037.09,
+  "total_full_years": 26036.85,
   "since": 2021,
   "first": "Sep 2021 - Dec 2021",
   "last": "Oct 2025 - Oct 2026",
-  "with_forecast": 37244.18,
+  "with_forecast": 37243.95,
   "forecast_label": "Oct 2026 - Oct 2027"
  },
  "rate_history": [

@@ -11,7 +11,7 @@
   $('sub').innerHTML = 'Data: Tesla app since Sep 2021 and ' +
     'PG&amp;E 15-minute meter data through ' + S.meter_through + '. Updated ' + S.generated + '.';
   const c = S.cards;
-  $('pge-when').textContent = 'closes ' + c.pge.close; $('pge-big').textContent = c.pge.text; $('pge-big').className = 'big ' + cls(c.pge.due);
+  $('pge-when').textContent = (c.pge.actual ? '' : 'closes ') + c.pge.close; $('pge-big').textContent = c.pge.text; $('pge-big').className = 'big ' + cls(c.pge.due);
   $('pge-small').innerHTML = c.pge.small;
   $('vce-when').textContent = 'closes ' + c.vce.close; $('vce-big').textContent = c.vce.text; $('vce-big').className = 'big ' + cls(c.vce.val);
   $('vce-small').innerHTML = c.vce.small;

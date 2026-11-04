@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02 19:06",
+ "generated": "2026-11-04 11:49",
  "years": [
   {
    "label": "2021\u201322",
@@ -486,10 +486,10 @@
    "current": true,
    "cells": {
     "trueup": {
-     "v": 38.36,
+     "v": 38.59,
      "est": true,
      "note": "monthly bills + meter data; true-up bill not issued yet",
-     "chg": 38.36,
+     "chg": 38.59,
      "pct": null
     },
     "mdc": {
@@ -535,11 +535,11 @@
      "pct": 37.9
     },
     "pge_total": {
-     "v": 206.82,
+     "v": 207.05,
      "est": true,
      "note": "true-up + minimum charges + Base Services Charge - Climate Credits",
-     "chg": 176.78,
-     "pct": 588.5
+     "chg": 177.01,
+     "pct": 589.2
     },
     "vce": {
      "v": -77.06,
@@ -585,10 +585,10 @@
      "pct": 11.8
     },
     "net": {
-     "v": -336.66,
+     "v": -336.43,
      "est": true,
      "note": "PG&E total + VCE - VPP",
-     "chg": 20.92,
+     "chg": 21.15,
      "pct": 5.9
     },
     "without": {
@@ -599,16 +599,16 @@
      "pct": -9.2
     },
     "saved": {
-     "v": 5900.13,
+     "v": 5899.9,
      "est": true,
      "note": "without solar - net cost",
-     "chg": -587.87,
+     "chg": -588.1,
      "pct": -9.1
     }
    }
   }
  ],
- "head": "<b>2025\u201326: PG&amp;E true-up $38.36 owed, the first non-zero PG&amp;E true-up in five years.</b> For the whole year, after PG&amp;E, Valley Clean Energy and VPP, electricity came out <b>$337 ahead</b>, $21 less ahead than 2024\u201325. The main reason is PG&amp;E's new fixed Base Services Charge ($190 this year), which outweighed bigger Valley Clean Energy and VPP payouts. Without it, 2025\u201326 would have come out about $527 ahead, the best of the five years.",
+ "head": "<b>2025\u201326: PG&amp;E true-up $38.59 owed, the first non-zero PG&amp;E true-up in five years.</b> For the whole year, after PG&amp;E, Valley Clean Energy and VPP, electricity came out <b>$336 ahead</b>, $21 less ahead than 2024\u201325. The main reason is PG&amp;E's new fixed Base Services Charge ($190 this year), which outweighed bigger Valley Clean Energy and VPP payouts. Without it, 2025\u201326 would have come out about $527 ahead, the best of the five years.",
  "stub": {
   "range": "Sep 3 \u2013 Oct 26, 2021",
   "solar": 2484,

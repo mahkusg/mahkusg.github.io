@@ -1,12 +1,13 @@
 {
- "generated": "2026-11-02 19:06",
+ "generated": "2026-11-04 11:49",
  "cards": {
   "pge": {
-   "close": "~Oct 26, 2026",
-   "due": 38.36073224424945,
-   "text": "about $38 owed",
-   "small": "93% of this year is already measured by the PG&amp;E meter, so the range is tight. This is the year's grid fees minus the minimum charges already paid. The Oct 1 bill already shows $33.76; grid fees since then add $4.60, for $38.36 at the true-up.",
-   "annual": 206.82018224424968
+   "close": "final: true-up statement Nov 2, 2026",
+   "due": 38.59,
+   "text": "$38.59 owed",
+   "actual": true,
+   "small": "Final, from the true-up statement dated Nov 2, 2026: $89.00 of grid fees minus $50.41 of minimum charges already paid = $38.59. The leftover energy credit ($115.92 before fees) is not paid out. The estimate was $38.36.",
+   "annual": 207.0494500000002
   },
   "vce": {
    "close": "Feb 25, 2027",
@@ -27,7 +28,7 @@
  "why_pge": [
   "This home's solar sent more energy to the grid than the home pulled from it, so its energy account ends the year about <b>$277 in credit</b>. That leftover dollar credit is <b>wiped out</b> at the true-up. PG&amp;E pays nothing for it, because for Valley Clean Energy customers the payment for extra energy comes from VCE (see below).",
   "There's a small fee on every kWh pulled from the grid that solar credits can't cancel (PG&amp;E calls it the \"non-bypassable charge\"). It adds up all year and is settled at the true-up: about <b>$88.76</b> this year. Most of it came in Nov&ndash;Feb, when the home used the most grid power.",
-  "The monthly minimum charge paid Nov&ndash;Feb (<b>$50.40</b>) counts against those fees. What's left, <b>$38.36</b>, is the true-up bill. The Oct 1 bill already shows this: \"YTD Estimated NEM Charges At True-Up <b>$33.76</b>\" ($84.17 of fees minus $50.41 of minimum charges), and one more billing cycle of fees (to Oct 26) will be added.",
+  "The monthly minimum charge paid Nov&ndash;Feb (<b>$50.40</b>) counts against those fees. What's left, <b>$38.59</b>, is the true-up bill. The Oct 1 bill already shows this: \"YTD Estimated NEM Charges At True-Up <b>$33.76</b>\" ($84.17 of fees minus $50.41 of minimum charges), and one more billing cycle of fees (to Oct 26) will be added.",
   "The 2025 true-up worked the same way. The fees ($141) were less than the minimum charges already paid ($146.50), so <b>$0</b> was owed.",
   "The monthly bill is just the fixed <b>~$24/month Base Services Charge</b> (about $190 this year), which solar credits can't reduce. Three state Climate Credits ($46.26 on the May 4 bill, $36.18 on the Sep 2 bill and $36.18 on the Oct 1 bill) offset part of it. All-in, PG&amp;E costs this home about <b>$207</b> for the year."
  ],
