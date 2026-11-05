@@ -68,10 +68,10 @@
  },
  "next": {
   "label": "Oct 27, 2026 - Oct 26, 2027",
-  "net": -230.45,
-  "net_low": -279.53,
-  "net_high": 255.72,
-  "headline": "this home came out $230 ahead (net -$230)",
+  "net": -227.77,
+  "net_low": -275.0,
+  "net_high": 260.94,
+  "headline": "this home came out $228 ahead (net -$228)",
   "bills_through": null,
   "components": [
    {
@@ -85,10 +85,10 @@
    {
     "name": "PG&E true-up (~Oct 26, 2027)",
     "short": "PG&E true-up\n~Oct 26, 2027",
-    "amount": 46.12,
+    "amount": 46.68,
     "actual": false,
-    "low": 29.29,
-    "high": 500.04
+    "low": 30.25,
+    "high": 504.59
    },
    {
     "name": "Climate credits (electric, expected)",
@@ -101,10 +101,10 @@
    {
     "name": "VCE annual payout (~Feb 2027)",
     "short": "VCE payout\n~Feb 2027",
-    "amount": -43.29,
+    "amount": -41.17,
     "actual": false,
-    "low": -75.53,
-    "high": -11.04
+    "low": -71.97,
+    "high": -10.36
    },
    {
     "name": "VPP payout (like 2026 season, ~Mar 2027)",
@@ -115,15 +115,15 @@
     "high": null
    }
   ],
-  "without_solar": 5534.2,
-  "savings": 5764.64,
+  "without_solar": 5550.33,
+  "savings": 5778.1,
   "ws_rates": {
-   "winter_peak": 0.3961,
-   "winter_off": 0.3576,
+   "winter_peak": 0.3962,
+   "winter_off": 0.3575,
    "summer_peak": 0.5025,
    "summer_off": 0.363
   },
-  "ws_kwh": 14289
+  "ws_kwh": 14337
  },
  "lifetime": {
   "rows": [
@@ -219,13 +219,13 @@
    },
    {
     "label": "Oct 2026 - Oct 2027",
-    "without_solar": 5534.2,
-    "actual_net": -230.45,
-    "savings": 5764.64,
-    "kwh": 14289,
+    "without_solar": 5550.33,
+    "actual_net": -227.77,
+    "savings": 5778.1,
+    "kwh": 14337,
     "rates": {
-     "winter_peak": 0.3961,
-     "winter_off": 0.3576,
+     "winter_peak": 0.3962,
+     "winter_off": 0.3575,
      "summer_peak": 0.5025,
      "summer_off": 0.363
     },
@@ -240,7 +240,7 @@
   "since": 2021,
   "first": "Sep 2021 - Dec 2021",
   "last": "Oct 2025 - Oct 2026",
-  "with_forecast": 37243.95,
+  "with_forecast": 37257.4,
   "forecast_label": "Oct 2026 - Oct 2027"
  },
  "rate_history": [

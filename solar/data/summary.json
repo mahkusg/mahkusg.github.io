@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04 11:49",
+ "generated": "2026-11-05 13:27",
  "cards": {
   "pge": {
    "close": "final: true-up statement Nov 2, 2026",
@@ -11,14 +11,14 @@
   },
   "vce": {
    "close": "Feb 25, 2027",
-   "val": -43.28572289796022,
-   "text": "about $43 credited to the owner",
-   "small": "As a bill credit. Likely range: $76 credited to $11 credited."
+   "val": -41.1668164464008,
+   "text": "about $41 credited to the owner",
+   "small": "As a bill credit. Likely range: $72 credited to $10 credited."
   },
   "nxt": {
    "pge_label": "Oct 2026 &ndash; Oct 2027",
-   "pge": "about $46 owed",
-   "pge_rng": "range $29 owed to $500 owed",
+   "pge": "about $47 owed",
+   "pge_rng": "range $30 owed to $505 owed",
    "vce_label": "Feb 2027 &ndash; Feb 2028",
    "vce": "about $33 credited to the owner",
    "vce_rng": "range $132 credited to $149 owed",
@@ -35,8 +35,8 @@
  "why_vce": [
   "Valley Clean Energy (VCE) is the local public agency that supplies this home's electricity. PG&amp;E still delivers it and sends the bill. VCE's side runs on its own year, March through February.",
   "Summer solar builds up VCE credit, and that credit pays for winter use as it comes up, so nothing is owed to VCE <b>month to month</b>.",
-  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,110 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$43</b>, as a <b>bill credit</b>.",
-  "The remaining dollar credit (about $100) is not paid out. The payout counts kWh, not dollars.",
+  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,056 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$41</b>, as a <b>bill credit</b>.",
+  "The remaining dollar credit (about $96) is not paid out. The payout counts kWh, not dollars.",
   "The range depends on how much grid power the home uses this winter (EV charging adds to it)."
  ],
  "leftover": [
@@ -55,6 +55,6 @@
  ],
  "meter_through": "2026-10-01",
  "tesla_from": "2021-09",
- "tesla_to": "2026-10",
+ "tesla_to": "2026-11",
  "bill_verdict": "Checked against 13 monthly PG&amp;E bills (Oct 2025 &ndash; Oct 2026): the grid fee was never charged monthly. It shows up only in the NEM details, which settle at the true-up. The running total on the bills ($84.17 by Sep 24, 2026) equals the sum of the monthly lines, and nothing was charged twice."
 }

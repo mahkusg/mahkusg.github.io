@@ -1,6 +1,6 @@
 {
  "current_year": 2026,
- "last_actual": "2026-10",
+ "last_actual": "2026-11",
  "prior_years": [
   2022,
   2023,
@@ -89,7 +89,7 @@
    "8": 1800,
    "9": 1374,
    "10": 886,
-   "11": null,
+   "11": 84,
    "12": null
   }
  },
@@ -99,7 +99,7 @@
   "2023": 17060,
   "2024": 16390,
   "2025": 16070,
-  "2026": 15201
+  "2026": 15285
  },
  "calendar": [
   {
@@ -224,10 +224,10 @@
   },
   {
    "month": "2026-11",
-   "status": "forecast",
-   "likely": 502,
-   "low": 360,
-   "high": 637,
+   "status": "partial",
+   "likely": 519,
+   "low": 396,
+   "high": 636,
    "avg": 640,
    "median": 650,
    "min": 460,
@@ -248,18 +248,6 @@
   }
  ],
  "next12": [
-  {
-   "month": "2026-11",
-   "status": "forecast",
-   "likely": 502,
-   "low": 360,
-   "high": 637,
-   "avg": 640,
-   "median": 650,
-   "min": 460,
-   "max": 800,
-   "fraction": null
-  },
   {
    "month": "2026-12",
    "status": "forecast",
@@ -390,6 +378,18 @@
    "median": 1050,
    "min": 940,
    "max": 1300,
+   "fraction": null
+  },
+  {
+   "month": "2027-11",
+   "status": "forecast",
+   "likely": 500,
+   "low": 276,
+   "high": 634,
+   "avg": 640,
+   "median": 650,
+   "min": 460,
+   "max": 800,
    "fraction": null
   }
  ],
@@ -554,14 +554,14 @@
  "pge_year_label": "Oct 27 2025 - Oct 26 2026",
  "totals": {
   "calendar": {
-   "likely": 16028,
-   "low": 15826,
-   "high": 16248
+   "likely": 16045,
+   "low": 15862,
+   "high": 16247
   },
   "next12": {
-   "likely": 15952,
-   "low": 14712,
-   "high": 16828
+   "likely": 15949,
+   "low": 14628,
+   "high": 16825
   },
   "pge_year": {
    "likely": 15965,
