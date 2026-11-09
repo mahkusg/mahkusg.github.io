@@ -347,9 +347,17 @@ const NARROW = window.innerWidth < 600;   // phones: shorter labels, fewer on-ba
         line: { color: '#2563eb', width: 2, dash: 'dash' }, marker: { size: 5 }, hovertemplate: lastPrior + ': %{y:,.0f} kWh<extra></extra>' }
     ], Object.assign({}, baseLayout, { barmode: 'overlay', hovermode: 'x unified', yaxis: { title: 'Solar generated (kWh)', tickformat: ',.0f' },
       xaxis: { categoryorder: 'array', categoryarray: mon } }), cfg);
-    $('sol-head').innerHTML = cy + ' solar: about <b>' + f0(T.calendar.likely) + ' kWh</b> (range ' + f0(T.calendar.low) + '–' + f0(T.calendar.high) + '). ' +
-      'Next 12 months: about <b>' + f0(T.next12.likely) + ' kWh</b> (' + f0(T.next12.low) + '–' + f0(T.next12.high) + ').';
-    $('sol-legend').innerHTML = 'Solid bars = Tesla app actuals through ' + mon[+SO.last_actual.slice(5) - 1] + ' ' + cy + '. Hatched bars = forecast: the average of past years for that month ' +
+    const ytdOn = D.site_config && D.site_config.solar_ytd && SO.ytd_kwh != null;
+    const ytdDate = SO.ytd_through ? new Date(SO.ytd_through + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+    $('sol-head').innerHTML = ytdOn
+      ? ('This home has made <b>' + f0(SO.ytd_kwh) + ' kWh</b> of solar so far in ' + cy +
+         ' (through ' + ytdDate + '). Full-year projection: about <b>' + f0(T.calendar.likely) + ' kWh</b>' +
+         ' (range ' + f0(T.calendar.low) + '–' + f0(T.calendar.high) + '). Next 12 months: about <b>' +
+         f0(T.next12.likely) + ' kWh</b> (' + f0(T.next12.low) + '–' + f0(T.next12.high) + ').')
+      : (cy + ' solar: about <b>' + f0(T.calendar.likely) + ' kWh</b> (range ' + f0(T.calendar.low) + '–' + f0(T.calendar.high) + '). ' +
+         'Next 12 months: about <b>' + f0(T.next12.likely) + ' kWh</b> (' + f0(T.next12.low) + '–' + f0(T.next12.high) + ').');
+    const thruLbl = ytdOn && ytdDate ? ytdDate : (mon[+SO.last_actual.slice(5) - 1] + ' ' + cy);
+    $('sol-legend').innerHTML = 'Solid bars = Tesla app actuals through ' + thruLbl + '. Hatched bars = forecast: the average of past years for that month ' +
       '(recent years count more), scaled by how ' + cy + ' compares with past years (' + Math.round(100 * SO.ratio_low_sun) + '% in the darker months, ' +
       Math.round(100 * SO.ratio_high_sun) + '% in the sunny months), with ' + (100 * SO.degradation).toFixed(1) + '%/yr for panel ageing. The shaded band is the lowest-to-highest of ' +
       py[0] + '–' + lastPrior + '. PG&amp;E true-up year ' + SO.pge_year_label + ': about ' + f0(T.pge_year.likely) + ' kWh. ' +
