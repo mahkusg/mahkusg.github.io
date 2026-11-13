@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11 20:19",
+ "generated": "2026-11-13 07:22",
  "cards": {
   "pge": {
    "close": "final: true-up statement Nov 2, 2026",
@@ -11,14 +11,14 @@
   },
   "vce": {
    "close": "Feb 25, 2027",
-   "val": -42.46782466564409,
-   "text": "about $42 credited to the owner",
-   "small": "As a bill credit. Likely range: $71 credited to $14 credited."
+   "val": -42.51025900764484,
+   "text": "about $43 credited to the owner",
+   "small": "As a bill credit. Likely range: $70 credited to $15 credited."
   },
   "nxt": {
    "pge_label": "Oct 2026 &ndash; Oct 2027",
    "pge": "about $46 owed",
-   "pge_rng": "range $30 owed to $481 owed",
+   "pge_rng": "range $30 owed to $476 owed",
    "vce_label": "Feb 2027 &ndash; Feb 2028",
    "vce": "about $33 credited to the owner",
    "vce_rng": "range $132 credited to $149 owed",
@@ -35,7 +35,7 @@
  "why_vce": [
   "Valley Clean Energy (VCE) is the local public agency that supplies this home's electricity. PG&amp;E still delivers it and sends the bill. VCE's side runs on its own year, March through February.",
   "Summer solar builds up VCE credit, and that credit pays for winter use as it comes up, so nothing is owed to VCE <b>month to month</b>.",
-  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,089 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$42</b>, as a <b>bill credit</b>.",
+  "In February VCE pays for the extra kWh the home sent to the grid over the year: <b>1,090 kWh &times; 3.9&cent;</b> (wholesale price about 2.9&cent; plus VCE's 1&cent; bonus) = <b>$43</b>, as a <b>bill credit</b>.",
   "The remaining dollar credit (about $98) is not paid out. The payout counts kWh, not dollars.",
   "The range depends on how much grid power the home uses this winter (EV charging adds to it)."
  ],

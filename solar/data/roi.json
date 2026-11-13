@@ -6,463 +6,463 @@
  "math": "$53,124.05 - 26% federal tax credit ($13,812.25) = $39,311.80",
  "install": "2021-09-03",
  "install_label": "Aug 2021",
- "today": "2026-11-11",
- "recovered_to_date": 31732.36,
- "recovered_pct": 80.7,
- "remaining": 7579.44,
- "payback_date": "2028-02-29",
- "payback_label": "Feb 2028",
+ "today": "2026-11-13",
+ "recovered_to_date": 31763.64,
+ "recovered_pct": 80.8,
+ "remaining": 7548.16,
+ "payback_date": "2028-03-01",
+ "payback_label": "Mar 2028",
  "payback_years": 6.5,
- "annual_savings_forward": 5772.78,
+ "annual_savings_forward": 5765.74,
  "life25": {
   "start": "2021-09-03",
   "end": "2046-09-02",
   "nem2_end": "2041-09-03",
   "discount_rate": 0.03,
   "inputs": {
-   "b": 5543.1464,
+   "b": 5536.0007,
    "fixed": 305.4939,
-   "nbc": 46.1175,
+   "nbc": 46.052,
    "climate": -72.36,
-   "vce": 42.4678,
+   "vce": 42.5103,
    "vpp": 466.4169,
-   "surplus": 1088.9186,
+   "surplus": 1090.0066,
    "cash_rate": 0.039,
    "solar": 15949.1802,
-   "imp": 3931.3438,
-   "exp": 4773.1876,
+   "imp": 3925.9735,
+   "exp": 4768.9053,
    "retail": 0.3709
   },
   "history_through": "2026-10-26",
   "cases": {
    "low": {
-    "grid_only": 163468.14,
-    "with_solar": 12748.9,
+    "grid_only": 163295.94,
+    "with_solar": 12732.99,
     "system_net_cost": 39311.8,
-    "net_savings": 111407.44,
-    "present_value": 68967.61,
+    "net_savings": 111251.15,
+    "present_value": 68864.97,
     "esc": 0.02,
     "assumptions": "2%/yr rates, 0.7%/yr panel wear, VPP ends after 2030, 3c exports after NEM 2",
     "years": [
      {
       "start": "2027-10-27",
       "end": "2028-10-26",
-      "grid_only": 5669.5,
-      "with_solar": -218.84,
+      "grid_only": 5662.19,
+      "with_solar": -218.95,
       "nem2_share": 1.0
      },
      {
       "start": "2028-10-27",
       "end": "2029-10-26",
-      "grid_only": 5767.09,
-      "with_solar": -206.75,
+      "grid_only": 5759.66,
+      "with_solar": -206.86,
       "nem2_share": 1.0
      },
      {
       "start": "2029-10-27",
       "end": "2030-10-26",
-      "grid_only": 5882.43,
-      "with_solar": -195.14,
+      "grid_only": 5874.85,
+      "with_solar": -195.25,
       "nem2_share": 1.0
      },
      {
       "start": "2030-10-27",
       "end": "2031-10-26",
-      "grid_only": 6000.08,
-      "with_solar": -183.41,
+      "grid_only": 5992.35,
+      "with_solar": -183.53,
       "nem2_share": 1.0
      },
      {
       "start": "2031-10-27",
       "end": "2032-10-26",
-      "grid_only": 6136.85,
-      "with_solar": 295.66,
+      "grid_only": 6128.94,
+      "with_solar": 295.54,
       "nem2_share": 1.0
      },
      {
       "start": "2032-10-27",
       "end": "2033-10-26",
-      "grid_only": 6242.48,
-      "with_solar": 306.82,
+      "grid_only": 6234.44,
+      "with_solar": 306.7,
       "nem2_share": 1.0
      },
      {
       "start": "2033-10-27",
       "end": "2034-10-26",
-      "grid_only": 6367.33,
-      "with_solar": 318.91,
+      "grid_only": 6359.12,
+      "with_solar": 318.79,
       "nem2_share": 1.0
      },
      {
       "start": "2034-10-27",
       "end": "2035-10-26",
-      "grid_only": 6494.68,
-      "with_solar": 331.13,
+      "grid_only": 6486.31,
+      "with_solar": 331.01,
       "nem2_share": 1.0
      },
      {
       "start": "2035-10-27",
       "end": "2036-10-26",
-      "grid_only": 6642.72,
-      "with_solar": 344.43,
+      "grid_only": 6634.16,
+      "with_solar": 344.31,
       "nem2_share": 1.0
      },
      {
       "start": "2036-10-27",
       "end": "2037-10-26",
-      "grid_only": 6757.06,
-      "with_solar": 355.98,
+      "grid_only": 6748.35,
+      "with_solar": 355.86,
       "nem2_share": 1.0
      },
      {
       "start": "2037-10-27",
       "end": "2038-10-26",
-      "grid_only": 6892.21,
-      "with_solar": 409.59,
+      "grid_only": 6883.32,
+      "with_solar": 409.01,
       "nem2_share": 1.0
      },
      {
       "start": "2038-10-27",
       "end": "2039-10-26",
-      "grid_only": 7030.05,
-      "with_solar": 467.84,
+      "grid_only": 7020.99,
+      "with_solar": 467.26,
       "nem2_share": 1.0
      },
      {
       "start": "2039-10-27",
       "end": "2040-10-26",
-      "grid_only": 7190.3,
-      "with_solar": 529.33,
+      "grid_only": 7181.03,
+      "with_solar": 528.74,
       "nem2_share": 1.0
      },
      {
       "start": "2040-10-27",
       "end": "2041-10-26",
-      "grid_only": 7314.06,
-      "with_solar": 821.53,
+      "grid_only": 7304.64,
+      "with_solar": 820.67,
       "nem2_share": 0.85
      },
      {
       "start": "2041-10-27",
       "end": "2042-10-26",
-      "grid_only": 7460.35,
-      "with_solar": 2205.92,
+      "grid_only": 7450.73,
+      "with_solar": 2203.55,
       "nem2_share": 0.0
      },
      {
       "start": "2042-10-27",
       "end": "2043-10-26",
-      "grid_only": 7609.55,
-      "with_solar": 2256.41,
+      "grid_only": 7599.74,
+      "with_solar": 2253.98,
       "nem2_share": 0.0
      },
      {
       "start": "2043-10-27",
       "end": "2044-10-26",
-      "grid_only": 7783.01,
-      "with_solar": 2314.15,
+      "grid_only": 7772.98,
+      "with_solar": 2311.66,
       "nem2_share": 0.0
      },
      {
       "start": "2044-10-27",
       "end": "2045-10-26",
-      "grid_only": 7916.98,
-      "with_solar": 2360.19,
+      "grid_only": 7906.77,
+      "with_solar": 2357.66,
       "nem2_share": 0.0
      },
      {
       "start": "2045-10-27",
       "end": "2046-09-02",
-      "grid_only": 6880.61,
-      "with_solar": 2056.45,
+      "grid_only": 6871.74,
+      "with_solar": 2054.25,
       "nem2_share": 0.0
      }
     ]
    },
    "base": {
-    "grid_only": 185174.92,
-    "with_solar": 8995.92,
+    "grid_only": 184974.73,
+    "with_solar": 8978.45,
     "system_net_cost": 39311.8,
-    "net_savings": 136867.2,
-    "present_value": 84126.68,
+    "net_savings": 136684.48,
+    "present_value": 84008.45,
     "esc": 0.035,
     "assumptions": "3.5%/yr rates, 0.5%/yr panel wear, VPP continues, 5c exports after NEM 2",
     "years": [
      {
       "start": "2027-10-27",
       "end": "2028-10-26",
-      "grid_only": 5752.87,
-      "with_solar": -214.8,
+      "grid_only": 5745.46,
+      "with_solar": -214.91,
       "nem2_share": 1.0
      },
      {
       "start": "2028-10-27",
       "end": "2029-10-26",
-      "grid_only": 5937.96,
-      "with_solar": -198.39,
+      "grid_only": 5930.3,
+      "with_solar": -198.5,
       "nem2_share": 1.0
      },
      {
       "start": "2029-10-27",
       "end": "2030-10-26",
-      "grid_only": 6145.79,
-      "with_solar": -182.12,
+      "grid_only": 6137.86,
+      "with_solar": -182.24,
       "nem2_share": 1.0
      },
      {
       "start": "2030-10-27",
       "end": "2031-10-26",
-      "grid_only": 6360.89,
-      "with_solar": -165.42,
+      "grid_only": 6352.69,
+      "with_solar": -165.53,
       "nem2_share": 1.0
      },
      {
       "start": "2031-10-27",
       "end": "2032-10-26",
-      "grid_only": 6601.56,
-      "with_solar": -148.65,
+      "grid_only": 6593.05,
+      "with_solar": -148.77,
       "nem2_share": 1.0
      },
      {
       "start": "2032-10-27",
       "end": "2033-10-26",
-      "grid_only": 6813.94,
-      "with_solar": -130.6,
+      "grid_only": 6805.16,
+      "with_solar": -130.72,
       "nem2_share": 1.0
      },
      {
       "start": "2033-10-27",
       "end": "2034-10-26",
-      "grid_only": 7052.43,
-      "with_solar": -112.45,
+      "grid_only": 7043.34,
+      "with_solar": -112.58,
       "nem2_share": 1.0
      },
      {
       "start": "2034-10-27",
       "end": "2035-10-26",
-      "grid_only": 7299.27,
-      "with_solar": -93.79,
+      "grid_only": 7289.86,
+      "with_solar": -93.92,
       "nem2_share": 1.0
      },
      {
       "start": "2035-10-27",
       "end": "2036-10-26",
-      "grid_only": 7575.44,
-      "with_solar": -74.8,
+      "grid_only": 7565.67,
+      "with_solar": -74.93,
       "nem2_share": 1.0
      },
      {
       "start": "2036-10-27",
       "end": "2037-10-26",
-      "grid_only": 7819.16,
-      "with_solar": -54.85,
+      "grid_only": 7809.08,
+      "with_solar": -54.99,
       "nem2_share": 1.0
      },
      {
       "start": "2037-10-27",
       "end": "2038-10-26",
-      "grid_only": 8092.83,
-      "with_solar": -34.53,
+      "grid_only": 8082.39,
+      "with_solar": -34.67,
       "nem2_share": 1.0
      },
      {
       "start": "2038-10-27",
       "end": "2039-10-26",
-      "grid_only": 8376.07,
-      "with_solar": -13.62,
+      "grid_only": 8365.28,
+      "with_solar": -13.77,
       "nem2_share": 1.0
      },
      {
       "start": "2039-10-27",
       "end": "2040-10-26",
-      "grid_only": 8692.99,
-      "with_solar": 7.92,
+      "grid_only": 8681.78,
+      "with_solar": 7.78,
       "nem2_share": 1.0
      },
      {
       "start": "2040-10-27",
       "end": "2041-10-26",
-      "grid_only": 8972.66,
-      "with_solar": 340.94,
+      "grid_only": 8961.09,
+      "with_solar": 340.4,
       "nem2_share": 0.85
      },
      {
       "start": "2041-10-27",
       "end": "2042-10-26",
-      "grid_only": 9286.7,
-      "with_solar": 2235.04,
+      "grid_only": 9274.73,
+      "with_solar": 2232.13,
       "nem2_share": 0.0
      },
      {
       "start": "2042-10-27",
       "end": "2043-10-26",
-      "grid_only": 9611.74,
-      "with_solar": 2342.15,
+      "grid_only": 9599.35,
+      "with_solar": 2339.14,
       "nem2_share": 0.0
      },
      {
       "start": "2043-10-27",
       "end": "2044-10-26",
-      "grid_only": 9975.4,
-      "with_solar": 2459.59,
+      "grid_only": 9962.55,
+      "with_solar": 2456.45,
       "nem2_share": 0.0
      },
      {
       "start": "2044-10-27",
       "end": "2045-10-26",
-      "grid_only": 10296.33,
-      "with_solar": 2567.31,
+      "grid_only": 10283.06,
+      "with_solar": 2564.06,
       "nem2_share": 0.0
      },
      {
       "start": "2045-10-27",
       "end": "2046-09-02",
-      "grid_only": 9080.1,
-      "with_solar": 2288.29,
+      "grid_only": 9068.39,
+      "with_solar": 2285.42,
       "nem2_share": 0.0
      }
     ]
    },
    "high": {
-    "grid_only": 208367.22,
-    "with_solar": 13064.82,
+    "grid_only": 208137.14,
+    "with_solar": 13043.57,
     "system_net_cost": 39311.8,
-    "net_savings": 155990.6,
-    "present_value": 95329.33,
+    "net_savings": 155781.77,
+    "present_value": 95195.82,
     "esc": 0.0485,
     "assumptions": "historical rate trend, 0.4%/yr panel wear, VPP continues, 7c exports after NEM 2",
     "years": [
      {
       "start": "2027-10-27",
       "end": "2028-10-26",
-      "grid_only": 5827.81,
-      "with_solar": -210.67,
+      "grid_only": 5820.3,
+      "with_solar": -210.79,
       "nem2_share": 1.0
      },
      {
       "start": "2028-10-27",
       "end": "2029-10-26",
-      "grid_only": 6093.65,
-      "with_solar": -189.75,
+      "grid_only": 6085.8,
+      "with_solar": -189.86,
       "nem2_share": 1.0
      },
      {
       "start": "2029-10-27",
       "end": "2030-10-26",
-      "grid_only": 6389.08,
-      "with_solar": -168.54,
+      "grid_only": 6380.85,
+      "with_solar": -168.66,
       "nem2_share": 1.0
      },
      {
       "start": "2030-10-27",
       "end": "2031-10-26",
-      "grid_only": 6698.84,
-      "with_solar": -146.43,
+      "grid_only": 6690.2,
+      "with_solar": -146.55,
       "nem2_share": 1.0
      },
      {
       "start": "2031-10-27",
       "end": "2032-10-26",
-      "grid_only": 7042.85,
-      "with_solar": -123.72,
+      "grid_only": 7033.77,
+      "with_solar": -123.85,
       "nem2_share": 1.0
      },
      {
       "start": "2032-10-27",
       "end": "2033-10-26",
-      "grid_only": 7364.12,
-      "with_solar": -99.35,
+      "grid_only": 7354.63,
+      "with_solar": -99.48,
       "nem2_share": 1.0
      },
      {
       "start": "2033-10-27",
       "end": "2034-10-26",
-      "grid_only": 7721.14,
-      "with_solar": -74.27,
+      "grid_only": 7711.19,
+      "with_solar": -74.4,
       "nem2_share": 1.0
      },
      {
       "start": "2034-10-27",
       "end": "2035-10-26",
-      "grid_only": 8095.47,
-      "with_solar": -48.11,
+      "grid_only": 8085.04,
+      "with_solar": -48.24,
       "nem2_share": 1.0
      },
      {
       "start": "2035-10-27",
       "end": "2036-10-26",
-      "grid_only": 8511.21,
-      "with_solar": -20.86,
+      "grid_only": 8500.24,
+      "with_solar": -21.0,
       "nem2_share": 1.0
      },
      {
       "start": "2036-10-27",
       "end": "2037-10-26",
-      "grid_only": 8899.46,
-      "with_solar": 7.7,
+      "grid_only": 8887.99,
+      "with_solar": 7.55,
       "nem2_share": 1.0
      },
      {
       "start": "2037-10-27",
       "end": "2038-10-26",
-      "grid_only": 9330.92,
-      "with_solar": 37.46,
+      "grid_only": 9318.89,
+      "with_solar": 37.31,
       "nem2_share": 1.0
      },
      {
       "start": "2038-10-27",
       "end": "2039-10-26",
-      "grid_only": 9783.3,
-      "with_solar": 68.54,
+      "grid_only": 9770.69,
+      "with_solar": 68.38,
       "nem2_share": 1.0
      },
      {
       "start": "2039-10-27",
       "end": "2040-10-26",
-      "grid_only": 10285.71,
-      "with_solar": 101.27,
+      "grid_only": 10272.45,
+      "with_solar": 101.11,
       "nem2_share": 1.0
      },
      {
       "start": "2040-10-27",
       "end": "2041-10-26",
-      "grid_only": 10754.91,
-      "with_solar": 501.06,
+      "grid_only": 10741.05,
+      "with_solar": 500.42,
       "nem2_share": 0.85
      },
      {
       "start": "2041-10-27",
       "end": "2042-10-26",
-      "grid_only": 11276.32,
-      "with_solar": 2779.99,
+      "grid_only": 11261.79,
+      "with_solar": 2776.5,
       "nem2_share": 0.0
      },
      {
       "start": "2042-10-27",
       "end": "2043-10-26",
-      "grid_only": 11823.02,
-      "with_solar": 2958.13,
+      "grid_only": 11807.78,
+      "with_solar": 2954.46,
       "nem2_share": 0.0
      },
      {
       "start": "2043-10-27",
       "end": "2044-10-26",
-      "grid_only": 12430.18,
-      "with_solar": 3153.31,
+      "grid_only": 12414.15,
+      "with_solar": 3149.43,
       "nem2_share": 0.0
      },
      {
       "start": "2044-10-27",
       "end": "2045-10-26",
-      "grid_only": 12997.2,
-      "with_solar": 3340.07,
+      "grid_only": 12980.44,
+      "with_solar": 3336.01,
       "nem2_share": 0.0
      },
      {
       "start": "2045-10-27",
       "end": "2046-09-02",
-      "grid_only": 11611.23,
-      "with_solar": 3020.29,
+      "grid_only": 11596.26,
+      "with_solar": 3016.64,
       "nem2_share": 0.0
      }
     ]
@@ -948,1815 +948,1815 @@
    },
    {
     "date": "2026-10-31",
-    "grid": 29963.58,
+    "grid": 29963.48,
     "solar": 37717.0,
-    "savings": -7753.42,
+    "savings": -7753.51,
     "projected": false
    },
    {
     "date": "2026-11-30",
-    "grid": 30419.18,
-    "solar": 37698.12,
-    "savings": -7278.94,
+    "grid": 30418.5,
+    "solar": 37698.11,
+    "savings": -7279.62,
     "projected": true
    },
    {
     "date": "2026-12-31",
-    "grid": 30889.97,
-    "solar": 37678.62,
-    "savings": -6788.65,
+    "grid": 30888.68,
+    "solar": 37678.6,
+    "savings": -6789.92,
     "projected": true
    },
    {
     "date": "2027-01-31",
-    "grid": 31360.76,
-    "solar": 37659.12,
-    "savings": -6298.36,
+    "grid": 31358.86,
+    "solar": 37659.09,
+    "savings": -6300.23,
     "projected": true
    },
    {
     "date": "2027-02-28",
-    "grid": 31785.99,
-    "solar": 37641.5,
-    "savings": -5855.52,
+    "grid": 31783.54,
+    "solar": 37641.46,
+    "savings": -5857.93,
     "projected": true
    },
    {
     "date": "2027-03-31",
-    "grid": 32256.77,
-    "solar": 37622.0,
-    "savings": -5365.22,
+    "grid": 32253.72,
+    "solar": 37621.95,
+    "savings": -5368.23,
     "projected": true
    },
    {
     "date": "2027-04-30",
-    "grid": 32712.37,
-    "solar": 37603.12,
-    "savings": -4890.75,
+    "grid": 32708.73,
+    "solar": 37603.07,
+    "savings": -4894.34,
     "projected": true
    },
    {
     "date": "2027-05-31",
-    "grid": 33183.16,
-    "solar": 37583.62,
-    "savings": -4400.46,
+    "grid": 33178.91,
+    "solar": 37583.56,
+    "savings": -4404.64,
     "projected": true
    },
    {
     "date": "2027-06-30",
-    "grid": 33638.76,
-    "solar": 37564.75,
-    "savings": -3925.98,
+    "grid": 33633.93,
+    "solar": 37564.67,
+    "savings": -3930.75,
     "projected": true
    },
    {
     "date": "2027-07-31",
-    "grid": 34109.55,
-    "solar": 37545.24,
-    "savings": -3435.69,
+    "grid": 34104.11,
+    "solar": 37545.16,
+    "savings": -3441.05,
     "projected": true
    },
    {
     "date": "2027-08-31",
-    "grid": 34580.34,
-    "solar": 37525.74,
-    "savings": -2945.4,
+    "grid": 34574.29,
+    "solar": 37525.65,
+    "savings": -2951.36,
     "projected": true
    },
    {
     "date": "2027-09-30",
-    "grid": 35035.94,
-    "solar": 37506.87,
-    "savings": -2470.93,
+    "grid": 35029.3,
+    "solar": 37506.77,
+    "savings": -2477.46,
     "projected": true
    },
    {
     "date": "2027-10-26",
-    "grid": 35430.79,
-    "solar": 37490.51,
-    "savings": -2059.71,
+    "grid": 35423.65,
+    "solar": 37490.4,
+    "savings": -2066.75,
     "projected": true
    },
    {
     "date": "2027-10-31",
-    "grid": 35509.39,
-    "solar": 37487.57,
-    "savings": -1978.19,
+    "grid": 35502.14,
+    "solar": 37487.47,
+    "savings": -1985.33,
     "projected": true
    },
    {
     "date": "2027-11-30",
-    "grid": 35980.93,
-    "solar": 37469.97,
-    "savings": -1489.04,
+    "grid": 35973.08,
+    "solar": 37469.85,
+    "savings": -1496.77,
     "projected": true
    },
    {
     "date": "2027-12-31",
-    "grid": 36468.2,
-    "solar": 37451.77,
-    "savings": -983.58,
+    "grid": 36459.71,
+    "solar": 37451.65,
+    "savings": -991.93,
     "projected": true
    },
    {
     "date": "2028-01-31",
-    "grid": 36955.46,
-    "solar": 37433.58,
-    "savings": -478.12,
+    "grid": 36946.35,
+    "solar": 37433.44,
+    "savings": -487.09,
     "projected": true
    },
    {
     "date": "2028-02-29",
-    "grid": 37411.29,
-    "solar": 37416.56,
-    "savings": -5.27,
+    "grid": 37401.59,
+    "solar": 37416.42,
+    "savings": -14.82,
     "projected": true
    },
    {
     "date": "2028-03-31",
-    "grid": 37898.56,
-    "solar": 37398.37,
-    "savings": 500.19,
+    "grid": 37888.23,
+    "solar": 37398.21,
+    "savings": 490.02,
     "projected": true
    },
    {
     "date": "2028-04-30",
-    "grid": 38370.1,
-    "solar": 37380.76,
-    "savings": 989.34,
+    "grid": 38359.17,
+    "solar": 37380.6,
+    "savings": 978.57,
     "projected": true
    },
    {
     "date": "2028-05-31",
-    "grid": 38857.37,
-    "solar": 37362.57,
-    "savings": 1494.8,
+    "grid": 38845.81,
+    "solar": 37362.39,
+    "savings": 1483.41,
     "projected": true
    },
    {
     "date": "2028-06-30",
-    "grid": 39328.91,
-    "solar": 37344.96,
-    "savings": 1983.95,
+    "grid": 39316.75,
+    "solar": 37344.78,
+    "savings": 1971.97,
     "projected": true
    },
    {
     "date": "2028-07-31",
-    "grid": 39816.18,
-    "solar": 37326.77,
-    "savings": 2489.41,
+    "grid": 39803.38,
+    "solar": 37326.58,
+    "savings": 2476.81,
     "projected": true
    },
    {
     "date": "2028-08-31",
-    "grid": 40303.44,
-    "solar": 37308.57,
-    "savings": 2994.87,
+    "grid": 40290.02,
+    "solar": 37308.37,
+    "savings": 2981.65,
     "projected": true
    },
    {
     "date": "2028-09-30",
-    "grid": 40774.99,
-    "solar": 37290.97,
-    "savings": 3484.02,
+    "grid": 40760.96,
+    "solar": 37290.76,
+    "savings": 3470.2,
     "projected": true
    },
    {
     "date": "2028-10-26",
-    "grid": 41183.66,
-    "solar": 37275.71,
-    "savings": 3907.96,
+    "grid": 41169.11,
+    "solar": 37275.49,
+    "savings": 3893.62,
     "projected": true
    },
    {
     "date": "2028-10-31",
-    "grid": 41265.01,
-    "solar": 37272.99,
-    "savings": 3992.01,
+    "grid": 41250.35,
+    "solar": 37272.77,
+    "savings": 3977.57,
     "projected": true
    },
    {
     "date": "2028-11-30",
-    "grid": 41753.06,
-    "solar": 37256.69,
-    "savings": 4496.37,
+    "grid": 41737.77,
+    "solar": 37256.46,
+    "savings": 4481.31,
     "projected": true
    },
    {
     "date": "2028-12-31",
-    "grid": 42257.38,
-    "solar": 37239.84,
-    "savings": 5017.54,
+    "grid": 42241.44,
+    "solar": 37239.6,
+    "savings": 5001.84,
     "projected": true
    },
    {
     "date": "2029-01-31",
-    "grid": 42761.7,
-    "solar": 37222.99,
-    "savings": 5538.71,
+    "grid": 42745.11,
+    "solar": 37222.74,
+    "savings": 5522.37,
     "projected": true
    },
    {
     "date": "2029-02-28",
-    "grid": 43217.21,
-    "solar": 37207.77,
-    "savings": 6009.44,
+    "grid": 43200.03,
+    "solar": 37207.51,
+    "savings": 5992.52,
     "projected": true
    },
    {
     "date": "2029-03-31",
-    "grid": 43721.53,
-    "solar": 37190.92,
-    "savings": 6530.61,
+    "grid": 43703.7,
+    "solar": 37190.65,
+    "savings": 6513.05,
     "projected": true
    },
    {
     "date": "2029-04-30",
-    "grid": 44209.58,
-    "solar": 37174.61,
-    "savings": 7034.97,
+    "grid": 44191.12,
+    "solar": 37174.34,
+    "savings": 7016.79,
     "projected": true
    },
    {
     "date": "2029-05-31",
-    "grid": 44713.9,
-    "solar": 37157.76,
-    "savings": 7556.14,
+    "grid": 44694.79,
+    "solar": 37157.48,
+    "savings": 7537.31,
     "projected": true
    },
    {
     "date": "2029-06-30",
-    "grid": 45201.95,
-    "solar": 37141.46,
-    "savings": 8060.5,
+    "grid": 45182.22,
+    "solar": 37141.16,
+    "savings": 8041.05,
     "projected": true
    },
    {
     "date": "2029-07-31",
-    "grid": 45706.27,
-    "solar": 37124.61,
-    "savings": 8581.67,
+    "grid": 45685.88,
+    "solar": 37124.3,
+    "savings": 8561.58,
     "projected": true
    },
    {
     "date": "2029-08-31",
-    "grid": 46210.59,
-    "solar": 37107.76,
-    "savings": 9102.84,
+    "grid": 46189.55,
+    "solar": 37107.45,
+    "savings": 9082.11,
     "projected": true
    },
    {
     "date": "2029-09-30",
-    "grid": 46698.65,
-    "solar": 37091.45,
-    "savings": 9607.2,
+    "grid": 46676.98,
+    "solar": 37091.13,
+    "savings": 9585.85,
     "projected": true
    },
    {
     "date": "2029-10-26",
-    "grid": 47121.62,
-    "solar": 37077.32,
-    "savings": 10044.31,
+    "grid": 47099.41,
+    "solar": 37076.99,
+    "savings": 10022.42,
     "projected": true
    },
    {
     "date": "2029-10-31",
-    "grid": 47205.81,
-    "solar": 37074.82,
-    "savings": 10130.99,
+    "grid": 47183.49,
+    "solar": 37074.49,
+    "savings": 10108.99,
     "projected": true
    },
    {
     "date": "2029-11-30",
-    "grid": 47710.95,
-    "solar": 37059.86,
-    "savings": 10651.09,
+    "grid": 47687.97,
+    "solar": 37059.52,
+    "savings": 10628.45,
     "projected": true
    },
    {
     "date": "2029-12-31",
-    "grid": 48232.92,
-    "solar": 37044.39,
-    "savings": 11188.53,
+    "grid": 48209.27,
+    "solar": 37044.04,
+    "savings": 11165.23,
     "projected": true
    },
    {
     "date": "2030-01-31",
-    "grid": 48754.89,
-    "solar": 37028.92,
-    "savings": 11725.97,
+    "grid": 48730.57,
+    "solar": 37028.56,
+    "savings": 11702.01,
     "projected": true
    },
    {
     "date": "2030-02-28",
-    "grid": 49226.35,
-    "solar": 37014.95,
-    "savings": 12211.4,
+    "grid": 49201.42,
+    "solar": 37014.58,
+    "savings": 12186.84,
     "projected": true
    },
    {
     "date": "2030-03-31",
-    "grid": 49748.32,
-    "solar": 36999.48,
-    "savings": 12748.84,
+    "grid": 49722.71,
+    "solar": 36999.1,
+    "savings": 12723.61,
     "projected": true
    },
    {
     "date": "2030-04-30",
-    "grid": 50253.45,
-    "solar": 36984.51,
-    "savings": 13268.94,
+    "grid": 50227.19,
+    "solar": 36984.12,
+    "savings": 13243.07,
     "projected": true
    },
    {
     "date": "2030-05-31",
-    "grid": 50775.42,
-    "solar": 36969.04,
-    "savings": 13806.38,
+    "grid": 50748.49,
+    "solar": 36968.65,
+    "savings": 13779.85,
     "projected": true
    },
    {
     "date": "2030-06-30",
-    "grid": 51280.56,
-    "solar": 36954.08,
-    "savings": 14326.48,
+    "grid": 51252.97,
+    "solar": 36953.67,
+    "savings": 14299.31,
     "projected": true
    },
    {
     "date": "2030-07-31",
-    "grid": 51802.53,
-    "solar": 36938.61,
-    "savings": 14863.92,
+    "grid": 51774.27,
+    "solar": 36938.19,
+    "savings": 14836.08,
     "projected": true
    },
    {
     "date": "2030-08-31",
-    "grid": 52324.5,
-    "solar": 36923.14,
-    "savings": 15401.36,
+    "grid": 52295.57,
+    "solar": 36922.71,
+    "savings": 15372.86,
     "projected": true
    },
    {
     "date": "2030-09-30",
-    "grid": 52829.63,
-    "solar": 36908.17,
-    "savings": 15921.46,
+    "grid": 52800.05,
+    "solar": 36907.73,
+    "savings": 15892.32,
     "projected": true
    },
    {
     "date": "2030-10-26",
-    "grid": 53267.41,
-    "solar": 36895.2,
-    "savings": 16372.22,
+    "grid": 53237.27,
+    "solar": 36894.75,
+    "savings": 16342.52,
     "projected": true
    },
    {
     "date": "2030-10-31",
-    "grid": 53354.55,
-    "solar": 36892.93,
-    "savings": 16461.62,
+    "grid": 53324.29,
+    "solar": 36892.48,
+    "savings": 16431.81,
     "projected": true
    },
    {
     "date": "2030-11-30",
-    "grid": 53877.36,
-    "solar": 36879.34,
-    "savings": 16998.03,
+    "grid": 53846.43,
+    "solar": 36878.88,
+    "savings": 16967.55,
     "projected": true
    },
    {
     "date": "2030-12-31",
-    "grid": 54417.6,
-    "solar": 36865.29,
-    "savings": 17552.32,
+    "grid": 54385.97,
+    "solar": 36864.82,
+    "savings": 17521.15,
     "projected": true
    },
    {
     "date": "2031-01-31",
-    "grid": 54957.84,
-    "solar": 36851.24,
-    "savings": 18106.6,
+    "grid": 54925.52,
+    "solar": 36850.76,
+    "savings": 18074.76,
     "projected": true
    },
    {
     "date": "2031-02-28",
-    "grid": 55445.8,
-    "solar": 36838.55,
-    "savings": 18607.25,
+    "grid": 55412.85,
+    "solar": 36838.06,
+    "savings": 18574.78,
     "projected": true
    },
    {
     "date": "2031-03-31",
-    "grid": 55986.04,
-    "solar": 36824.5,
-    "savings": 19161.54,
+    "grid": 55952.39,
+    "solar": 36824.0,
+    "savings": 19128.39,
     "projected": true
    },
    {
     "date": "2031-04-30",
-    "grid": 56508.85,
-    "solar": 36810.9,
-    "savings": 19697.95,
+    "grid": 56474.53,
+    "solar": 36810.4,
+    "savings": 19664.13,
     "projected": true
    },
    {
     "date": "2031-05-31",
-    "grid": 57049.09,
-    "solar": 36796.85,
-    "savings": 20252.24,
+    "grid": 57014.07,
+    "solar": 36796.34,
+    "savings": 20217.73,
     "projected": true
    },
    {
     "date": "2031-06-30",
-    "grid": 57571.91,
-    "solar": 36783.26,
-    "savings": 20788.65,
+    "grid": 57536.21,
+    "solar": 36782.73,
+    "savings": 20753.48,
     "projected": true
    },
    {
     "date": "2031-07-31",
-    "grid": 58112.15,
-    "solar": 36769.21,
-    "savings": 21342.94,
+    "grid": 58075.76,
+    "solar": 36768.68,
+    "savings": 21307.08,
     "projected": true
    },
    {
     "date": "2031-08-31",
-    "grid": 58652.39,
-    "solar": 36755.16,
-    "savings": 21897.23,
+    "grid": 58615.3,
+    "solar": 36754.62,
+    "savings": 21860.68,
     "projected": true
    },
    {
     "date": "2031-09-30",
-    "grid": 59175.2,
-    "solar": 36741.56,
-    "savings": 22433.64,
+    "grid": 59137.44,
+    "solar": 36741.01,
+    "savings": 22396.43,
     "projected": true
    },
    {
     "date": "2031-10-26",
-    "grid": 59628.3,
-    "solar": 36729.78,
-    "savings": 22898.53,
+    "grid": 59589.96,
+    "solar": 36729.22,
+    "savings": 22860.74,
     "projected": true
    },
    {
     "date": "2031-10-31",
-    "grid": 59718.49,
-    "solar": 36727.75,
-    "savings": 22990.74,
+    "grid": 59680.03,
+    "solar": 36727.19,
+    "savings": 22952.84,
     "projected": true
    },
    {
     "date": "2031-11-30",
-    "grid": 60259.6,
-    "solar": 36715.56,
-    "savings": 23544.04,
+    "grid": 60220.44,
+    "solar": 36714.99,
+    "savings": 23505.45,
     "projected": true
    },
    {
     "date": "2031-12-31",
-    "grid": 60818.75,
-    "solar": 36702.97,
-    "savings": 24115.78,
+    "grid": 60778.87,
+    "solar": 36702.39,
+    "savings": 24076.48,
     "projected": true
    },
    {
     "date": "2032-01-31",
-    "grid": 61377.9,
-    "solar": 36690.38,
-    "savings": 24687.52,
+    "grid": 61337.3,
+    "solar": 36689.79,
+    "savings": 24647.5,
     "projected": true
    },
    {
     "date": "2032-02-29",
-    "grid": 61900.97,
-    "solar": 36678.6,
-    "savings": 25222.37,
+    "grid": 61859.7,
+    "solar": 36678.01,
+    "savings": 25181.69,
     "projected": true
    },
    {
     "date": "2032-03-31",
-    "grid": 62460.12,
-    "solar": 36666.01,
-    "savings": 25794.11,
+    "grid": 62418.12,
+    "solar": 36665.4,
+    "savings": 25752.72,
     "projected": true
    },
    {
     "date": "2032-04-30",
-    "grid": 63001.23,
-    "solar": 36653.83,
-    "savings": 26347.4,
+    "grid": 62958.54,
+    "solar": 36653.21,
+    "savings": 26305.33,
     "projected": true
    },
    {
     "date": "2032-05-31",
-    "grid": 63560.38,
-    "solar": 36641.24,
-    "savings": 26919.14,
+    "grid": 63516.97,
+    "solar": 36640.61,
+    "savings": 26876.36,
     "projected": true
    },
    {
     "date": "2032-06-30",
-    "grid": 64101.49,
-    "solar": 36629.05,
-    "savings": 27472.44,
+    "grid": 64057.38,
+    "solar": 36628.42,
+    "savings": 27428.97,
     "projected": true
    },
    {
     "date": "2032-07-31",
-    "grid": 64660.64,
-    "solar": 36616.46,
-    "savings": 28044.18,
+    "grid": 64615.81,
+    "solar": 36615.81,
+    "savings": 27999.99,
     "projected": true
    },
    {
     "date": "2032-08-31",
-    "grid": 65219.79,
-    "solar": 36603.87,
-    "savings": 28615.92,
+    "grid": 65174.24,
+    "solar": 36603.21,
+    "savings": 28571.02,
     "projected": true
    },
    {
     "date": "2032-09-30",
-    "grid": 65760.9,
-    "solar": 36591.69,
-    "savings": 29169.21,
+    "grid": 65714.65,
+    "solar": 36591.02,
+    "savings": 29123.63,
     "projected": true
    },
    {
     "date": "2032-10-26",
-    "grid": 66229.86,
-    "solar": 36581.13,
-    "savings": 29648.74,
+    "grid": 66183.01,
+    "solar": 36580.45,
+    "savings": 29602.56,
     "projected": true
    },
    {
     "date": "2032-10-31",
-    "grid": 66323.21,
-    "solar": 36579.34,
-    "savings": 29743.87,
+    "grid": 66276.23,
+    "solar": 36578.66,
+    "savings": 29697.57,
     "projected": true
    },
    {
     "date": "2032-11-30",
-    "grid": 66883.26,
-    "solar": 36568.61,
-    "savings": 30314.65,
+    "grid": 66835.56,
+    "solar": 36567.92,
+    "savings": 30267.64,
     "projected": true
    },
    {
     "date": "2032-12-31",
-    "grid": 67461.97,
-    "solar": 36557.51,
-    "savings": 30904.46,
+    "grid": 67413.53,
+    "solar": 36556.81,
+    "savings": 30856.72,
     "projected": true
    },
    {
     "date": "2033-01-31",
-    "grid": 68040.69,
-    "solar": 36546.42,
-    "savings": 31494.27,
+    "grid": 67991.5,
+    "solar": 36545.71,
+    "savings": 31445.79,
     "projected": true
    },
    {
     "date": "2033-02-28",
-    "grid": 68563.41,
-    "solar": 36536.4,
-    "savings": 32027.0,
+    "grid": 68513.54,
+    "solar": 36535.68,
+    "savings": 31977.86,
     "projected": true
    },
    {
     "date": "2033-03-31",
-    "grid": 69142.12,
-    "solar": 36525.31,
-    "savings": 32616.81,
+    "grid": 69091.52,
+    "solar": 36524.58,
+    "savings": 32566.93,
     "projected": true
    },
    {
     "date": "2033-04-30",
-    "grid": 69702.17,
-    "solar": 36514.58,
-    "savings": 33187.6,
+    "grid": 69650.84,
+    "solar": 36513.84,
+    "savings": 33137.01,
     "projected": true
    },
    {
     "date": "2033-05-31",
-    "grid": 70280.89,
-    "solar": 36503.48,
-    "savings": 33777.41,
+    "grid": 70228.82,
+    "solar": 36502.74,
+    "savings": 33726.08,
     "projected": true
    },
    {
     "date": "2033-06-30",
-    "grid": 70840.94,
-    "solar": 36492.75,
-    "savings": 34348.19,
+    "grid": 70788.14,
+    "solar": 36491.99,
+    "savings": 34296.15,
     "projected": true
    },
    {
     "date": "2033-07-31",
-    "grid": 71419.66,
-    "solar": 36481.66,
-    "savings": 34938.0,
+    "grid": 71366.12,
+    "solar": 36480.89,
+    "savings": 34885.23,
     "projected": true
    },
    {
     "date": "2033-08-31",
-    "grid": 71998.38,
-    "solar": 36470.57,
-    "savings": 35527.81,
+    "grid": 71944.09,
+    "solar": 36469.79,
+    "savings": 35474.3,
     "projected": true
    },
    {
     "date": "2033-09-30",
-    "grid": 72558.43,
-    "solar": 36459.83,
-    "savings": 36098.6,
+    "grid": 72503.42,
+    "solar": 36459.04,
+    "savings": 36044.37,
     "projected": true
    },
    {
     "date": "2033-10-26",
-    "grid": 73043.8,
-    "solar": 36450.53,
-    "savings": 36593.28,
+    "grid": 72988.17,
+    "solar": 36449.73,
+    "savings": 36538.44,
     "projected": true
    },
    {
     "date": "2033-10-31",
-    "grid": 73140.41,
-    "solar": 36448.99,
-    "savings": 36691.42,
+    "grid": 73084.65,
+    "solar": 36448.19,
+    "savings": 36636.46,
     "projected": true
    },
    {
     "date": "2033-11-30",
-    "grid": 73720.06,
-    "solar": 36439.75,
-    "savings": 37280.32,
+    "grid": 73663.56,
+    "solar": 36438.94,
+    "savings": 37224.62,
     "projected": true
    },
    {
     "date": "2033-12-31",
-    "grid": 74319.04,
-    "solar": 36430.2,
-    "savings": 37888.84,
+    "grid": 74261.76,
+    "solar": 36429.37,
+    "savings": 37832.38,
     "projected": true
    },
    {
     "date": "2034-01-31",
-    "grid": 74918.01,
-    "solar": 36420.64,
-    "savings": 38497.37,
+    "grid": 74859.96,
+    "solar": 36419.81,
+    "savings": 38440.15,
     "projected": true
    },
    {
     "date": "2034-02-28",
-    "grid": 75459.02,
-    "solar": 36412.02,
-    "savings": 39047.0,
+    "grid": 75400.27,
+    "solar": 36411.18,
+    "savings": 38989.09,
     "projected": true
    },
    {
     "date": "2034-03-31",
-    "grid": 76057.99,
-    "solar": 36402.47,
-    "savings": 39655.53,
+    "grid": 75998.47,
+    "solar": 36401.61,
+    "savings": 39596.86,
     "projected": true
    },
    {
     "date": "2034-04-30",
-    "grid": 76637.65,
-    "solar": 36393.23,
-    "savings": 40244.42,
+    "grid": 76577.38,
+    "solar": 36392.36,
+    "savings": 40185.02,
     "projected": true
    },
    {
     "date": "2034-05-31",
-    "grid": 77236.62,
-    "solar": 36383.68,
-    "savings": 40852.94,
+    "grid": 77175.58,
+    "solar": 36382.8,
+    "savings": 40792.78,
     "projected": true
    },
    {
     "date": "2034-06-30",
-    "grid": 77816.27,
-    "solar": 36374.43,
-    "savings": 41441.84,
+    "grid": 77754.48,
+    "solar": 36373.55,
+    "savings": 41380.94,
     "projected": true
    },
    {
     "date": "2034-07-31",
-    "grid": 78415.24,
-    "solar": 36364.88,
-    "savings": 42050.36,
+    "grid": 78352.68,
+    "solar": 36363.99,
+    "savings": 41988.7,
     "projected": true
    },
    {
     "date": "2034-08-31",
-    "grid": 79014.22,
-    "solar": 36355.33,
-    "savings": 42658.89,
+    "grid": 78950.89,
+    "solar": 36354.42,
+    "savings": 42596.46,
     "projected": true
    },
    {
     "date": "2034-09-30",
-    "grid": 79593.87,
-    "solar": 36346.09,
-    "savings": 43247.78,
+    "grid": 79529.79,
+    "solar": 36345.17,
+    "savings": 43184.62,
     "projected": true
    },
    {
     "date": "2034-10-26",
-    "grid": 80096.23,
-    "solar": 36338.08,
-    "savings": 43758.16,
+    "grid": 80031.51,
+    "solar": 36337.15,
+    "savings": 43694.36,
     "projected": true
    },
    {
     "date": "2034-10-31",
-    "grid": 80196.22,
-    "solar": 36336.79,
-    "savings": 43859.43,
+    "grid": 80131.37,
+    "solar": 36335.86,
+    "savings": 43795.51,
     "projected": true
    },
    {
     "date": "2034-11-30",
-    "grid": 80796.16,
-    "solar": 36329.09,
-    "savings": 44467.08,
+    "grid": 80730.54,
+    "solar": 36328.14,
+    "savings": 44402.39,
     "projected": true
    },
    {
     "date": "2034-12-31",
-    "grid": 81416.1,
-    "solar": 36321.12,
-    "savings": 45094.98,
+    "grid": 81349.67,
+    "solar": 36320.17,
+    "savings": 45029.51,
     "projected": true
    },
    {
     "date": "2035-01-31",
-    "grid": 82036.04,
-    "solar": 36313.15,
-    "savings": 45722.89,
+    "grid": 81968.81,
+    "solar": 36312.19,
+    "savings": 45656.62,
     "projected": true
    },
    {
     "date": "2035-02-28",
-    "grid": 82595.98,
-    "solar": 36305.96,
-    "savings": 46290.03,
+    "grid": 82528.04,
+    "solar": 36304.99,
+    "savings": 46223.05,
     "projected": true
    },
    {
     "date": "2035-03-31",
-    "grid": 83215.92,
-    "solar": 36297.99,
-    "savings": 46917.93,
+    "grid": 83147.17,
+    "solar": 36297.01,
+    "savings": 46850.16,
     "projected": true
    },
    {
     "date": "2035-04-30",
-    "grid": 83815.86,
-    "solar": 36290.28,
-    "savings": 47525.58,
+    "grid": 83746.34,
+    "solar": 36289.29,
+    "savings": 47457.05,
     "projected": true
    },
    {
     "date": "2035-05-31",
-    "grid": 84435.8,
-    "solar": 36282.32,
-    "savings": 48153.48,
+    "grid": 84365.48,
+    "solar": 36281.31,
+    "savings": 48084.17,
     "projected": true
    },
    {
     "date": "2035-06-30",
-    "grid": 85035.74,
-    "solar": 36274.61,
-    "savings": 48761.13,
+    "grid": 84964.65,
+    "solar": 36273.59,
+    "savings": 48691.05,
     "projected": true
    },
    {
     "date": "2035-07-31",
-    "grid": 85655.68,
-    "solar": 36266.64,
-    "savings": 49389.03,
+    "grid": 85583.79,
+    "solar": 36265.62,
+    "savings": 49318.17,
     "projected": true
    },
    {
     "date": "2035-08-31",
-    "grid": 86275.62,
-    "solar": 36258.68,
-    "savings": 50016.94,
+    "grid": 86202.92,
+    "solar": 36257.64,
+    "savings": 49945.28,
     "projected": true
    },
    {
     "date": "2035-09-30",
-    "grid": 86875.56,
-    "solar": 36250.97,
-    "savings": 50624.59,
+    "grid": 86802.09,
+    "solar": 36249.92,
+    "savings": 50552.17,
     "projected": true
    },
    {
     "date": "2035-10-26",
-    "grid": 87395.5,
-    "solar": 36244.29,
-    "savings": 51151.22,
+    "grid": 87321.37,
+    "solar": 36243.23,
+    "savings": 51078.14,
     "projected": true
    },
    {
     "date": "2035-10-31",
-    "grid": 87498.99,
-    "solar": 36243.27,
-    "savings": 51255.73,
+    "grid": 87424.72,
+    "solar": 36242.21,
+    "savings": 51182.52,
     "projected": true
    },
    {
     "date": "2035-11-30",
-    "grid": 88119.93,
-    "solar": 36237.14,
-    "savings": 51882.8,
+    "grid": 88044.86,
+    "solar": 36236.07,
+    "savings": 51808.8,
     "projected": true
    },
    {
     "date": "2035-12-31",
-    "grid": 88761.57,
-    "solar": 36230.8,
-    "savings": 52530.77,
+    "grid": 88685.67,
+    "solar": 36229.72,
+    "savings": 52455.95,
     "projected": true
    },
    {
     "date": "2036-01-31",
-    "grid": 89403.2,
-    "solar": 36224.46,
-    "savings": 53178.74,
+    "grid": 89326.48,
+    "solar": 36223.37,
+    "savings": 53103.11,
     "projected": true
    },
    {
     "date": "2036-02-29",
-    "grid": 90003.44,
-    "solar": 36218.54,
-    "savings": 53784.9,
+    "grid": 89925.94,
+    "solar": 36217.44,
+    "savings": 53708.51,
     "projected": true
    },
    {
     "date": "2036-03-31",
-    "grid": 90645.08,
-    "solar": 36212.2,
-    "savings": 54432.88,
+    "grid": 90566.75,
+    "solar": 36211.09,
+    "savings": 54355.66,
     "projected": true
    },
    {
     "date": "2036-04-30",
-    "grid": 91266.02,
-    "solar": 36206.07,
-    "savings": 55059.94,
+    "grid": 91186.89,
+    "solar": 36204.95,
+    "savings": 54981.94,
     "projected": true
    },
    {
     "date": "2036-05-31",
-    "grid": 91907.65,
-    "solar": 36199.74,
-    "savings": 55707.92,
+    "grid": 91827.7,
+    "solar": 36198.6,
+    "savings": 55629.1,
     "projected": true
    },
    {
     "date": "2036-06-30",
-    "grid": 92528.59,
-    "solar": 36193.6,
-    "savings": 56334.98,
+    "grid": 92447.83,
+    "solar": 36192.46,
+    "savings": 56255.37,
     "projected": true
    },
    {
     "date": "2036-07-31",
-    "grid": 93170.22,
-    "solar": 36187.27,
-    "savings": 56982.96,
+    "grid": 93088.64,
+    "solar": 36186.11,
+    "savings": 56902.53,
     "projected": true
    },
    {
     "date": "2036-08-31",
-    "grid": 93811.86,
-    "solar": 36180.93,
-    "savings": 57630.93,
+    "grid": 93729.45,
+    "solar": 36179.77,
+    "savings": 57549.68,
     "projected": true
    },
    {
     "date": "2036-09-30",
-    "grid": 94432.8,
-    "solar": 36174.8,
-    "savings": 58258.0,
+    "grid": 94349.59,
+    "solar": 36173.62,
+    "savings": 58175.96,
     "projected": true
    },
    {
     "date": "2036-10-26",
-    "grid": 94970.94,
-    "solar": 36169.49,
-    "savings": 58801.46,
+    "grid": 94887.04,
+    "solar": 36168.3,
+    "savings": 58718.74,
     "projected": true
    },
    {
     "date": "2036-10-31",
-    "grid": 95078.06,
-    "solar": 36168.74,
-    "savings": 58909.32,
+    "grid": 94994.01,
+    "solar": 36167.55,
+    "savings": 58826.46,
     "projected": true
    },
    {
     "date": "2036-11-30",
-    "grid": 95720.73,
-    "solar": 36164.23,
-    "savings": 59556.5,
+    "grid": 95635.85,
+    "solar": 36163.03,
+    "savings": 59472.83,
     "projected": true
    },
    {
     "date": "2036-12-31",
-    "grid": 96384.82,
-    "solar": 36159.57,
-    "savings": 60225.25,
+    "grid": 96299.09,
+    "solar": 36158.36,
+    "savings": 60140.73,
     "projected": true
    },
    {
     "date": "2037-01-31",
-    "grid": 97048.91,
-    "solar": 36154.91,
-    "savings": 60894.0,
+    "grid": 96962.33,
+    "solar": 36153.69,
+    "savings": 60808.64,
     "projected": true
    },
    {
     "date": "2037-02-28",
-    "grid": 97648.74,
-    "solar": 36150.7,
-    "savings": 61498.03,
+    "grid": 97561.38,
+    "solar": 36149.47,
+    "savings": 61411.91,
     "projected": true
    },
    {
     "date": "2037-03-31",
-    "grid": 98312.83,
-    "solar": 36146.05,
-    "savings": 62166.79,
+    "grid": 98224.62,
+    "solar": 36144.8,
+    "savings": 62079.82,
     "projected": true
    },
    {
     "date": "2037-04-30",
-    "grid": 98955.5,
-    "solar": 36141.54,
-    "savings": 62813.96,
+    "grid": 98866.46,
+    "solar": 36140.28,
+    "savings": 62726.18,
     "projected": true
    },
    {
     "date": "2037-05-31",
-    "grid": 99619.6,
-    "solar": 36136.88,
-    "savings": 63482.72,
+    "grid": 99529.7,
+    "solar": 36135.61,
+    "savings": 63394.09,
     "projected": true
    },
    {
     "date": "2037-06-30",
-    "grid": 100262.27,
-    "solar": 36132.37,
-    "savings": 64129.89,
+    "grid": 100171.54,
+    "solar": 36131.09,
+    "savings": 64040.45,
     "projected": true
    },
    {
     "date": "2037-07-31",
-    "grid": 100926.36,
-    "solar": 36127.71,
-    "savings": 64798.65,
+    "grid": 100834.78,
+    "solar": 36126.42,
+    "savings": 64708.36,
     "projected": true
    },
    {
     "date": "2037-08-31",
-    "grid": 101590.45,
-    "solar": 36123.05,
-    "savings": 65467.4,
+    "grid": 101498.01,
+    "solar": 36121.75,
+    "savings": 65376.27,
     "projected": true
    },
    {
     "date": "2037-09-30",
-    "grid": 102233.12,
-    "solar": 36118.55,
-    "savings": 66114.58,
+    "grid": 102139.86,
+    "solar": 36117.23,
+    "savings": 66022.63,
     "projected": true
    },
    {
     "date": "2037-10-26",
-    "grid": 102790.1,
-    "solar": 36114.64,
-    "savings": 66675.47,
+    "grid": 102696.12,
+    "solar": 36113.31,
+    "savings": 66582.81,
     "projected": true
    },
    {
     "date": "2037-10-31",
-    "grid": 102900.96,
-    "solar": 36114.17,
-    "savings": 66786.8,
+    "grid": 102806.84,
+    "solar": 36112.84,
+    "savings": 66694.0,
     "projected": true
    },
    {
     "date": "2037-11-30",
-    "grid": 103566.13,
-    "solar": 36111.33,
-    "savings": 67454.8,
+    "grid": 103471.14,
+    "solar": 36109.99,
+    "savings": 67361.16,
     "projected": true
    },
    {
     "date": "2037-12-31",
-    "grid": 104253.47,
-    "solar": 36108.4,
-    "savings": 68145.07,
+    "grid": 104157.59,
+    "solar": 36107.04,
+    "savings": 68050.55,
     "projected": true
    },
    {
     "date": "2038-01-31",
-    "grid": 104940.8,
-    "solar": 36105.46,
-    "savings": 68835.34,
+    "grid": 104844.04,
+    "solar": 36104.1,
+    "savings": 68739.94,
     "projected": true
    },
    {
     "date": "2038-02-28",
-    "grid": 105561.62,
-    "solar": 36102.81,
-    "savings": 69458.81,
+    "grid": 105464.06,
+    "solar": 36101.44,
+    "savings": 69362.62,
     "projected": true
    },
    {
     "date": "2038-03-31",
-    "grid": 106248.96,
-    "solar": 36099.88,
-    "savings": 70149.08,
+    "grid": 106150.51,
+    "solar": 36098.49,
+    "savings": 70052.02,
     "projected": true
    },
    {
     "date": "2038-04-30",
-    "grid": 106914.12,
-    "solar": 36097.04,
-    "savings": 70817.08,
+    "grid": 106814.82,
+    "solar": 36095.64,
+    "savings": 70719.17,
     "projected": true
    },
    {
     "date": "2038-05-31",
-    "grid": 107601.46,
-    "solar": 36094.11,
-    "savings": 71507.35,
+    "grid": 107501.27,
+    "solar": 36092.7,
+    "savings": 71408.57,
     "projected": true
    },
    {
     "date": "2038-06-30",
-    "grid": 108266.62,
-    "solar": 36091.27,
-    "savings": 72175.35,
+    "grid": 108165.57,
+    "solar": 36089.85,
+    "savings": 72075.72,
     "projected": true
    },
    {
     "date": "2038-07-31",
-    "grid": 108953.96,
-    "solar": 36088.34,
-    "savings": 72865.62,
+    "grid": 108852.02,
+    "solar": 36086.9,
+    "savings": 72765.12,
     "projected": true
    },
    {
     "date": "2038-08-31",
-    "grid": 109641.29,
-    "solar": 36085.41,
-    "savings": 73555.89,
+    "grid": 109538.47,
+    "solar": 36083.96,
+    "savings": 73454.51,
     "projected": true
    },
    {
     "date": "2038-09-30",
-    "grid": 110306.46,
-    "solar": 36082.57,
-    "savings": 74223.89,
+    "grid": 110202.78,
+    "solar": 36081.11,
+    "savings": 74121.67,
     "projected": true
    },
    {
     "date": "2038-10-26",
-    "grid": 110882.93,
-    "solar": 36080.11,
-    "savings": 74802.83,
+    "grid": 110778.51,
+    "solar": 36078.64,
+    "savings": 74699.87,
     "projected": true
    },
    {
     "date": "2038-10-31",
-    "grid": 110997.67,
-    "solar": 36079.92,
-    "savings": 74917.75,
+    "grid": 110893.1,
+    "solar": 36078.45,
+    "savings": 74814.65,
     "projected": true
    },
    {
     "date": "2038-11-30",
-    "grid": 111686.12,
-    "solar": 36078.8,
-    "savings": 75607.32,
+    "grid": 111580.66,
+    "solar": 36077.32,
+    "savings": 75503.34,
     "projected": true
    },
    {
     "date": "2038-12-31",
-    "grid": 112397.51,
-    "solar": 36077.65,
-    "savings": 76319.87,
+    "grid": 112291.13,
+    "solar": 36076.15,
+    "savings": 76214.98,
     "projected": true
    },
    {
     "date": "2039-01-31",
-    "grid": 113108.9,
-    "solar": 36076.49,
-    "savings": 77032.41,
+    "grid": 113001.61,
+    "solar": 36074.98,
+    "savings": 76926.63,
     "projected": true
    },
    {
     "date": "2039-02-28",
-    "grid": 113751.45,
-    "solar": 36075.44,
-    "savings": 77676.01,
+    "grid": 113643.33,
+    "solar": 36073.93,
+    "savings": 77569.41,
     "projected": true
    },
    {
     "date": "2039-03-31",
-    "grid": 114462.84,
-    "solar": 36074.29,
-    "savings": 78388.56,
+    "grid": 114353.81,
+    "solar": 36072.76,
+    "savings": 78281.05,
     "projected": true
    },
    {
     "date": "2039-04-30",
-    "grid": 115151.29,
-    "solar": 36073.17,
-    "savings": 79078.12,
+    "grid": 115041.36,
+    "solar": 36071.62,
+    "savings": 78969.74,
     "projected": true
    },
    {
     "date": "2039-05-31",
-    "grid": 115862.68,
-    "solar": 36072.01,
-    "savings": 79790.67,
+    "grid": 115751.84,
+    "solar": 36070.45,
+    "savings": 79681.38,
     "projected": true
    },
    {
     "date": "2039-06-30",
-    "grid": 116551.12,
-    "solar": 36070.89,
-    "savings": 80480.23,
+    "grid": 116439.4,
+    "solar": 36069.32,
+    "savings": 80370.07,
     "projected": true
    },
    {
     "date": "2039-07-31",
-    "grid": 117262.52,
-    "solar": 36069.74,
-    "savings": 81192.78,
+    "grid": 117149.87,
+    "solar": 36068.15,
+    "savings": 81081.72,
     "projected": true
    },
    {
     "date": "2039-08-31",
-    "grid": 117973.91,
-    "solar": 36068.58,
-    "savings": 81905.33,
+    "grid": 117860.35,
+    "solar": 36066.98,
+    "savings": 81793.36,
     "projected": true
    },
    {
     "date": "2039-09-30",
-    "grid": 118662.35,
-    "solar": 36067.46,
-    "savings": 82594.89,
+    "grid": 118547.91,
+    "solar": 36065.85,
+    "savings": 82482.05,
     "projected": true
    },
    {
     "date": "2039-10-26",
-    "grid": 119259.0,
-    "solar": 36066.49,
-    "savings": 83192.52,
+    "grid": 119143.79,
+    "solar": 36064.87,
+    "savings": 83078.92,
     "projected": true
    },
    {
     "date": "2039-10-31",
-    "grid": 119377.76,
-    "solar": 36066.6,
-    "savings": 83311.16,
+    "grid": 119262.39,
+    "solar": 36064.98,
+    "savings": 83197.41,
     "projected": true
    },
    {
     "date": "2039-11-30",
-    "grid": 120090.3,
-    "solar": 36067.25,
-    "savings": 84023.05,
+    "grid": 119974.01,
+    "solar": 36065.61,
+    "savings": 83908.4,
     "projected": true
    },
    {
     "date": "2039-12-31",
-    "grid": 120826.59,
-    "solar": 36067.92,
-    "savings": 84758.68,
+    "grid": 120709.36,
+    "solar": 36066.27,
+    "savings": 84643.08,
     "projected": true
    },
    {
     "date": "2040-01-31",
-    "grid": 121562.88,
-    "solar": 36068.59,
-    "savings": 85494.3,
+    "grid": 121444.7,
+    "solar": 36066.93,
+    "savings": 85377.76,
     "projected": true
    },
    {
     "date": "2040-02-29",
-    "grid": 122251.67,
-    "solar": 36069.22,
-    "savings": 86182.46,
+    "grid": 122132.6,
+    "solar": 36067.55,
+    "savings": 86065.05,
     "projected": true
    },
    {
     "date": "2040-03-31",
-    "grid": 122987.96,
-    "solar": 36069.89,
-    "savings": 86918.08,
+    "grid": 122867.94,
+    "solar": 36068.21,
+    "savings": 86799.73,
     "projected": true
    },
    {
     "date": "2040-04-30",
-    "grid": 123700.5,
-    "solar": 36070.54,
-    "savings": 87629.97,
+    "grid": 123579.56,
+    "solar": 36068.85,
+    "savings": 87510.72,
     "projected": true
    },
    {
     "date": "2040-05-31",
-    "grid": 124436.8,
-    "solar": 36071.21,
-    "savings": 88365.59,
+    "grid": 124314.9,
+    "solar": 36069.5,
+    "savings": 88245.4,
     "projected": true
    },
    {
     "date": "2040-06-30",
-    "grid": 125149.34,
-    "solar": 36071.86,
-    "savings": 89077.48,
+    "grid": 125026.52,
+    "solar": 36070.14,
+    "savings": 88956.38,
     "projected": true
    },
    {
     "date": "2040-07-31",
-    "grid": 125885.63,
-    "solar": 36072.53,
-    "savings": 89813.1,
+    "grid": 125761.87,
+    "solar": 36070.8,
+    "savings": 89691.06,
     "projected": true
    },
    {
     "date": "2040-08-31",
-    "grid": 126621.92,
-    "solar": 36073.2,
-    "savings": 90548.72,
+    "grid": 126497.21,
+    "solar": 36071.46,
+    "savings": 90425.75,
     "projected": true
    },
    {
     "date": "2040-09-30",
-    "grid": 127334.46,
-    "solar": 36073.85,
-    "savings": 91260.61,
+    "grid": 127208.83,
+    "solar": 36072.1,
+    "savings": 91136.73,
     "projected": true
    },
    {
     "date": "2040-10-26",
-    "grid": 127951.99,
-    "solar": 36074.41,
-    "savings": 91877.59,
+    "grid": 127825.57,
+    "solar": 36072.65,
+    "savings": 91752.92,
     "projected": true
    },
    {
     "date": "2040-10-31",
-    "grid": 128074.91,
-    "solar": 36079.08,
-    "savings": 91995.83,
+    "grid": 127948.32,
+    "solar": 36077.31,
+    "savings": 91871.01,
     "projected": true
    },
    {
     "date": "2040-11-30",
-    "grid": 128812.39,
-    "solar": 36107.1,
-    "savings": 92705.28,
+    "grid": 128684.85,
+    "solar": 36105.29,
+    "savings": 92579.56,
     "projected": true
    },
    {
     "date": "2040-12-31",
-    "grid": 129574.45,
-    "solar": 36136.06,
-    "savings": 93438.39,
+    "grid": 129445.93,
+    "solar": 36134.2,
+    "savings": 93311.73,
     "projected": true
    },
    {
     "date": "2041-01-31",
-    "grid": 130336.51,
-    "solar": 36165.01,
-    "savings": 94171.49,
+    "grid": 130207.01,
+    "solar": 36163.11,
+    "savings": 94043.9,
     "projected": true
    },
    {
     "date": "2041-02-28",
-    "grid": 131024.82,
-    "solar": 36191.17,
-    "savings": 94833.65,
+    "grid": 130894.43,
+    "solar": 36189.23,
+    "savings": 94705.21,
     "projected": true
    },
    {
     "date": "2041-03-31",
-    "grid": 131786.88,
-    "solar": 36220.13,
-    "savings": 95566.76,
+    "grid": 131655.51,
+    "solar": 36218.14,
+    "savings": 95437.38,
     "projected": true
    },
    {
     "date": "2041-04-30",
-    "grid": 132524.36,
-    "solar": 36248.15,
-    "savings": 96276.22,
+    "grid": 132392.04,
+    "solar": 36246.12,
+    "savings": 96145.93,
     "projected": true
    },
    {
     "date": "2041-05-31",
-    "grid": 133286.42,
-    "solar": 36277.1,
-    "savings": 97009.32,
+    "grid": 133153.12,
+    "solar": 36275.03,
+    "savings": 96878.09,
     "projected": true
    },
    {
     "date": "2041-06-30",
-    "grid": 134023.9,
-    "solar": 36305.13,
-    "savings": 97718.78,
+    "grid": 133889.65,
+    "solar": 36303.0,
+    "savings": 97586.64,
     "projected": true
    },
    {
     "date": "2041-07-31",
-    "grid": 134785.97,
-    "solar": 36334.08,
-    "savings": 98451.88,
+    "grid": 134650.73,
+    "solar": 36331.91,
+    "savings": 98318.81,
     "projected": true
    },
    {
     "date": "2041-08-31",
-    "grid": 135548.03,
-    "solar": 36363.04,
-    "savings": 99184.99,
+    "grid": 135411.81,
+    "solar": 36360.83,
+    "savings": 99050.98,
     "projected": true
    },
    {
     "date": "2041-09-30",
-    "grid": 136285.51,
-    "solar": 36391.06,
-    "savings": 99894.44,
+    "grid": 136148.33,
+    "solar": 36388.8,
+    "savings": 99759.53,
     "projected": true
    },
    {
     "date": "2041-10-26",
-    "grid": 136924.65,
-    "solar": 36415.35,
-    "savings": 100509.31,
+    "grid": 136786.66,
+    "solar": 36413.05,
+    "savings": 100373.61,
     "projected": true
    },
    {
     "date": "2041-10-31",
-    "grid": 137051.87,
-    "solar": 36445.97,
-    "savings": 100605.9,
+    "grid": 136913.71,
+    "solar": 36443.63,
+    "savings": 100470.08,
     "projected": true
    },
    {
     "date": "2041-11-30",
-    "grid": 137815.16,
-    "solar": 36629.67,
-    "savings": 101185.49,
+    "grid": 137676.02,
+    "solar": 36627.09,
+    "savings": 101048.93,
     "projected": true
    },
    {
     "date": "2041-12-31",
-    "grid": 138603.89,
-    "solar": 36819.49,
-    "savings": 101784.4,
+    "grid": 138463.73,
+    "solar": 36816.67,
+    "savings": 101647.06,
     "projected": true
    },
    {
     "date": "2042-01-31",
-    "grid": 139392.63,
-    "solar": 37009.32,
-    "savings": 102383.31,
+    "grid": 139251.45,
+    "solar": 37006.25,
+    "savings": 102245.2,
     "projected": true
    },
    {
     "date": "2042-02-28",
-    "grid": 140105.03,
-    "solar": 37180.77,
-    "savings": 102924.26,
+    "grid": 139962.94,
+    "solar": 37177.48,
+    "savings": 102785.46,
     "projected": true
    },
    {
     "date": "2042-03-31",
-    "grid": 140893.76,
-    "solar": 37370.6,
-    "savings": 103523.17,
+    "grid": 140750.65,
+    "solar": 37367.06,
+    "savings": 103383.6,
     "projected": true
    },
    {
     "date": "2042-04-30",
-    "grid": 141657.05,
-    "solar": 37554.3,
-    "savings": 104102.75,
+    "grid": 141512.96,
+    "solar": 37550.52,
+    "savings": 103962.44,
     "projected": true
    },
    {
     "date": "2042-05-31",
-    "grid": 142445.79,
-    "solar": 37744.13,
-    "savings": 104701.66,
+    "grid": 142300.68,
+    "solar": 37740.1,
+    "savings": 104560.58,
     "projected": true
    },
    {
     "date": "2042-06-30",
-    "grid": 143209.08,
-    "solar": 37927.83,
-    "savings": 105281.25,
+    "grid": 143062.98,
+    "solar": 37923.56,
+    "savings": 105139.42,
     "projected": true
    },
    {
     "date": "2042-07-31",
-    "grid": 143997.81,
-    "solar": 38117.65,
-    "savings": 105880.16,
+    "grid": 143850.7,
+    "solar": 38113.14,
+    "savings": 105737.56,
     "projected": true
    },
    {
     "date": "2042-08-31",
-    "grid": 144786.55,
-    "solar": 38307.48,
-    "savings": 106479.07,
+    "grid": 144638.42,
+    "solar": 38302.72,
+    "savings": 106335.7,
     "projected": true
    },
    {
     "date": "2042-09-30",
-    "grid": 145549.84,
-    "solar": 38491.18,
-    "savings": 107058.66,
+    "grid": 145400.72,
+    "solar": 38486.18,
+    "savings": 106914.54,
     "projected": true
    },
    {
     "date": "2042-10-26",
-    "grid": 146211.35,
-    "solar": 38650.39,
-    "savings": 107560.97,
+    "grid": 146061.39,
+    "solar": 38645.18,
+    "savings": 107416.21,
     "projected": true
    },
    {
     "date": "2042-10-31",
-    "grid": 146343.02,
-    "solar": 38682.47,
-    "savings": 107660.55,
+    "grid": 146192.89,
+    "solar": 38677.22,
+    "savings": 107515.66,
     "projected": true
    },
    {
     "date": "2042-11-30",
-    "grid": 147133.03,
-    "solar": 38874.98,
-    "savings": 108258.05,
+    "grid": 146981.87,
+    "solar": 38869.48,
+    "savings": 108112.39,
     "projected": true
    },
    {
     "date": "2042-12-31",
-    "grid": 147949.37,
-    "solar": 39073.9,
-    "savings": 108875.47,
+    "grid": 147797.16,
+    "solar": 39068.15,
+    "savings": 108729.01,
     "projected": true
    },
    {
     "date": "2043-01-31",
-    "grid": 148765.71,
-    "solar": 39272.82,
-    "savings": 109492.88,
+    "grid": 148612.45,
+    "solar": 39266.82,
+    "savings": 109345.63,
     "projected": true
    },
    {
     "date": "2043-02-28",
-    "grid": 149503.05,
-    "solar": 39452.5,
-    "savings": 110050.55,
+    "grid": 149348.84,
+    "solar": 39446.26,
+    "savings": 109902.58,
     "projected": true
    },
    {
     "date": "2043-03-31",
-    "grid": 150319.39,
-    "solar": 39651.42,
-    "savings": 110667.97,
+    "grid": 150164.12,
+    "solar": 39644.92,
+    "savings": 110519.2,
     "projected": true
    },
    {
     "date": "2043-04-30",
-    "grid": 151109.39,
-    "solar": 39843.92,
-    "savings": 111265.47,
+    "grid": 150953.11,
+    "solar": 39837.18,
+    "savings": 111115.93,
     "projected": true
    },
    {
     "date": "2043-05-31",
-    "grid": 151925.73,
-    "solar": 40042.85,
-    "savings": 111882.89,
+    "grid": 151768.4,
+    "solar": 40035.85,
+    "savings": 111732.55,
     "projected": true
    },
    {
     "date": "2043-06-30",
-    "grid": 152715.74,
-    "solar": 40235.35,
-    "savings": 112480.39,
+    "grid": 152557.39,
+    "solar": 40228.11,
+    "savings": 112329.28,
     "projected": true
    },
    {
     "date": "2043-07-31",
-    "grid": 153532.08,
-    "solar": 40434.27,
-    "savings": 113097.8,
+    "grid": 153372.67,
+    "solar": 40426.77,
+    "savings": 112945.9,
     "projected": true
    },
    {
     "date": "2043-08-31",
-    "grid": 154348.42,
-    "solar": 40633.2,
-    "savings": 113715.22,
+    "grid": 154187.96,
+    "solar": 40625.44,
+    "savings": 113562.52,
     "projected": true
    },
    {
     "date": "2043-09-30",
-    "grid": 155138.42,
-    "solar": 40825.7,
-    "savings": 114312.72,
+    "grid": 154976.95,
+    "solar": 40817.7,
+    "savings": 114159.25,
     "projected": true
    },
    {
     "date": "2043-10-26",
-    "grid": 155823.09,
-    "solar": 40992.54,
-    "savings": 114830.56,
+    "grid": 155660.74,
+    "solar": 40984.32,
+    "savings": 114676.42,
     "projected": true
    },
    {
     "date": "2043-10-31",
-    "grid": 155959.37,
-    "solar": 41026.14,
-    "savings": 114933.23,
+    "grid": 155796.84,
+    "solar": 41017.88,
+    "savings": 114778.96,
     "projected": true
    },
    {
     "date": "2043-11-30",
-    "grid": 156777.03,
-    "solar": 41227.75,
-    "savings": 115549.28,
+    "grid": 156613.44,
+    "solar": 41219.23,
+    "savings": 115394.21,
     "projected": true
    },
    {
     "date": "2043-12-31",
-    "grid": 157621.94,
-    "solar": 41436.07,
-    "savings": 116185.87,
+    "grid": 157457.26,
+    "solar": 41427.29,
+    "savings": 116029.98,
     "projected": true
    },
    {
     "date": "2044-01-31",
-    "grid": 158466.85,
-    "solar": 41644.4,
-    "savings": 116822.45,
+    "grid": 158301.09,
+    "solar": 41635.35,
+    "savings": 116665.74,
     "projected": true
    },
    {
     "date": "2044-02-29",
-    "grid": 159257.25,
-    "solar": 41839.28,
-    "savings": 117417.97,
+    "grid": 159090.47,
+    "solar": 41829.98,
+    "savings": 117260.48,
     "projected": true
    },
    {
     "date": "2044-03-31",
-    "grid": 160102.16,
-    "solar": 42047.61,
-    "savings": 118054.55,
+    "grid": 159934.29,
+    "solar": 42038.04,
+    "savings": 117896.25,
     "projected": true
    },
    {
     "date": "2044-04-30",
-    "grid": 160919.81,
-    "solar": 42249.21,
-    "savings": 118670.6,
+    "grid": 160750.89,
+    "solar": 42239.39,
+    "savings": 118511.5,
     "projected": true
    },
    {
     "date": "2044-05-31",
-    "grid": 161764.73,
-    "solar": 42457.54,
-    "savings": 119307.19,
+    "grid": 161594.72,
+    "solar": 42447.45,
+    "savings": 119147.26,
     "projected": true
    },
    {
     "date": "2044-06-30",
-    "grid": 162582.38,
-    "solar": 42659.15,
-    "savings": 119923.24,
+    "grid": 162411.32,
+    "solar": 42648.8,
+    "savings": 119762.52,
     "projected": true
    },
    {
     "date": "2044-07-31",
-    "grid": 163427.29,
-    "solar": 42867.47,
-    "savings": 120559.82,
+    "grid": 163255.14,
+    "solar": 42856.86,
+    "savings": 120398.28,
     "projected": true
    },
    {
     "date": "2044-08-31",
-    "grid": 164272.2,
-    "solar": 43075.8,
-    "savings": 121196.41,
+    "grid": 164098.96,
+    "solar": 43064.92,
+    "savings": 121034.04,
     "projected": true
    },
    {
     "date": "2044-09-30",
-    "grid": 165089.86,
-    "solar": 43277.4,
-    "savings": 121812.46,
+    "grid": 164915.57,
+    "solar": 43266.27,
+    "savings": 121649.3,
     "projected": true
    },
    {
     "date": "2044-10-26",
-    "grid": 165798.49,
-    "solar": 43452.13,
-    "savings": 122346.37,
+    "grid": 165623.29,
+    "solar": 43440.77,
+    "savings": 122182.52,
     "projected": true
    },
    {
     "date": "2044-10-31",
-    "grid": 165939.54,
-    "solar": 43487.3,
-    "savings": 122452.24,
+    "grid": 165764.15,
+    "solar": 43475.9,
+    "savings": 122288.26,
     "projected": true
    },
    {
     "date": "2044-11-30",
-    "grid": 166785.81,
-    "solar": 43698.31,
-    "savings": 123087.5,
+    "grid": 166609.34,
+    "solar": 43686.64,
+    "savings": 122922.7,
     "projected": true
    },
    {
     "date": "2044-12-31",
-    "grid": 167660.3,
-    "solar": 43916.35,
-    "savings": 123743.94,
+    "grid": 167482.69,
+    "solar": 43904.41,
+    "savings": 123578.28,
     "projected": true
    },
    {
     "date": "2045-01-31",
-    "grid": 168534.78,
-    "solar": 44134.4,
-    "savings": 124400.38,
+    "grid": 168356.05,
+    "solar": 44122.18,
+    "savings": 124233.87,
     "projected": true
    },
    {
     "date": "2045-02-28",
-    "grid": 169324.63,
-    "solar": 44331.34,
-    "savings": 124993.29,
+    "grid": 169144.88,
+    "solar": 44318.87,
+    "savings": 124826.01,
     "projected": true
    },
    {
     "date": "2045-03-31",
-    "grid": 170199.12,
-    "solar": 44549.39,
-    "savings": 125649.73,
+    "grid": 170018.24,
+    "solar": 44536.64,
+    "savings": 125481.6,
     "projected": true
    },
    {
     "date": "2045-04-30",
-    "grid": 171045.39,
-    "solar": 44760.4,
-    "savings": 126284.99,
+    "grid": 170863.42,
+    "solar": 44747.39,
+    "savings": 126116.04,
     "projected": true
    },
    {
     "date": "2045-05-31",
-    "grid": 171919.87,
-    "solar": 44978.45,
-    "savings": 126941.43,
+    "grid": 171736.78,
+    "solar": 44965.16,
+    "savings": 126771.62,
     "projected": true
    },
    {
     "date": "2045-06-30",
-    "grid": 172766.15,
-    "solar": 45189.46,
-    "savings": 127576.69,
+    "grid": 172581.96,
+    "solar": 45175.9,
+    "savings": 127406.06,
     "projected": true
    },
    {
     "date": "2045-07-31",
-    "grid": 173640.63,
-    "solar": 45407.5,
-    "savings": 128233.13,
+    "grid": 173455.32,
+    "solar": 45393.67,
+    "savings": 128061.65,
     "projected": true
    },
    {
     "date": "2045-08-31",
-    "grid": 174515.11,
-    "solar": 45625.55,
-    "savings": 128889.56,
+    "grid": 174328.67,
+    "solar": 45611.44,
+    "savings": 128717.23,
     "projected": true
    },
    {
     "date": "2045-09-30",
-    "grid": 175361.39,
-    "solar": 45836.56,
-    "savings": 129524.82,
+    "grid": 175173.86,
+    "solar": 45822.19,
+    "savings": 129351.67,
     "projected": true
    },
    {
     "date": "2045-10-26",
-    "grid": 176094.82,
-    "solar": 46019.44,
-    "savings": 130075.39,
+    "grid": 175906.35,
+    "solar": 46004.83,
+    "savings": 129901.52,
     "projected": true
    },
    {
     "date": "2045-10-31",
-    "grid": 176240.81,
-    "solar": 46056.23,
-    "savings": 130184.58,
+    "grid": 176052.14,
+    "solar": 46041.57,
+    "savings": 130010.57,
     "projected": true
    },
    {
     "date": "2045-11-30",
-    "grid": 177116.7,
-    "solar": 46276.96,
-    "savings": 130839.74,
+    "grid": 176926.91,
+    "solar": 46262.03,
+    "savings": 130664.87,
     "projected": true
    },
    {
     "date": "2045-12-31",
-    "grid": 178021.79,
-    "solar": 46505.06,
-    "savings": 131516.73,
+    "grid": 177830.83,
+    "solar": 46489.84,
+    "savings": 131340.99,
     "projected": true
    },
    {
     "date": "2046-01-31",
-    "grid": 178926.88,
-    "solar": 46733.15,
-    "savings": 132193.73,
+    "grid": 178734.75,
+    "solar": 46717.65,
+    "savings": 132017.11,
     "projected": true
    },
    {
     "date": "2046-02-28",
-    "grid": 179744.38,
-    "solar": 46939.17,
-    "savings": 132805.21,
+    "grid": 179551.2,
+    "solar": 46923.41,
+    "savings": 132627.79,
     "projected": true
    },
    {
     "date": "2046-03-31",
-    "grid": 180649.47,
-    "solar": 47167.26,
-    "savings": 133482.21,
+    "grid": 180455.12,
+    "solar": 47151.22,
+    "savings": 133303.91,
     "projected": true
    },
    {
     "date": "2046-04-30",
-    "grid": 181525.37,
-    "solar": 47388.0,
-    "savings": 134137.37,
+    "grid": 181329.89,
+    "solar": 47371.67,
+    "savings": 133958.21,
     "projected": true
    },
    {
     "date": "2046-05-31",
-    "grid": 182430.46,
-    "solar": 47616.09,
-    "savings": 134814.37,
+    "grid": 182233.81,
+    "solar": 47599.48,
+    "savings": 134634.33,
     "projected": true
    },
    {
     "date": "2046-06-30",
-    "grid": 183306.35,
-    "solar": 47836.83,
-    "savings": 135469.52,
+    "grid": 183108.57,
+    "solar": 47819.94,
+    "savings": 135288.64,
     "projected": true
    },
    {
     "date": "2046-07-31",
-    "grid": 184211.44,
-    "solar": 48064.92,
-    "savings": 136146.52,
+    "grid": 184012.5,
+    "solar": 48047.75,
+    "savings": 135964.75,
     "projected": true
    },
    {
     "date": "2046-08-31",
-    "grid": 185116.53,
-    "solar": 48293.01,
-    "savings": 136823.52,
+    "grid": 184916.42,
+    "solar": 48275.55,
+    "savings": 136640.87,
     "projected": true
    },
    {
     "date": "2046-09-02",
-    "grid": 185174.92,
-    "solar": 48307.73,
-    "savings": 136867.2,
+    "grid": 184974.74,
+    "solar": 48290.25,
+    "savings": 136684.49,
     "projected": true
    }
   ],
@@ -2821,7 +2821,7 @@
    "label": "Oct 2026 - Oct 2027",
    "start": "2026-10-27",
    "end": "2027-10-26",
-   "savings": 5772.78,
+   "savings": 5765.74,
    "kind": "forecast",
    "estimated": false,
    "forecast": true
@@ -3166,222 +3166,222 @@
   },
   {
    "date": "2026-10-31",
-   "cum": 31558.38,
+   "cum": 31558.29,
    "projected": true
   },
   {
    "date": "2026-11-30",
-   "cum": 32032.86,
+   "cum": 32032.18,
    "projected": true
   },
   {
    "date": "2026-12-31",
-   "cum": 32523.15,
+   "cum": 32521.88,
    "projected": true
   },
   {
    "date": "2027-01-31",
-   "cum": 33013.44,
+   "cum": 33011.57,
    "projected": true
   },
   {
    "date": "2027-02-28",
-   "cum": 33456.28,
+   "cum": 33453.87,
    "projected": true
   },
   {
    "date": "2027-03-31",
-   "cum": 33946.58,
+   "cum": 33943.57,
    "projected": true
   },
   {
    "date": "2027-04-30",
-   "cum": 34421.05,
+   "cum": 34417.46,
    "projected": true
   },
   {
    "date": "2027-05-31",
-   "cum": 34911.34,
+   "cum": 34907.16,
    "projected": true
   },
   {
    "date": "2027-06-30",
-   "cum": 35385.82,
+   "cum": 35381.05,
    "projected": true
   },
   {
    "date": "2027-07-31",
-   "cum": 35876.11,
+   "cum": 35870.75,
    "projected": true
   },
   {
    "date": "2027-08-31",
-   "cum": 36366.4,
+   "cum": 36360.44,
    "projected": true
   },
   {
    "date": "2027-09-30",
-   "cum": 36840.87,
+   "cum": 36834.34,
    "projected": true
   },
   {
    "date": "2027-10-26",
-   "cum": 37252.09,
+   "cum": 37245.05,
    "projected": true
   },
   {
    "date": "2027-10-31",
-   "cum": 37333.61,
+   "cum": 37326.47,
    "projected": true
   },
   {
    "date": "2027-11-30",
-   "cum": 37822.76,
+   "cum": 37815.03,
    "projected": true
   },
   {
    "date": "2027-12-31",
-   "cum": 38328.22,
+   "cum": 38319.87,
    "projected": true
   },
   {
    "date": "2028-01-31",
-   "cum": 38833.68,
+   "cum": 38824.71,
    "projected": true
   },
   {
    "date": "2028-02-29",
-   "cum": 39306.53,
+   "cum": 39296.98,
    "projected": true
   },
   {
    "date": "2028-03-31",
-   "cum": 39811.99,
+   "cum": 39801.82,
    "projected": true
   },
   {
    "date": "2028-04-30",
-   "cum": 40301.14,
+   "cum": 40290.37,
    "projected": true
   },
   {
    "date": "2028-05-31",
-   "cum": 40806.6,
+   "cum": 40795.21,
    "projected": true
   },
   {
    "date": "2028-06-30",
-   "cum": 41295.75,
+   "cum": 41283.77,
    "projected": true
   },
   {
    "date": "2028-07-31",
-   "cum": 41801.21,
+   "cum": 41788.61,
    "projected": true
   },
   {
    "date": "2028-08-31",
-   "cum": 42306.67,
+   "cum": 42293.45,
    "projected": true
   },
   {
    "date": "2028-09-30",
-   "cum": 42795.82,
+   "cum": 42782.0,
    "projected": true
   },
   {
    "date": "2028-10-26",
-   "cum": 43219.76,
+   "cum": 43205.42,
    "projected": true
   },
   {
    "date": "2028-10-31",
-   "cum": 43303.81,
+   "cum": 43289.37,
    "projected": true
   },
   {
    "date": "2028-11-30",
-   "cum": 43808.17,
+   "cum": 43793.11,
    "projected": true
   },
   {
    "date": "2028-12-31",
-   "cum": 44329.34,
+   "cum": 44313.64,
    "projected": true
   },
   {
    "date": "2029-01-31",
-   "cum": 44850.51,
+   "cum": 44834.17,
    "projected": true
   },
   {
    "date": "2029-02-28",
-   "cum": 45321.24,
+   "cum": 45304.32,
    "projected": true
   },
   {
    "date": "2029-03-31",
-   "cum": 45842.41,
+   "cum": 45824.85,
    "projected": true
   },
   {
    "date": "2029-04-30",
-   "cum": 46346.77,
+   "cum": 46328.59,
    "projected": true
   },
   {
    "date": "2029-05-31",
-   "cum": 46867.94,
+   "cum": 46849.11,
    "projected": true
   },
   {
    "date": "2029-06-30",
-   "cum": 47372.3,
+   "cum": 47352.85,
    "projected": true
   },
   {
    "date": "2029-07-31",
-   "cum": 47893.47,
+   "cum": 47873.38,
    "projected": true
   },
   {
    "date": "2029-08-31",
-   "cum": 48414.64,
+   "cum": 48393.91,
    "projected": true
   },
   {
    "date": "2029-09-30",
-   "cum": 48919.0,
+   "cum": 48897.65,
    "projected": true
   },
   {
    "date": "2029-10-26",
-   "cum": 49356.11,
+   "cum": 49334.22,
    "projected": true
   },
   {
    "date": "2029-10-31",
-   "cum": 49442.79,
+   "cum": 49420.79,
    "projected": true
   },
   {
    "date": "2029-11-30",
-   "cum": 49962.89,
+   "cum": 49940.25,
    "projected": true
   },
   {
    "date": "2029-12-31",
-   "cum": 50500.33,
+   "cum": 50477.03,
    "projected": true
   },
   {
    "date": "2030-01-31",
-   "cum": 51037.77,
+   "cum": 51013.81,
    "projected": true
   },
   {
    "date": "2030-02-28",
-   "cum": 51523.2,
+   "cum": 51498.64,
    "projected": true
   }
  ]
