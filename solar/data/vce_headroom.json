@@ -1,13 +1,13 @@
 {
- "surplus_kwh": 1045,
- "credit": 94.98,
- "payout": 40.76,
+ "surplus_kwh": 1046,
+ "credit": 95.02,
+ "payout": 40.77,
  "cash_rate": 0.039,
  "rates": {
   "peak": 0.1103,
   "off": 0.077
  },
- "winter_kwh": 1972,
+ "winter_kwh": 1971,
  "mi_per_kwh": 2.5,
  "to_date": 117.65,
  "last_actual": "2026-10",
@@ -19,26 +19,26 @@
   "total": 2881,
   "total_low": 2228,
   "total_high": 3481,
-  "left": 2482,
-  "per_day": 24.8
+  "left": 2466,
+  "per_day": 24.9
  },
  "off": {
   "kwh": 1045,
   "low": 651,
-  "high": 1435,
+  "high": 1436,
   "credit_covers": 1234,
   "total": 3017,
   "total_low": 2228,
   "total_high": 3801,
-  "left": 2618,
-  "per_day": 26.2
+  "left": 2602,
+  "per_day": 26.3
  },
- "payout_gone_kwh": 1045,
- "used_kwh": 399,
+ "payout_gone_kwh": 1046,
+ "used_kwh": 415,
  "used_from": "2026-11-01",
- "days_left": 100,
- "through": "2026-11-20",
+ "days_left": 99,
+ "through": "2026-11-21",
  "end": "2027-02-28",
- "normal_left": 1573,
+ "normal_left": 1556,
  "normal_per_day": 15.7
 }
