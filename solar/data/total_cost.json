@@ -68,9 +68,9 @@
  },
  "next": {
   "label": "Oct 27, 2026 - Oct 26, 2027",
-  "net": -227.21,
-  "net_low": -266.59,
-  "net_high": 216.28,
+  "net": -227.04,
+  "net_low": -265.97,
+  "net_high": 214.4,
   "headline": "this home came out $227 ahead (net -$227)",
   "bills_through": null,
   "components": [
@@ -85,10 +85,10 @@
    {
     "name": "PG&E true-up (~Oct 26, 2027)",
     "short": "PG&E true-up\n~Oct 26, 2027",
-    "amount": 46.86,
+    "amount": 46.9,
     "actual": false,
-    "low": 32.14,
-    "high": 465.67
+    "low": 32.29,
+    "high": 464.04
    },
    {
     "name": "Climate credits (electric, expected)",
@@ -101,10 +101,10 @@
    {
     "name": "VCE annual payout (~Feb 2027)",
     "short": "VCE payout\n~Feb 2027",
-    "amount": -40.78,
+    "amount": -40.66,
     "actual": false,
-    "low": -65.45,
-    "high": -16.11
+    "low": -64.97,
+    "high": -16.35
    },
    {
     "name": "VPP payout (like 2026 season, ~Mar 2027)",
@@ -115,15 +115,15 @@
     "high": null
    }
   ],
-  "without_solar": 5516.74,
-  "savings": 5743.95,
+  "without_solar": 5513.98,
+  "savings": 5741.02,
   "ws_rates": {
    "winter_peak": 0.3964,
    "winter_off": 0.3577,
    "summer_peak": 0.5025,
    "summer_off": 0.363
   },
-  "ws_kwh": 14241
+  "ws_kwh": 14233
  },
  "lifetime": {
   "rows": [
@@ -219,10 +219,10 @@
    },
    {
     "label": "Oct 2026 - Oct 2027",
-    "without_solar": 5516.74,
-    "actual_net": -227.21,
-    "savings": 5743.95,
-    "kwh": 14241,
+    "without_solar": 5513.98,
+    "actual_net": -227.04,
+    "savings": 5741.02,
+    "kwh": 14233,
     "rates": {
      "winter_peak": 0.3964,
      "winter_off": 0.3577,
@@ -240,7 +240,7 @@
   "since": 2021,
   "first": "Sep 2021 - Dec 2021",
   "last": "Oct 2025 - Oct 2026",
-  "with_forecast": 37223.26,
+  "with_forecast": 37220.33,
   "forecast_label": "Oct 2026 - Oct 2027"
  },
  "rate_history": [
