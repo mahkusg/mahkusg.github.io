@@ -89,7 +89,7 @@
    "8": 1800,
    "9": 1374,
    "10": 886,
-   "11": 427,
+   "11": 448,
    "12": null
   }
  },
@@ -99,7 +99,7 @@
   "2023": 17060,
   "2024": 16390,
   "2025": 16070,
-  "2026": 15628
+  "2026": 15649
  },
  "calendar": [
   {
@@ -225,16 +225,16 @@
   {
    "month": "2026-11",
    "status": "partial",
-   "likely": 528,
-   "low": 499,
-   "high": 554,
+   "likely": 532,
+   "low": 508,
+   "high": 555,
    "avg": 640,
    "median": 650,
    "min": 460,
    "max": 800,
    "fraction": null,
-   "actual_kwh": 427,
-   "actual_days": 24
+   "actual_kwh": 448,
+   "actual_days": 25
   },
   {
    "month": "2026-12",
@@ -386,7 +386,7 @@
    "month": "2027-11",
    "status": "forecast",
    "likely": 500,
-   "low": 302,
+   "low": 319,
    "high": 634,
    "avg": 640,
    "median": 650,
@@ -556,13 +556,13 @@
  "pge_year_label": "Oct 27 2025 - Oct 26 2026",
  "totals": {
   "calendar": {
-   "likely": 16053,
-   "low": 15965,
+   "likely": 16058,
+   "low": 15974,
    "high": 16166
   },
   "next12": {
    "likely": 15949,
-   "low": 14654,
+   "low": 14671,
    "high": 16825
   },
   "pge_year": {
@@ -574,6 +574,6 @@
  "ratio_low_sun": 0.861,
  "ratio_high_sun": 0.989,
  "degradation": 0.005,
- "ytd_kwh": 15628,
- "ytd_through": "2026-11-24"
+ "ytd_kwh": 15649,
+ "ytd_through": "2026-11-25"
 }

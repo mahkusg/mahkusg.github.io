@@ -875,12 +875,12 @@
  },
  {
   "month": "2026-11",
-  "solar": 427.0,
-  "home": 728.0,
-  "powerwall": 257.0,
-  "grid_in": 496.0,
-  "grid_out": 57.3,
-  "net_grid": 438.7,
+  "solar": 448.0,
+  "home": 754.0,
+  "powerwall": 269.0,
+  "grid_in": 505.1,
+  "grid_out": 72.1,
+  "net_grid": 433.0,
   "ev": 97.7,
   "meter": false
  }
